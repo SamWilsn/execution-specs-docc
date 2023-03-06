@@ -46,6 +46,7 @@ merkle
 merkleize
 metaclass
 ommers
+pathlib
 patricialize
 pickler
 rlp
@@ -79,6 +80,7 @@ rmod
 imod
 mod
 divmod
+docc
 rdivmod
 rpow
 ipow
@@ -387,3 +389,5 @@ tf
 casefold
 rlps
 jsons
+
+merchantability
