@@ -15,3 +15,35 @@ markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
     "bigmem: marks tests as big memory (deselect with '-m \"not bigmem\"')",
 ]
+
+[tool.docc]
+discovery = [
+    "docc.cst.discover",
+    "docc.listing.discover",
+]
+
+build = [
+    "docc.cst.build",
+    "docc.listing.build",
+]
+
+transform = [
+    "docc.cst.transform",
+    "docc.mistletoe.transform",
+    "docc.references.index",
+    "docc.html",
+]
+
+[tool.docc.plugins."docc.cst.transform"]
+excluded_references = [
+    "ethereum_spec_tools.lint.lints",   # This is a namespace package.
+]
+
+[tool.docc.plugins."docc.cst.discover"]
+paths = [
+    "src",
+]
+
+[tool.docc.output]
+path = "docs"
+extension = ".html"
