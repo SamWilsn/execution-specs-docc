@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+        :root {
+            --default-color: black;
+            --default-font-weight: normal;
+
+            --keyword-color: blue;
+            --keyword-font-weight: bold;
+
+            --literal-color: teal;
+
+            --name-color: maroon;
+        }
+
+        pre {
+            margin: 0;
+        }
+
+        /* Resets */
+        .hi * {
+            color: var(--default-color);
+            font-weight: var(--default-font-weight);
+        }
+
+        /* Theme */
+        .hi a {
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+        }
+
+        .hi-and,
+        .hi-or,
+        .hi-for,
+        .hi-comp-for,
+        .hi-comp-if,
+        .hi-if,
+        .hi-else,
+        .hi-elif,
+        .hi-if-exp,
+        .hi-continue,
+        .hi-assert,
+        .hi-return,
+        .hi-pass,
+        .hi-not,
+        .hi-raise,
+        .hi-from,
+        .hi-try,
+        .hi-except-handler,
+        .hi-with,
+        .hi-as-name {
+            color: var(--keyword-color);
+            font-weight: var(--keyword-font-weight);
+        }
+
+        .hi-simple-string,
+        .hi-formatted-string,
+        .hi-formatted-string-text,
+        .hi-formatted-string-expression,
+        .hi-integer {
+            color: var(--literal-color);
+        }
+
+        .hi-formatted-string-expression {
+            font-weight: bold;
+        }
+
+        .hi-name {
+            color: var(--name-color);
+        }
+
+        .hi-call > .hi-name,
+        .hi-call > .hi-attribute > .hi-name:last-child {
+            font-weight: bold;
+        }
+
+        </style>
+    </head>
+    <body>
+        <section id="ethereum.shanghai.vm.precompiled_contracts.mapping:0">
+    
+    <h2><span title="ethereum.shanghai.vm.precompiled_contracts.mapping">ethereum.shanghai.vm.precompiled_contracts.mapping</span></h2>
+    
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Precompiled Contract Addresses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>Mapping of precompiled contracts their implementations.</p></div>
+    </div>
+    
+
+    
+    <section id="ethereum.shanghai.vm.precompiled_contracts.mapping.PRE_COMPILED_CONTRACTS:0"><table><tbody><tr><th>36</th><td><pre><span class="hi-ann-assign hi"><span class="hi-name hi">PRE_COMPILED_CONTRACTS</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Dict</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../fork_types.py.html#ethereum.shanghai.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-name hi">Callable</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span> <span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-dict hi"><span class="hi-left-curly-brace hi">{<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>37</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-left-curly-brace hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.ECRECOVER_ADDRESS:0"><span class="hi-name hi">ECRECOVER_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="ecrecover.py.html#ethereum.shanghai.vm.precompiled_contracts.ecrecover.ecrecover:0"><span class="hi-name hi">ecrecover</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>38</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-dict-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.SHA256_ADDRESS:0"><span class="hi-name hi">SHA256_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="sha256.py.html#ethereum.shanghai.vm.precompiled_contracts.sha256.sha256:0"><span class="hi-name hi">sha256</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>39</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-dict-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.RIPEMD160_ADDRESS:0"><span class="hi-name hi">RIPEMD160_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="ripemd160.py.html#ethereum.shanghai.vm.precompiled_contracts.ripemd160.ripemd160:0"><span class="hi-name hi">ripemd160</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>40</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-dict-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.IDENTITY_ADDRESS:0"><span class="hi-name hi">IDENTITY_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="identity.py.html#ethereum.shanghai.vm.precompiled_contracts.identity.identity:0"><span class="hi-name hi">identity</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>41</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-dict-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.MODEXP_ADDRESS:0"><span class="hi-name hi">MODEXP_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="modexp.py.html#ethereum.shanghai.vm.precompiled_contracts.modexp.modexp:0"><span class="hi-name hi">modexp</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>42</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-dict-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.ALT_BN128_ADD_ADDRESS:0"><span class="hi-name hi">ALT_BN128_ADD_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="alt_bn128.py.html#ethereum.shanghai.vm.precompiled_contracts.alt_bn128.alt_bn128_add:0"><span class="hi-name hi">alt_bn128_add</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>43</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-dict-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.ALT_BN128_MUL_ADDRESS:0"><span class="hi-name hi">ALT_BN128_MUL_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="alt_bn128.py.html#ethereum.shanghai.vm.precompiled_contracts.alt_bn128.alt_bn128_mul:0"><span class="hi-name hi">alt_bn128_mul</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>44</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-dict-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.ALT_BN128_PAIRING_CHECK_ADDRESS:0"><span class="hi-name hi">ALT_BN128_PAIRING_CHECK_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="alt_bn128.py.html#ethereum.shanghai.vm.precompiled_contracts.alt_bn128.alt_bn128_pairing_check:0"><span class="hi-name hi">alt_bn128_pairing_check</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>45</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-dict-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-dict-element hi"><a href="__init__.py.html#ethereum.shanghai.vm.precompiled_contracts.BLAKE2F_ADDRESS:0"><span class="hi-name hi">BLAKE2F_ADDRESS</span></a><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span><a href="blake2f.py.html#ethereum.shanghai.vm.precompiled_contracts.blake2f.blake2f:0"><span class="hi-name hi">blake2f</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"></span></span></span><span class="hi-right-curly-brace hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>46</th><td><pre><span class="hi-ann-assign hi"><span class="hi-dict hi"><span class="hi-right-curly-brace hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span>}</span></span></span></pre></td></tr></tbody></table>
+</section>
+    
+</section>
+    </body>
+</html>

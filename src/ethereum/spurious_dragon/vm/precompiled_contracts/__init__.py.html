@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+        :root {
+            --default-color: black;
+            --default-font-weight: normal;
+
+            --keyword-color: blue;
+            --keyword-font-weight: bold;
+
+            --literal-color: teal;
+
+            --name-color: maroon;
+        }
+
+        pre {
+            margin: 0;
+        }
+
+        /* Resets */
+        .hi * {
+            color: var(--default-color);
+            font-weight: var(--default-font-weight);
+        }
+
+        /* Theme */
+        .hi a {
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+        }
+
+        .hi-and,
+        .hi-or,
+        .hi-for,
+        .hi-comp-for,
+        .hi-comp-if,
+        .hi-if,
+        .hi-else,
+        .hi-elif,
+        .hi-if-exp,
+        .hi-continue,
+        .hi-assert,
+        .hi-return,
+        .hi-pass,
+        .hi-not,
+        .hi-raise,
+        .hi-from,
+        .hi-try,
+        .hi-except-handler,
+        .hi-with,
+        .hi-as-name {
+            color: var(--keyword-color);
+            font-weight: var(--keyword-font-weight);
+        }
+
+        .hi-simple-string,
+        .hi-formatted-string,
+        .hi-formatted-string-text,
+        .hi-formatted-string-expression,
+        .hi-integer {
+            color: var(--literal-color);
+        }
+
+        .hi-formatted-string-expression {
+            font-weight: bold;
+        }
+
+        .hi-name {
+            color: var(--name-color);
+        }
+
+        .hi-call > .hi-name,
+        .hi-call > .hi-attribute > .hi-name:last-child {
+            font-weight: bold;
+        }
+
+        </style>
+    </head>
+    <body>
+        <section id="ethereum.spurious_dragon.vm.precompiled_contracts:0">
+    
+    <h2><span title="ethereum.spurious_dragon.vm.precompiled_contracts">ethereum.spurious_dragon.vm.precompiled_contracts</span></h2>
+    
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Precompiled Contract Addresses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>Addresses of precompiled contracts and mappings to their
+implementations.</p></div>
+    </div>
+    
+
+    
+    <section id="ethereum.spurious_dragon.vm.precompiled_contracts.__all__:0"><table><tbody><tr><th>18</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">__all__</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span>(</span></pre></td></tr><tr><th>19</th><td><pre><span class="hi-assign hi">    <span class="hi-tuple hi"><span class="hi-left-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"ECRECOVER_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>20</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"SHA256_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>21</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"RIPEMD160_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>22</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"IDENTITY_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"></span></span></span><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>23</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></pre></td></tr></tbody></table>
+</section>
+    
+    <section id="ethereum.spurious_dragon.vm.precompiled_contracts.ECRECOVER_ADDRESS:0"><table><tbody><tr><th>25</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">ECRECOVER_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#ethereum.spurious_dragon.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x01"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table>
+</section>
+    
+    <section id="ethereum.spurious_dragon.vm.precompiled_contracts.SHA256_ADDRESS:0"><table><tbody><tr><th>26</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">SHA256_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#ethereum.spurious_dragon.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x02"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table>
+</section>
+    
+    <section id="ethereum.spurious_dragon.vm.precompiled_contracts.RIPEMD160_ADDRESS:0"><table><tbody><tr><th>27</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">RIPEMD160_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#ethereum.spurious_dragon.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x03"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table>
+</section>
+    
+    <section id="ethereum.spurious_dragon.vm.precompiled_contracts.IDENTITY_ADDRESS:0"><table><tbody><tr><th>28</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">IDENTITY_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#ethereum.spurious_dragon.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x04"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table>
+</section>
+    
+</section>
+    </body>
+</html>

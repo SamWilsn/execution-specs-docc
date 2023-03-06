@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+        :root {
+            --default-color: black;
+            --default-font-weight: normal;
+
+            --keyword-color: blue;
+            --keyword-font-weight: bold;
+
+            --literal-color: teal;
+
+            --name-color: maroon;
+        }
+
+        pre {
+            margin: 0;
+        }
+
+        /* Resets */
+        .hi * {
+            color: var(--default-color);
+            font-weight: var(--default-font-weight);
+        }
+
+        /* Theme */
+        .hi a {
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+        }
+
+        .hi-and,
+        .hi-or,
+        .hi-for,
+        .hi-comp-for,
+        .hi-comp-if,
+        .hi-if,
+        .hi-else,
+        .hi-elif,
+        .hi-if-exp,
+        .hi-continue,
+        .hi-assert,
+        .hi-return,
+        .hi-pass,
+        .hi-not,
+        .hi-raise,
+        .hi-from,
+        .hi-try,
+        .hi-except-handler,
+        .hi-with,
+        .hi-as-name {
+            color: var(--keyword-color);
+            font-weight: var(--keyword-font-weight);
+        }
+
+        .hi-simple-string,
+        .hi-formatted-string,
+        .hi-formatted-string-text,
+        .hi-formatted-string-expression,
+        .hi-integer {
+            color: var(--literal-color);
+        }
+
+        .hi-formatted-string-expression {
+            font-weight: bold;
+        }
+
+        .hi-name {
+            color: var(--name-color);
+        }
+
+        .hi-call > .hi-name,
+        .hi-call > .hi-attribute > .hi-name:last-child {
+            font-weight: bold;
+        }
+
+        </style>
+    </head>
+    <body>
+        <section id="ethereum.byzantium.utils.hexadecimal:0">
+    
+    <h2><span title="ethereum.byzantium.utils.hexadecimal">ethereum.byzantium.utils.hexadecimal</span></h2>
+    
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Utility Functions For Hexadecimal Strings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>Hexadecimal utility functions used in this specification, specific to
+Byzantium types.</p></div>
+    </div>
+    
+
+    
+    <section id="ethereum.byzantium.utils.hexadecimal.hex_to_root:0">
+    
+    <div class="docstring">
+        <div class="markdown"><p>Convert hex string to trie root.</p><h2>Parameters</h2><p>hex_string :
+The hexadecimal string to be converted to trie root.</p><h2>Returns</h2><p>root : <code>Root</code>
+Trie root obtained from the given hexadecimal string.</p></div>
+    </div>
+    
+    
+    <pre>
+def <span title="ethereum.byzantium.utils.hexadecimal.hex_to_root">hex_to_root</span>(<span title="ethereum.byzantium.utils.hexadecimal.hex_to_root.<locals&gt;.hex_string">hex_string</span>: <span><span title="builtins.str">str</span></span>) -&gt; <span><a href="../fork_types.py.html#ethereum.byzantium.fork_types.Root:0"><span title="ethereum.byzantium.fork_types.Root">Root</span></a></span>:
+</pre><table><tbody><tr><th>21</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>22</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Convert hex string to trie root.</span></span></span></span></pre></td></tr><tr><th>23</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>24</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>25</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>26</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    hex_string :</span></span></span></span></pre></td></tr><tr><th>27</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The hexadecimal string to be converted to trie root.</span></span></span></span></pre></td></tr><tr><th>28</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>29</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Returns</span></span></span></span></pre></td></tr><tr><th>30</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    -------</span></span></span></span></pre></td></tr><tr><th>31</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    root : `Root`</span></span></span></span></pre></td></tr><tr><th>32</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Trie root obtained from the given hexadecimal string.</span></span></span></span></pre></td></tr><tr><th>33</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>34</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><a href="../fork_types.py.html#ethereum.byzantium.fork_types.Root:0"><span class="hi-name hi">Root</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">bytes</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">fromhex</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#ethereum.utils.hexadecimal.remove_hex_prefix:0"><span class="hi-name hi">remove_hex_prefix</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">hex_string</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>35</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table>
+</section>
+    
+    <section id="ethereum.byzantium.utils.hexadecimal.hex_to_bloom:0">
+    
+    <div class="docstring">
+        <div class="markdown"><p>Convert hex string to bloom.</p><h2>Parameters</h2><p>hex_string :
+The hexadecimal string to be converted to bloom.</p><h2>Returns</h2><p>bloom : <code>Bloom</code>
+Bloom obtained from the given hexadecimal string.</p></div>
+    </div>
+    
+    
+    <pre>
+def <span title="ethereum.byzantium.utils.hexadecimal.hex_to_bloom">hex_to_bloom</span>(<span title="ethereum.byzantium.utils.hexadecimal.hex_to_bloom.<locals&gt;.hex_string">hex_string</span>: <span><span title="builtins.str">str</span></span>) -&gt; <span><a href="../fork_types.py.html#ethereum.byzantium.fork_types.Bloom:0"><span title="ethereum.byzantium.fork_types.Bloom">Bloom</span></a></span>:
+</pre><table><tbody><tr><th>38</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>39</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Convert hex string to bloom.</span></span></span></span></pre></td></tr><tr><th>40</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>41</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>42</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>43</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    hex_string :</span></span></span></span></pre></td></tr><tr><th>44</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The hexadecimal string to be converted to bloom.</span></span></span></span></pre></td></tr><tr><th>45</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>46</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Returns</span></span></span></span></pre></td></tr><tr><th>47</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    -------</span></span></span></span></pre></td></tr><tr><th>48</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    bloom : `Bloom`</span></span></span></span></pre></td></tr><tr><th>49</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Bloom obtained from the given hexadecimal string.</span></span></span></span></pre></td></tr><tr><th>50</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>51</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><a href="../fork_types.py.html#ethereum.byzantium.fork_types.Bloom:0"><span class="hi-name hi">Bloom</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">bytes</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">fromhex</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#ethereum.utils.hexadecimal.remove_hex_prefix:0"><span class="hi-name hi">remove_hex_prefix</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">hex_string</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>52</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table>
+</section>
+    
+    <section id="ethereum.byzantium.utils.hexadecimal.hex_to_address:0">
+    
+    <div class="docstring">
+        <div class="markdown"><p>Convert hex string to Address (20 bytes).</p><h2>Parameters</h2><p>hex_string :
+The hexadecimal string to be converted to Address.</p><h2>Returns</h2><p>address : <code>Address</code>
+The address obtained from the given hexadecimal string.</p></div>
+    </div>
+    
+    
+    <pre>
+def <span title="ethereum.byzantium.utils.hexadecimal.hex_to_address">hex_to_address</span>(<span title="ethereum.byzantium.utils.hexadecimal.hex_to_address.<locals&gt;.hex_string">hex_string</span>: <span><span title="builtins.str">str</span></span>) -&gt; <span><a href="../fork_types.py.html#ethereum.byzantium.fork_types.Address:0"><span title="ethereum.byzantium.fork_types.Address">Address</span></a></span>:
+</pre><table><tbody><tr><th>55</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>56</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Convert hex string to Address (20 bytes).</span></span></span></span></pre></td></tr><tr><th>57</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>58</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>59</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>60</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    hex_string :</span></span></span></span></pre></td></tr><tr><th>61</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The hexadecimal string to be converted to Address.</span></span></span></span></pre></td></tr><tr><th>62</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>63</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Returns</span></span></span></span></pre></td></tr><tr><th>64</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    -------</span></span></span></span></pre></td></tr><tr><th>65</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    address : `Address`</span></span></span></span></pre></td></tr><tr><th>66</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The address obtained from the given hexadecimal string.</span></span></span></span></pre></td></tr><tr><th>67</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>68</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><a href="../fork_types.py.html#ethereum.byzantium.fork_types.Address:0"><span class="hi-name hi">Address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">bytes</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">fromhex</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#ethereum.utils.hexadecimal.remove_hex_prefix:0"><span class="hi-name hi">remove_hex_prefix</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">hex_string</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">rjust</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-integer hi">40</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0"</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>69</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table>
+</section>
+    
+</section>
+    </body>
+</html>

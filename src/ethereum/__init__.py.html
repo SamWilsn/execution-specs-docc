@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+        :root {
+            --default-color: black;
+            --default-font-weight: normal;
+
+            --keyword-color: blue;
+            --keyword-font-weight: bold;
+
+            --literal-color: teal;
+
+            --name-color: maroon;
+        }
+
+        pre {
+            margin: 0;
+        }
+
+        /* Resets */
+        .hi * {
+            color: var(--default-color);
+            font-weight: var(--default-font-weight);
+        }
+
+        /* Theme */
+        .hi a {
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+        }
+
+        .hi-and,
+        .hi-or,
+        .hi-for,
+        .hi-comp-for,
+        .hi-comp-if,
+        .hi-if,
+        .hi-else,
+        .hi-elif,
+        .hi-if-exp,
+        .hi-continue,
+        .hi-assert,
+        .hi-return,
+        .hi-pass,
+        .hi-not,
+        .hi-raise,
+        .hi-from,
+        .hi-try,
+        .hi-except-handler,
+        .hi-with,
+        .hi-as-name {
+            color: var(--keyword-color);
+            font-weight: var(--keyword-font-weight);
+        }
+
+        .hi-simple-string,
+        .hi-formatted-string,
+        .hi-formatted-string-text,
+        .hi-formatted-string-expression,
+        .hi-integer {
+            color: var(--literal-color);
+        }
+
+        .hi-formatted-string-expression {
+            font-weight: bold;
+        }
+
+        .hi-name {
+            color: var(--name-color);
+        }
+
+        .hi-call > .hi-name,
+        .hi-call > .hi-attribute > .hi-name:last-child {
+            font-weight: bold;
+        }
+
+        </style>
+    </head>
+    <body>
+        <section id="ethereum:0">
+    
+    <h2><span title="ethereum">ethereum</span></h2>
+    
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Ethereum Specification
+^^^^^^^^^^^^^^^^^^^^^^
+Seeing as internet connections have been vastly expanding across the
+world, spreading information has become as cheap as ever. Bitcoin, for
+example, has demonstrated the possibility of creating a decentralized,
+trade system that is accessible around the world. Namecoin is another
+system that built off of Bitcoin's currency structure to create other
+simple technological applications.</p><p>Ethereum's goal is to create a cryptographically secure system in which
+any and all types of transaction-based concepts can be built. It provides
+an exceptionally accessible and decentralized system to build software
+and execute transactions.</p><p>This package contains a reference implementation, written as simply as
+possible, to aid in defining the behavior of Ethereum clients.</p></div>
+    </div>
+    
+
+    
+    <section id="ethereum.__version__:0"><table><tbody><tr><th>22</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">__version__</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-string hi">"0.1.0"</span></span></pre></td></tr></tbody></table>
+</section>
+    
+    <section id="ethereum.EVM_RECURSION_LIMIT:0"><table><tbody><tr><th>27</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">EVM_RECURSION_LIMIT</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-integer hi">1024</span> <span class="hi-multiply hi"><span class="hi-simple-whitespace hi"></span>*<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">12</span></span></span></pre></td></tr></tbody></table>
+</section>
+    
+    <section id="ethereum.evm_trace:0">
+    
+    <div class="docstring">
+        <div class="markdown"><p>autoapi_noshow
+Placeholder for an evm trace function. The spec does not trace evm by
+default. EVM tracing will be injected if the user requests it.</p></div>
+    </div>
+    
+    
+    <pre>
+def <span title="ethereum.evm_trace">evm_trace</span>(<span title="ethereum.evm_trace.<locals&gt;.evm">evm</span>: <span><span title="typing.Any">Any</span></span>, <span title="ethereum.evm_trace.<locals&gt;.op">op</span>: <span><span title="typing.Any">Any</span></span>) -&gt; <span><span title="builtins.None">None</span></span>:
+</pre><table><tbody><tr><th>32</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>33</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    autoapi_noshow</span></span></span></span></pre></td></tr><tr><th>34</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Placeholder for an evm trace function. The spec does not trace evm by</span></span></span></span></pre></td></tr><tr><th>35</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    default. EVM tracing will be injected if the user requests it.</span></span></span></span></pre></td></tr><tr><th>36</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>37</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-pass hi">pass</span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>38</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table>
+</section>
+    
+</section>
+    </body>
+</html>
