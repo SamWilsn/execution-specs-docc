@@ -2,81 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <style>
-        :root {
-            --default-color: black;
-            --default-font-weight: normal;
-
-            --keyword-color: blue;
-            --keyword-font-weight: bold;
-
-            --literal-color: teal;
-
-            --name-color: maroon;
-        }
-
-        pre {
-            margin: 0;
-        }
-
-        /* Resets */
-        .hi * {
-            color: var(--default-color);
-            font-weight: var(--default-font-weight);
-        }
-
-        /* Theme */
-        .hi a {
-            text-decoration: none;
-            border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
-        }
-
-        .hi-and,
-        .hi-or,
-        .hi-for,
-        .hi-comp-for,
-        .hi-comp-if,
-        .hi-if,
-        .hi-else,
-        .hi-elif,
-        .hi-if-exp,
-        .hi-continue,
-        .hi-assert,
-        .hi-return,
-        .hi-pass,
-        .hi-not,
-        .hi-raise,
-        .hi-from,
-        .hi-try,
-        .hi-except-handler,
-        .hi-with,
-        .hi-as-name {
-            color: var(--keyword-color);
-            font-weight: var(--keyword-font-weight);
-        }
-
-        .hi-simple-string,
-        .hi-formatted-string,
-        .hi-formatted-string-text,
-        .hi-formatted-string-expression,
-        .hi-integer {
-            color: var(--literal-color);
-        }
-
-        .hi-formatted-string-expression {
-            font-weight: bold;
-        }
-
-        .hi-name {
-            color: var(--name-color);
-        }
-
-        .hi-call > .hi-name,
-        .hi-call > .hi-attribute > .hi-name:last-child {
-            font-weight: bold;
-        }
-
-        </style>
+        <link href="../../static/chota.min.css" rel="stylesheet">
+        <link href="../../static/docc.css" rel="stylesheet">
     </head>
     <body>
         <section id="ethereum:0">
@@ -101,14 +28,84 @@ possible, to aid in defining the behavior of Ethereum clients.</p></div>
     </div>
     
 
+    <nav aria-labelledby="module-members">
+        <h3 id="module-members">Members</h3>
+        <ul>
+            
+            
+            <li>
+                <h4>
+                    Attributes
+                </h4>
+
+                <ul>
+                    
+                    
+                    <li>
+                        <a href="#ethereum.__version__:0">
+                        </a><a href="#ethereum.__version__:0"><span title="ethereum.__version__">__version__</span></a><a href="#ethereum.__version__:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#ethereum.EVM_RECURSION_LIMIT:0">
+                        </a><a href="#ethereum.EVM_RECURSION_LIMIT:0"><span title="ethereum.EVM_RECURSION_LIMIT">EVM_RECURSION_LIMIT</span></a><a href="#ethereum.EVM_RECURSION_LIMIT:0">
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </li>
+            
+            
+
+            
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Functions
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#ethereum.evm_trace:0">
+                        </a><a href="#ethereum.evm_trace:0"><span title="ethereum.evm_trace">evm_trace</span></a><a href="#ethereum.evm_trace:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+        </ul>
+    </nav>
+
     
-    <section id="ethereum.__version__:0"><table><tbody><tr><th>22</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">__version__</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-string hi">"0.1.0"</span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.__version__:0">
+    <h3>
+        
+        <span title="ethereum.__version__">__version__</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>22</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">__version__</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-string hi">"0.1.0"</span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.EVM_RECURSION_LIMIT:0"><table><tbody><tr><th>27</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">EVM_RECURSION_LIMIT</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-integer hi">1024</span> <span class="hi-multiply hi"><span class="hi-simple-whitespace hi"></span>*<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">12</span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.EVM_RECURSION_LIMIT:0">
+    <h3>
+        
+        <span title="ethereum.EVM_RECURSION_LIMIT">EVM_RECURSION_LIMIT</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>27</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">EVM_RECURSION_LIMIT</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-integer hi">1024</span> <span class="hi-multiply hi"><span class="hi-simple-whitespace hi"></span>*<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">12</span></span></span></pre></td></tr></tbody></table></section>
     
     <section id="ethereum.evm_trace:0">
+    <h3><span title="ethereum.evm_trace">evm_trace</span></h3>
     
     <div class="docstring">
         <div class="markdown"><p>autoapi_noshow
@@ -117,9 +114,10 @@ default. EVM tracing will be injected if the user requests it.</p></div>
     </div>
     
     
-    <pre>
-def <span title="ethereum.evm_trace">evm_trace</span>(<span title="ethereum.evm_trace.<locals&gt;.evm">evm</span>: <span><span title="typing.Any">Any</span></span>, <span title="ethereum.evm_trace.<locals&gt;.op">op</span>: <span><span title="typing.Any">Any</span></span>) -&gt; <span><span title="builtins.None">None</span></span>:
-</pre><table><tbody><tr><th>32</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>33</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    autoapi_noshow</span></span></span></span></pre></td></tr><tr><th>34</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Placeholder for an evm trace function. The spec does not trace evm by</span></span></span></span></pre></td></tr><tr><th>35</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    default. EVM tracing will be injected if the user requests it.</span></span></span></span></pre></td></tr><tr><th>36</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>37</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-pass hi">pass</span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>38</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table>
+    <details open="">
+        <summary>
+            <code>def <span title="ethereum.evm_trace">evm_trace</span>(<span title="ethereum.evm_trace.<locals&gt;.evm">evm</span>: <span><span title="typing.Any">Any</span></span>, <span title="ethereum.evm_trace.<locals&gt;.op">op</span>: <span><span title="typing.Any">Any</span></span>) -&gt; <span><span title="builtins.None">None</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>32</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>33</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    autoapi_noshow</span></span></span></span></pre></td></tr><tr><th>34</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Placeholder for an evm trace function. The spec does not trace evm by</span></span></span></span></pre></td></tr><tr><th>35</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    default. EVM tracing will be injected if the user requests it.</span></span></span></span></pre></td></tr><tr><th>36</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>37</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-pass hi">pass</span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>38</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
 </section>
     
 </section>

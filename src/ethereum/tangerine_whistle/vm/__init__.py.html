@@ -2,81 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <style>
-        :root {
-            --default-color: black;
-            --default-font-weight: normal;
-
-            --keyword-color: blue;
-            --keyword-font-weight: bold;
-
-            --literal-color: teal;
-
-            --name-color: maroon;
-        }
-
-        pre {
-            margin: 0;
-        }
-
-        /* Resets */
-        .hi * {
-            color: var(--default-color);
-            font-weight: var(--default-font-weight);
-        }
-
-        /* Theme */
-        .hi a {
-            text-decoration: none;
-            border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
-        }
-
-        .hi-and,
-        .hi-or,
-        .hi-for,
-        .hi-comp-for,
-        .hi-comp-if,
-        .hi-if,
-        .hi-else,
-        .hi-elif,
-        .hi-if-exp,
-        .hi-continue,
-        .hi-assert,
-        .hi-return,
-        .hi-pass,
-        .hi-not,
-        .hi-raise,
-        .hi-from,
-        .hi-try,
-        .hi-except-handler,
-        .hi-with,
-        .hi-as-name {
-            color: var(--keyword-color);
-            font-weight: var(--keyword-font-weight);
-        }
-
-        .hi-simple-string,
-        .hi-formatted-string,
-        .hi-formatted-string-text,
-        .hi-formatted-string-expression,
-        .hi-integer {
-            color: var(--literal-color);
-        }
-
-        .hi-formatted-string-expression {
-            font-weight: bold;
-        }
-
-        .hi-name {
-            color: var(--name-color);
-        }
-
-        .hi-call > .hi-name,
-        .hi-call > .hi-attribute > .hi-name:last-child {
-            font-weight: bold;
-        }
-
-        </style>
+        <link href="../../../../static/chota.min.css" rel="stylesheet">
+        <link href="../../../../static/docc.css" rel="stylesheet">
     </head>
     <body>
         <section id="ethereum.tangerine_whistle.vm:0">
@@ -94,134 +21,395 @@
     </div>
     
 
+    <nav aria-labelledby="module-members">
+        <h3 id="module-members">Members</h3>
+        <ul>
+            
+            
+            <li>
+                <h4>
+                    Attributes
+                </h4>
+
+                <ul>
+                    
+                    
+                    <li>
+                        <a href="#ethereum.tangerine_whistle.vm.__all__:0">
+                        </a><a href="#ethereum.tangerine_whistle.vm.__all__:0"><span title="ethereum.tangerine_whistle.vm.__all__">__all__</span></a><a href="#ethereum.tangerine_whistle.vm.__all__:0">
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </li>
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Classes
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#ethereum.tangerine_whistle.vm.Environment:0">
+                        </a><a href="#ethereum.tangerine_whistle.vm.Environment:0"><span title="ethereum.tangerine_whistle.vm.Environment">Environment</span></a><a href="#ethereum.tangerine_whistle.vm.Environment:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#ethereum.tangerine_whistle.vm.Message:0">
+                        </a><a href="#ethereum.tangerine_whistle.vm.Message:0"><span title="ethereum.tangerine_whistle.vm.Message">Message</span></a><a href="#ethereum.tangerine_whistle.vm.Message:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#ethereum.tangerine_whistle.vm.Evm:0">
+                        </a><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a><a href="#ethereum.tangerine_whistle.vm.Evm:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Functions
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#ethereum.tangerine_whistle.vm.incorporate_child_on_success:0">
+                        </a><a href="#ethereum.tangerine_whistle.vm.incorporate_child_on_success:0"><span title="ethereum.tangerine_whistle.vm.incorporate_child_on_success">incorporate_child_on_success</span></a><a href="#ethereum.tangerine_whistle.vm.incorporate_child_on_success:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#ethereum.tangerine_whistle.vm.incorporate_child_on_error:0">
+                        </a><a href="#ethereum.tangerine_whistle.vm.incorporate_child_on_error:0"><span title="ethereum.tangerine_whistle.vm.incorporate_child_on_error">incorporate_child_on_error</span></a><a href="#ethereum.tangerine_whistle.vm.incorporate_child_on_error:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+        </ul>
+    </nav>
+
     
-    <section id="ethereum.tangerine_whistle.vm.__all__:0"><table><tbody><tr><th>25</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">__all__</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span>(<span class="hi-tuple hi"><span class="hi-left-paren hi"><span class="hi-simple-whitespace hi"></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"Environment"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"Evm"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"Message"</span></span><span class="hi-right-paren hi"><span class="hi-simple-whitespace hi"></span>)</span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.__all__:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.__all__">__all__</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>25</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">__all__</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span>(<span class="hi-tuple hi"><span class="hi-left-paren hi"><span class="hi-simple-whitespace hi"></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"Environment"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"Evm"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"Message"</span></span><span class="hi-right-paren hi"><span class="hi-simple-whitespace hi"></span>)</span></span></span></pre></td></tr></tbody></table></section>
     
     <section id="ethereum.tangerine_whistle.vm.Environment:0">
     <h3><span title="ethereum.tangerine_whistle.vm.Environment">Environment</span></h3>
-    <table><tbody><tr><th>28</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <table class="verbatim"><tbody><tr><th>28</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre>class <span title="ethereum.tangerine_whistle.vm.Environment">Environment</span>:</pre>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.caller:0"><table><tbody><tr><th>34</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">caller</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.caller:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.caller">caller</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>34</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">caller</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.block_hashes:0"><table><tbody><tr><th>35</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">block_hashes</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">List</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.block_hashes:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.block_hashes">block_hashes</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>35</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">block_hashes</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">List</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.origin:0"><table><tbody><tr><th>36</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">origin</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.origin:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.origin">origin</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>36</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">origin</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.coinbase:0"><table><tbody><tr><th>37</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">coinbase</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.coinbase:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.coinbase">coinbase</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>37</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">coinbase</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.number:0"><table><tbody><tr><th>38</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">number</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.number:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.number">number</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>38</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">number</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.gas_limit:0"><table><tbody><tr><th>39</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_limit</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.gas_limit:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.gas_limit">gas_limit</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>39</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_limit</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.gas_price:0"><table><tbody><tr><th>40</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_price</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.gas_price:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.gas_price">gas_price</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>40</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_price</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.time:0"><table><tbody><tr><th>41</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">time</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.time:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.time">time</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>41</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">time</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.difficulty:0"><table><tbody><tr><th>42</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">difficulty</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.difficulty:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.difficulty">difficulty</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>42</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">difficulty</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Environment.state:0"><table><tbody><tr><th>43</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">state</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../state.py.html#ethereum.tangerine_whistle.state.State:0"><span class="hi-name hi">State</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Environment.state:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Environment.state">state</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>43</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">state</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../state.py.html#ethereum.tangerine_whistle.state.State:0"><span class="hi-name hi">State</span></a></span></span></pre></td></tr></tbody></table></section>
     
 </section>
     
     <section id="ethereum.tangerine_whistle.vm.Message:0">
     <h3><span title="ethereum.tangerine_whistle.vm.Message">Message</span></h3>
-    <table><tbody><tr><th>46</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <table class="verbatim"><tbody><tr><th>46</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre>class <span title="ethereum.tangerine_whistle.vm.Message">Message</span>:</pre>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.caller:0"><table><tbody><tr><th>52</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">caller</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.caller:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.caller">caller</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>52</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">caller</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.target:0"><table><tbody><tr><th>53</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">target</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Union</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../base_types.py.html#ethereum.base_types.Bytes0:0"><span class="hi-name hi">Bytes0</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.target:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.target">target</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>53</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">target</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Union</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../base_types.py.html#ethereum.base_types.Bytes0:0"><span class="hi-name hi">Bytes0</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.current_target:0"><table><tbody><tr><th>54</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">current_target</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.current_target:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.current_target">current_target</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>54</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">current_target</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.gas:0"><table><tbody><tr><th>55</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.gas:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.gas">gas</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>55</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.value:0"><table><tbody><tr><th>56</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">value</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.value:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.value">value</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>56</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">value</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.data:0"><table><tbody><tr><th>57</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.data:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.data">data</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>57</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.code_address:0"><table><tbody><tr><th>58</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code_address</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Optional</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.code_address:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.code_address">code_address</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>58</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code_address</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Optional</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.code:0"><table><tbody><tr><th>59</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.code:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.code">code</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>59</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.depth:0"><table><tbody><tr><th>60</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">depth</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.depth:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.depth">depth</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>60</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">depth</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Message.should_transfer_value:0"><table><tbody><tr><th>61</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">should_transfer_value</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Message.should_transfer_value:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Message.should_transfer_value">should_transfer_value</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>61</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">should_transfer_value</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table></section>
     
 </section>
     
     <section id="ethereum.tangerine_whistle.vm.Evm:0">
     <h3><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></h3>
-    <table><tbody><tr><th>64</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <table class="verbatim"><tbody><tr><th>64</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre>class <span title="ethereum.tangerine_whistle.vm.Evm">Evm</span>:</pre>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.pc:0"><table><tbody><tr><th>68</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">pc</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.pc:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.pc">pc</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>68</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">pc</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.stack:0"><table><tbody><tr><th>69</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">stack</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">List</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.stack:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.stack">stack</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>69</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">stack</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">List</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.memory:0"><table><tbody><tr><th>70</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">memory</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bytearray</span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.memory:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.memory">memory</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>70</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">memory</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bytearray</span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.code:0"><table><tbody><tr><th>71</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.code:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.code">code</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>71</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.gas_left:0"><table><tbody><tr><th>72</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_left</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.gas_left:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.gas_left">gas_left</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>72</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_left</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.env:0"><table><tbody><tr><th>73</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">env</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.tangerine_whistle.vm.Environment:0"><span class="hi-name hi">Environment</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.env:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.env">env</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>73</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">env</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.tangerine_whistle.vm.Environment:0"><span class="hi-name hi">Environment</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.valid_jump_destinations:0"><table><tbody><tr><th>74</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">valid_jump_destinations</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Set</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.valid_jump_destinations:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.valid_jump_destinations">valid_jump_destinations</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>74</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">valid_jump_destinations</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Set</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.logs:0"><table><tbody><tr><th>75</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">logs</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Log:0"><span class="hi-name hi">Log</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.logs:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.logs">logs</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>75</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">logs</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Log:0"><span class="hi-name hi">Log</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.refund_counter:0"><table><tbody><tr><th>76</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">refund_counter</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.refund_counter:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.refund_counter">refund_counter</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>76</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">refund_counter</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.running:0"><table><tbody><tr><th>77</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">running</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.running:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.running">running</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>77</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">running</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.message:0"><table><tbody><tr><th>78</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">message</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.tangerine_whistle.vm.Message:0"><span class="hi-name hi">Message</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.message:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.message">message</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>78</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">message</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.tangerine_whistle.vm.Message:0"><span class="hi-name hi">Message</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.output:0"><table><tbody><tr><th>79</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">output</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.output:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.output">output</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>79</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">output</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.accounts_to_delete:0"><table><tbody><tr><th>80</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">accounts_to_delete</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Set</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.accounts_to_delete:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.accounts_to_delete">accounts_to_delete</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>80</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">accounts_to_delete</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Set</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../fork_types.py.html#ethereum.tangerine_whistle.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
-    <section id="ethereum.tangerine_whistle.vm.Evm.has_erred:0"><table><tbody><tr><th>81</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">has_erred</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table>
-</section>
+    <section id="ethereum.tangerine_whistle.vm.Evm.has_erred:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.Evm.has_erred">has_erred</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>81</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">has_erred</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table></section>
     
 </section>
     
     <section id="ethereum.tangerine_whistle.vm.incorporate_child_on_success:0">
+    <h3><span title="ethereum.tangerine_whistle.vm.incorporate_child_on_success">incorporate_child_on_success</span></h3>
     
     <div class="docstring">
         <div class="markdown"><p>Incorporate the state of a successful <code>child_evm</code> into the parent <code>evm</code>.</p><h2>Parameters</h2><p>evm :
@@ -231,12 +419,14 @@ The child evm to incorporate.</p></div>
     </div>
     
     
-    <pre>
-def <span title="ethereum.tangerine_whistle.vm.incorporate_child_on_success">incorporate_child_on_success</span>(<span title="ethereum.tangerine_whistle.vm.incorporate_child_on_success.<locals&gt;.evm">evm</span>: <span><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a></span>, <span title="ethereum.tangerine_whistle.vm.incorporate_child_on_success.<locals&gt;.child_evm">child_evm</span>: <span><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a></span>) -&gt; <span><span title="builtins.None">None</span></span>:
-</pre><table><tbody><tr><th>85</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Incorporate the state of a successful `child_evm` into the parent `evm`.</span></span></span></span></pre></td></tr><tr><th>87</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>88</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>89</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>90</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    evm :</span></span></span></span></pre></td></tr><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The parent `EVM`.</span></span></span></span></pre></td></tr><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    child_evm :</span></span></span></span></pre></td></tr><tr><th>93</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The child evm to incorporate.</span></span></span></span></pre></td></tr><tr><th>94</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>95</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">gas_left</span></span> <span class="hi-add-assign hi"><span class="hi-simple-whitespace hi"></span>+=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">gas_left</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>96</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">logs</span></span> <span class="hi-add-assign hi"><span class="hi-simple-whitespace hi"></span>+=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">logs</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>97</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">refund_counter</span></span> <span class="hi-add-assign hi"><span class="hi-simple-whitespace hi"></span>+=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">refund_counter</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>98</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">accounts_to_delete</span></span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">update</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">accounts_to_delete</span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>99</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table>
+    <details open="">
+        <summary>
+            <code>def <span title="ethereum.tangerine_whistle.vm.incorporate_child_on_success">incorporate_child_on_success</span>(<span title="ethereum.tangerine_whistle.vm.incorporate_child_on_success.<locals&gt;.evm">evm</span>: <span><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a></span>, <span title="ethereum.tangerine_whistle.vm.incorporate_child_on_success.<locals&gt;.child_evm">child_evm</span>: <span><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a></span>) -&gt; <span><span title="builtins.None">None</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>85</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Incorporate the state of a successful `child_evm` into the parent `evm`.</span></span></span></span></pre></td></tr><tr><th>87</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>88</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>89</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>90</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    evm :</span></span></span></span></pre></td></tr><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The parent `EVM`.</span></span></span></span></pre></td></tr><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    child_evm :</span></span></span></span></pre></td></tr><tr><th>93</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The child evm to incorporate.</span></span></span></span></pre></td></tr><tr><th>94</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>95</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">gas_left</span></span> <span class="hi-add-assign hi"><span class="hi-simple-whitespace hi"></span>+=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">gas_left</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>96</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">logs</span></span> <span class="hi-add-assign hi"><span class="hi-simple-whitespace hi"></span>+=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">logs</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>97</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">refund_counter</span></span> <span class="hi-add-assign hi"><span class="hi-simple-whitespace hi"></span>+=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">refund_counter</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>98</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">accounts_to_delete</span></span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">update</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">accounts_to_delete</span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>99</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
 </section>
     
     <section id="ethereum.tangerine_whistle.vm.incorporate_child_on_error:0">
+    <h3><span title="ethereum.tangerine_whistle.vm.incorporate_child_on_error">incorporate_child_on_error</span></h3>
     
     <div class="docstring">
         <div class="markdown"><p>Incorporate the state of an unsuccessful <code>child_evm</code> into the parent <code>evm</code>.</p><h2>Parameters</h2><p>evm :
@@ -246,9 +436,10 @@ The child evm to incorporate.</p></div>
     </div>
     
     
-    <pre>
-def <span title="ethereum.tangerine_whistle.vm.incorporate_child_on_error">incorporate_child_on_error</span>(<span title="ethereum.tangerine_whistle.vm.incorporate_child_on_error.<locals&gt;.evm">evm</span>: <span><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a></span>, <span title="ethereum.tangerine_whistle.vm.incorporate_child_on_error.<locals&gt;.child_evm">child_evm</span>: <span><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a></span>) -&gt; <span><span title="builtins.None">None</span></span>:
-</pre><table><tbody><tr><th>102</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>103</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Incorporate the state of an unsuccessful `child_evm` into the parent `evm`.</span></span></span></span></pre></td></tr><tr><th>104</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>105</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>106</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>107</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    evm :</span></span></span></span></pre></td></tr><tr><th>108</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The parent `EVM`.</span></span></span></span></pre></td></tr><tr><th>109</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    child_evm :</span></span></span></span></pre></td></tr><tr><th>110</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The child evm to incorporate.</span></span></span></span></pre></td></tr><tr><th>111</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>112</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">gas_left</span></span> <span class="hi-add-assign hi"><span class="hi-simple-whitespace hi"></span>+=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">gas_left</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>113</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table>
+    <details open="">
+        <summary>
+            <code>def <span title="ethereum.tangerine_whistle.vm.incorporate_child_on_error">incorporate_child_on_error</span>(<span title="ethereum.tangerine_whistle.vm.incorporate_child_on_error.<locals&gt;.evm">evm</span>: <span><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a></span>, <span title="ethereum.tangerine_whistle.vm.incorporate_child_on_error.<locals&gt;.child_evm">child_evm</span>: <span><a href="#ethereum.tangerine_whistle.vm.Evm:0"><span title="ethereum.tangerine_whistle.vm.Evm">Evm</span></a></span>) -&gt; <span><span title="builtins.None">None</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>102</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>103</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Incorporate the state of an unsuccessful `child_evm` into the parent `evm`.</span></span></span></span></pre></td></tr><tr><th>104</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>105</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>106</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>107</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    evm :</span></span></span></span></pre></td></tr><tr><th>108</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The parent `EVM`.</span></span></span></span></pre></td></tr><tr><th>109</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    child_evm :</span></span></span></span></pre></td></tr><tr><th>110</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The child evm to incorporate.</span></span></span></span></pre></td></tr><tr><th>111</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>112</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">gas_left</span></span> <span class="hi-add-assign hi"><span class="hi-simple-whitespace hi"></span>+=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">gas_left</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>113</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
 </section>
     
 </section>
