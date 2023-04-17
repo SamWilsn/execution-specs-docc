@@ -2,26 +2,449 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../../../static/chota.min.css" rel="stylesheet">
         <link href="../../../static/docc.css" rel="stylesheet">
     </head>
     <body>
-        <section id="ethereum.constantinople.fork_types:0">
-    
-    <h2><span title="ethereum.constantinople.fork_types">ethereum.constantinople.fork_types</span></h2>
-    
+        <section class="module" id="ethereum.constantinople.fork_types:0">
+    <div class="members">
+        
+        <h2><span title="ethereum.constantinople.fork_types">ethereum.constantinople.fork_types</span></h2>
+        
 
-    
-    <div class="docstring">
-        <div class="markdown"><p>Ethereum Types
+        
+        <div class="docstring">
+            <div class="markdown"><p>Ethereum Types
 ^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
 :backlinks: none
 :local:</p><h2>Introduction</h2><p>Types re-used throughout the specification, which are specific to Ethereum.</p></div>
+        </div>
+        
+
+
+        
+        <section id="ethereum.constantinople.fork_types.Address:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Address">Address</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>32</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Address</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../base_types.py.html#ethereum.base_types.Bytes20:0"><span class="hi-name hi">Bytes20</span></a></span></pre></td></tr></tbody></table></section>
+        
+        <section id="ethereum.constantinople.fork_types.Root:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Root">Root</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>33</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Root</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></pre></td></tr></tbody></table></section>
+        
+        <section id="ethereum.constantinople.fork_types.Bloom:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Bloom">Bloom</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>35</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Bloom</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../base_types.py.html#ethereum.base_types.Bytes256:0"><span class="hi-name hi">Bytes256</span></a></span></pre></td></tr></tbody></table></section>
+        
+        <section id="ethereum.constantinople.fork_types.TX_BASE_COST:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.TX_BASE_COST">TX_BASE_COST</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>37</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_BASE_COST</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">21000</span></span></pre></td></tr></tbody></table></section>
+        
+        <section id="ethereum.constantinople.fork_types.TX_DATA_COST_PER_NON_ZERO:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.TX_DATA_COST_PER_NON_ZERO">TX_DATA_COST_PER_NON_ZERO</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>38</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_DATA_COST_PER_NON_ZERO</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">68</span></span></pre></td></tr></tbody></table></section>
+        
+        <section id="ethereum.constantinople.fork_types.TX_DATA_COST_PER_ZERO:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.TX_DATA_COST_PER_ZERO">TX_DATA_COST_PER_ZERO</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>39</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_DATA_COST_PER_ZERO</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">4</span></span></pre></td></tr></tbody></table></section>
+        
+        <section id="ethereum.constantinople.fork_types.TX_CREATE_COST:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.TX_CREATE_COST">TX_CREATE_COST</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>40</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_CREATE_COST</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">32000</span></span></pre></td></tr></tbody></table></section>
+        
+        <section id="ethereum.constantinople.fork_types.Transaction:0">
+    <h3><span title="ethereum.constantinople.fork_types.Transaction">Transaction</span></h3>
+    <table class="verbatim"><tbody><tr><th>43</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>44</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <pre>class <span title="ethereum.constantinople.fork_types.Transaction">Transaction</span>:</pre>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.nonce:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.nonce">nonce</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>50</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">nonce</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.gas_price:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.gas_price">gas_price</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>51</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_price</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.gas:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.gas">gas</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>52</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.to:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.to">to</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>53</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">to</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Union</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../base_types.py.html#ethereum.base_types.Bytes0:0"><span class="hi-name hi">Bytes0</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.constantinople.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.value:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.value">value</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>54</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">value</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.data:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.data">data</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>55</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.v:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.v">v</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>56</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">v</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.r:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.r">r</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>57</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">r</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Transaction.s:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Transaction.s">s</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>58</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">s</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+</section>
+        
+        <section id="ethereum.constantinople.fork_types.Account:0">
+    <h3><span title="ethereum.constantinople.fork_types.Account">Account</span></h3>
+    <table class="verbatim"><tbody><tr><th>61</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>62</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <pre>class <span title="ethereum.constantinople.fork_types.Account">Account</span>:</pre>
+    
+    <section id="ethereum.constantinople.fork_types.Account.nonce:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Account.nonce">nonce</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>68</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">nonce</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Account.balance:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Account.balance">balance</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>69</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">balance</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Account.code:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Account.code">code</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>70</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bytes</span></span></span></pre></td></tr></tbody></table></section>
+    
+</section>
+        
+        <section id="ethereum.constantinople.fork_types.EMPTY_ACCOUNT:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.EMPTY_ACCOUNT">EMPTY_ACCOUNT</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>73</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">EMPTY_ACCOUNT</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="#ethereum.constantinople.fork_types.Account:0"><span class="hi-name hi">Account</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></pre></td></tr><tr><th>74</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">nonce</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-integer hi">0</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>75</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">balance</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-integer hi">0</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>76</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">code</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><span class="hi-name hi">bytearray</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>77</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+        
+        <section id="ethereum.constantinople.fork_types.encode_account:0">
+    <h3><span title="ethereum.constantinople.fork_types.encode_account">encode_account</span></h3>
+    
+    <div class="docstring">
+        <div class="markdown"><p>Encode <code>Account</code> dataclass.</p><p>Storage is not stored in the <code>Account</code> dataclass, so <code>Accounts</code> cannot be
+encoded with providing a storage root.</p></div>
     </div>
     
+    
+    <details open="">
+        <summary>
+            <code>def <span title="ethereum.constantinople.fork_types.encode_account">encode_account</span>(<span title="ethereum.constantinople.fork_types.encode_account.<locals&gt;.raw_account_data">raw_account_data</span>: <span><a href="#ethereum.constantinople.fork_types.Account:0"><span title="ethereum.constantinople.fork_types.Account">Account</span></a></span>, <span title="ethereum.constantinople.fork_types.encode_account.<locals&gt;.storage_root">storage_root</span>: <span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span title="ethereum.base_types.Bytes">Bytes</span></a></span>) -&gt; <span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span title="ethereum.base_types.Bytes">Bytes</span></a></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>81</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>82</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Encode `Account` dataclass.</span></span></span></span></pre></td></tr><tr><th>83</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>84</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Storage is not stored in the `Account` dataclass, so `Accounts` cannot be</span></span></span></span></pre></td></tr><tr><th>85</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    encoded with providing a storage root.</span></span></span></span></pre></td></tr><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>87</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-attribute hi"><a href="../rlp.py.html#ethereum.rlp:0"><span class="hi-name hi">rlp</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">encode</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>88</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span>(</span></span></span></span></span></pre></td></tr><tr><th>89</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi">            <span class="hi-tuple hi"><span class="hi-left-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">nonce</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>90</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">balance</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-name hi">storage_root</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-call hi"><a href="../crypto/hash.py.html#ethereum.crypto.hash.keccak256:0"><span class="hi-name hi">keccak256</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">code</span></span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"></span></span></span><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>93</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">    </span></span>)</span></span><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>94</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi"></span></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>95</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
+</section>
+        
+        <section id="ethereum.constantinople.fork_types.Header:0">
+    <h3><span title="ethereum.constantinople.fork_types.Header">Header</span></h3>
+    <table class="verbatim"><tbody><tr><th>97</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>98</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <pre>class <span title="ethereum.constantinople.fork_types.Header">Header</span>:</pre>
+    
+    <section id="ethereum.constantinople.fork_types.Header.parent_hash:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.parent_hash">parent_hash</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>104</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">parent_hash</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.ommers_hash:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.ommers_hash">ommers_hash</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>105</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">ommers_hash</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.coinbase:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.coinbase">coinbase</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>106</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">coinbase</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.state_root:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.state_root">state_root</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>107</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">state_root</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Root:0"><span class="hi-name hi">Root</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.transactions_root:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.transactions_root">transactions_root</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>108</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">transactions_root</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Root:0"><span class="hi-name hi">Root</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.receipt_root:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.receipt_root">receipt_root</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>109</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">receipt_root</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Root:0"><span class="hi-name hi">Root</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.bloom:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.bloom">bloom</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>110</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">bloom</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Bloom:0"><span class="hi-name hi">Bloom</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.difficulty:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.difficulty">difficulty</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>111</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">difficulty</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.number:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.number">number</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>112</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">number</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.gas_limit:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.gas_limit">gas_limit</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>113</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_limit</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.gas_used:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.gas_used">gas_used</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>114</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_used</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.timestamp:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.timestamp">timestamp</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>115</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">timestamp</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.extra_data:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.extra_data">extra_data</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>116</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">extra_data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.mix_digest:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.mix_digest">mix_digest</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>117</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">mix_digest</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes32:0"><span class="hi-name hi">Bytes32</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Header.nonce:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Header.nonce">nonce</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>118</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">nonce</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes8:0"><span class="hi-name hi">Bytes8</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+</section>
+        
+        <section id="ethereum.constantinople.fork_types.Block:0">
+    <h3><span title="ethereum.constantinople.fork_types.Block">Block</span></h3>
+    <table class="verbatim"><tbody><tr><th>121</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>122</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <pre>class <span title="ethereum.constantinople.fork_types.Block">Block</span>:</pre>
+    
+    <section id="ethereum.constantinople.fork_types.Block.header:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Block.header">header</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>128</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">header</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Header:0"><span class="hi-name hi">Header</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Block.transactions:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Block.transactions">transactions</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>129</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">transactions</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.constantinople.fork_types.Transaction:0"><span class="hi-name hi">Transaction</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Block.ommers:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Block.ommers">ommers</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>130</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">ommers</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.constantinople.fork_types.Header:0"><span class="hi-name hi">Header</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
+    
+</section>
+        
+        <section id="ethereum.constantinople.fork_types.Log:0">
+    <h3><span title="ethereum.constantinople.fork_types.Log">Log</span></h3>
+    <table class="verbatim"><tbody><tr><th>133</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>134</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <pre>class <span title="ethereum.constantinople.fork_types.Log">Log</span>:</pre>
+    
+    <section id="ethereum.constantinople.fork_types.Log.address:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Log.address">address</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>140</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">address</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Log.topics:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Log.topics">topics</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>141</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">topics</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Log.data:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Log.data">data</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>142</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bytes</span></span></span></pre></td></tr></tbody></table></section>
+    
+</section>
+        
+        <section id="ethereum.constantinople.fork_types.Receipt:0">
+    <h3><span title="ethereum.constantinople.fork_types.Receipt">Receipt</span></h3>
+    <table class="verbatim"><tbody><tr><th>145</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>146</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
+    <pre>class <span title="ethereum.constantinople.fork_types.Receipt">Receipt</span>:</pre>
+    
+    <section id="ethereum.constantinople.fork_types.Receipt.succeeded:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Receipt.succeeded">succeeded</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>152</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">succeeded</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Receipt.cumulative_gas_used:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Receipt.cumulative_gas_used">cumulative_gas_used</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>153</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">cumulative_gas_used</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Receipt.bloom:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Receipt.bloom">bloom</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>154</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">bloom</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Bloom:0"><span class="hi-name hi">Bloom</span></a></span></span></pre></td></tr></tbody></table></section>
+    
+    <section id="ethereum.constantinople.fork_types.Receipt.logs:0">
+    <h3>
+        
+        <span title="ethereum.constantinople.fork_types.Receipt.logs">logs</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>155</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">logs</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.constantinople.fork_types.Log:0"><span class="hi-name hi">Log</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
+    
+</section>
+        
+    </div>
 
-    <nav aria-labelledby="module-members">
-        <h3 id="module-members">Members</h3>
+    <nav class="toc">
+        <h3>Members</h3>
         <ul>
             
             
@@ -172,425 +595,6 @@
             
         </ul>
     </nav>
-
-    
-    <section id="ethereum.constantinople.fork_types.Address:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Address">Address</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>32</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Address</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../base_types.py.html#ethereum.base_types.Bytes20:0"><span class="hi-name hi">Bytes20</span></a></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Root:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Root">Root</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>33</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Root</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Bloom:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Bloom">Bloom</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>35</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Bloom</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../base_types.py.html#ethereum.base_types.Bytes256:0"><span class="hi-name hi">Bytes256</span></a></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.TX_BASE_COST:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.TX_BASE_COST">TX_BASE_COST</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>37</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_BASE_COST</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">21000</span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.TX_DATA_COST_PER_NON_ZERO:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.TX_DATA_COST_PER_NON_ZERO">TX_DATA_COST_PER_NON_ZERO</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>38</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_DATA_COST_PER_NON_ZERO</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">68</span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.TX_DATA_COST_PER_ZERO:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.TX_DATA_COST_PER_ZERO">TX_DATA_COST_PER_ZERO</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>39</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_DATA_COST_PER_ZERO</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">4</span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.TX_CREATE_COST:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.TX_CREATE_COST">TX_CREATE_COST</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>40</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_CREATE_COST</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">32000</span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction:0">
-    <h3><span title="ethereum.constantinople.fork_types.Transaction">Transaction</span></h3>
-    <table class="verbatim"><tbody><tr><th>43</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>44</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
-    <pre>class <span title="ethereum.constantinople.fork_types.Transaction">Transaction</span>:</pre>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.nonce:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.nonce">nonce</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>50</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">nonce</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.gas_price:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.gas_price">gas_price</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>51</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_price</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.gas:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.gas">gas</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>52</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.to:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.to">to</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>53</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">to</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Union</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../base_types.py.html#ethereum.base_types.Bytes0:0"><span class="hi-name hi">Bytes0</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.constantinople.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.value:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.value">value</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>54</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">value</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.data:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.data">data</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>55</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.v:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.v">v</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>56</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">v</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.r:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.r">r</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>57</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">r</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Transaction.s:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Transaction.s">s</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>58</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">s</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-</section>
-    
-    <section id="ethereum.constantinople.fork_types.Account:0">
-    <h3><span title="ethereum.constantinople.fork_types.Account">Account</span></h3>
-    <table class="verbatim"><tbody><tr><th>61</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>62</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
-    <pre>class <span title="ethereum.constantinople.fork_types.Account">Account</span>:</pre>
-    
-    <section id="ethereum.constantinople.fork_types.Account.nonce:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Account.nonce">nonce</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>68</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">nonce</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Account.balance:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Account.balance">balance</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>69</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">balance</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Account.code:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Account.code">code</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>70</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bytes</span></span></span></pre></td></tr></tbody></table></section>
-    
-</section>
-    
-    <section id="ethereum.constantinople.fork_types.EMPTY_ACCOUNT:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.EMPTY_ACCOUNT">EMPTY_ACCOUNT</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>73</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">EMPTY_ACCOUNT</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="#ethereum.constantinople.fork_types.Account:0"><span class="hi-name hi">Account</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></pre></td></tr><tr><th>74</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">nonce</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-integer hi">0</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>75</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">balance</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-integer hi">0</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>76</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">code</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><span class="hi-name hi">bytearray</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>77</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.encode_account:0">
-    <h3><span title="ethereum.constantinople.fork_types.encode_account">encode_account</span></h3>
-    
-    <div class="docstring">
-        <div class="markdown"><p>Encode <code>Account</code> dataclass.</p><p>Storage is not stored in the <code>Account</code> dataclass, so <code>Accounts</code> cannot be
-encoded with providing a storage root.</p></div>
-    </div>
-    
-    
-    <details open="">
-        <summary>
-            <code>def <span title="ethereum.constantinople.fork_types.encode_account">encode_account</span>(<span title="ethereum.constantinople.fork_types.encode_account.<locals&gt;.raw_account_data">raw_account_data</span>: <span><a href="#ethereum.constantinople.fork_types.Account:0"><span title="ethereum.constantinople.fork_types.Account">Account</span></a></span>, <span title="ethereum.constantinople.fork_types.encode_account.<locals&gt;.storage_root">storage_root</span>: <span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span title="ethereum.base_types.Bytes">Bytes</span></a></span>) -&gt; <span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span title="ethereum.base_types.Bytes">Bytes</span></a></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>81</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>82</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Encode `Account` dataclass.</span></span></span></span></pre></td></tr><tr><th>83</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>84</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Storage is not stored in the `Account` dataclass, so `Accounts` cannot be</span></span></span></span></pre></td></tr><tr><th>85</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    encoded with providing a storage root.</span></span></span></span></pre></td></tr><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>87</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-attribute hi"><a href="../rlp.py.html#ethereum.rlp:0"><span class="hi-name hi">rlp</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">encode</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>88</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span>(</span></span></span></span></span></pre></td></tr><tr><th>89</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi">            <span class="hi-tuple hi"><span class="hi-left-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">nonce</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>90</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">balance</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-name hi">storage_root</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-call hi"><a href="../crypto/hash.py.html#ethereum.crypto.hash.keccak256:0"><span class="hi-name hi">keccak256</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">code</span></span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"></span></span></span><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>93</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">    </span></span>)</span></span><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>94</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi"></span></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>95</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
-</section>
-    
-    <section id="ethereum.constantinople.fork_types.Header:0">
-    <h3><span title="ethereum.constantinople.fork_types.Header">Header</span></h3>
-    <table class="verbatim"><tbody><tr><th>97</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>98</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
-    <pre>class <span title="ethereum.constantinople.fork_types.Header">Header</span>:</pre>
-    
-    <section id="ethereum.constantinople.fork_types.Header.parent_hash:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.parent_hash">parent_hash</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>104</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">parent_hash</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.ommers_hash:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.ommers_hash">ommers_hash</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>105</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">ommers_hash</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.coinbase:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.coinbase">coinbase</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>106</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">coinbase</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.state_root:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.state_root">state_root</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>107</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">state_root</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Root:0"><span class="hi-name hi">Root</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.transactions_root:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.transactions_root">transactions_root</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>108</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">transactions_root</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Root:0"><span class="hi-name hi">Root</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.receipt_root:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.receipt_root">receipt_root</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>109</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">receipt_root</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Root:0"><span class="hi-name hi">Root</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.bloom:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.bloom">bloom</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>110</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">bloom</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Bloom:0"><span class="hi-name hi">Bloom</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.difficulty:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.difficulty">difficulty</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>111</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">difficulty</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.number:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.number">number</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>112</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">number</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.gas_limit:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.gas_limit">gas_limit</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>113</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_limit</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.gas_used:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.gas_used">gas_used</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>114</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">gas_used</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.timestamp:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.timestamp">timestamp</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>115</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">timestamp</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.extra_data:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.extra_data">extra_data</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>116</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">extra_data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.mix_digest:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.mix_digest">mix_digest</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>117</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">mix_digest</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes32:0"><span class="hi-name hi">Bytes32</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Header.nonce:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Header.nonce">nonce</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>118</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">nonce</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes8:0"><span class="hi-name hi">Bytes8</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-</section>
-    
-    <section id="ethereum.constantinople.fork_types.Block:0">
-    <h3><span title="ethereum.constantinople.fork_types.Block">Block</span></h3>
-    <table class="verbatim"><tbody><tr><th>121</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>122</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
-    <pre>class <span title="ethereum.constantinople.fork_types.Block">Block</span>:</pre>
-    
-    <section id="ethereum.constantinople.fork_types.Block.header:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Block.header">header</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>128</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">header</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Header:0"><span class="hi-name hi">Header</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Block.transactions:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Block.transactions">transactions</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>129</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">transactions</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.constantinople.fork_types.Transaction:0"><span class="hi-name hi">Transaction</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Block.ommers:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Block.ommers">ommers</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>130</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">ommers</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.constantinople.fork_types.Header:0"><span class="hi-name hi">Header</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
-    
-</section>
-    
-    <section id="ethereum.constantinople.fork_types.Log:0">
-    <h3><span title="ethereum.constantinople.fork_types.Log">Log</span></h3>
-    <table class="verbatim"><tbody><tr><th>133</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>134</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
-    <pre>class <span title="ethereum.constantinople.fork_types.Log">Log</span>:</pre>
-    
-    <section id="ethereum.constantinople.fork_types.Log.address:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Log.address">address</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>140</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">address</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Address:0"><span class="hi-name hi">Address</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Log.topics:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Log.topics">topics</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>141</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">topics</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Log.data:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Log.data">data</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>142</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bytes</span></span></span></pre></td></tr></tbody></table></section>
-    
-</section>
-    
-    <section id="ethereum.constantinople.fork_types.Receipt:0">
-    <h3><span title="ethereum.constantinople.fork_types.Receipt">Receipt</span></h3>
-    <table class="verbatim"><tbody><tr><th>145</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>146</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
-    <pre>class <span title="ethereum.constantinople.fork_types.Receipt">Receipt</span>:</pre>
-    
-    <section id="ethereum.constantinople.fork_types.Receipt.succeeded:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Receipt.succeeded">succeeded</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>152</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">succeeded</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Receipt.cumulative_gas_used:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Receipt.cumulative_gas_used">cumulative_gas_used</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>153</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">cumulative_gas_used</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Receipt.bloom:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Receipt.bloom">bloom</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>154</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">bloom</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="#ethereum.constantinople.fork_types.Bloom:0"><span class="hi-name hi">Bloom</span></a></span></span></pre></td></tr></tbody></table></section>
-    
-    <section id="ethereum.constantinople.fork_types.Receipt.logs:0">
-    <h3>
-        
-        <span title="ethereum.constantinople.fork_types.Receipt.logs">logs</span>
-        
-    </h3>
-    <table class="verbatim"><tbody><tr><th>155</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">logs</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.constantinople.fork_types.Log:0"><span class="hi-name hi">Log</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
-    
-</section>
-    
 </section>
     </body>
 </html>

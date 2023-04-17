@@ -2,79 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../../../static/chota.min.css" rel="stylesheet">
         <link href="../../../static/docc.css" rel="stylesheet">
     </head>
     <body>
-        <section id="ethereum.crypto.blake2:0">
-    
-    <h2><span title="ethereum.crypto.blake2">ethereum.crypto.blake2</span></h2>
-    
+        <section class="module" id="ethereum.crypto.blake2:0">
+    <div class="members">
+        
+        <h2><span title="ethereum.crypto.blake2">ethereum.crypto.blake2</span></h2>
+        
 
-    
-    <div class="docstring">
-        <div class="markdown"><p>The Blake2 Implementation
+        
+        <div class="docstring">
+            <div class="markdown"><p>The Blake2 Implementation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^</p></div>
-    </div>
-    
+        </div>
+        
 
-    <nav aria-labelledby="module-members">
-        <h3 id="module-members">Members</h3>
-        <ul>
-            
-            
-            
 
-            
-            
-            <li>
-                <h4>
-                    Classes
-                </h4>
-
-                <ul>
-                    
-                    <li>
-                        <a href="#ethereum.crypto.blake2.Blake2:0">
-                        </a><a href="#ethereum.crypto.blake2.Blake2:0"><span title="ethereum.crypto.blake2.Blake2">Blake2</span></a><a href="#ethereum.crypto.blake2.Blake2:0">
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#ethereum.crypto.blake2.Blake2b:0">
-                        </a><a href="#ethereum.crypto.blake2.Blake2b:0"><span title="ethereum.crypto.blake2.Blake2b">Blake2b</span></a><a href="#ethereum.crypto.blake2.Blake2b:0">
-                        </a>
-                    </li>
-                    
-                </ul>
-            </li>
-            
-            
-
-            
-            
-            <li>
-                <h4>
-                    Functions
-                </h4>
-
-                <ul>
-                    
-                    <li>
-                        <a href="#ethereum.crypto.blake2.spit_le_to_uint:0">
-                        </a><a href="#ethereum.crypto.blake2.spit_le_to_uint:0"><span title="ethereum.crypto.blake2.spit_le_to_uint">spit_le_to_uint</span></a><a href="#ethereum.crypto.blake2.spit_le_to_uint:0">
-                        </a>
-                    </li>
-                    
-                </ul>
-            </li>
-            
-            
-        </ul>
-    </nav>
-
-    
-    <section id="ethereum.crypto.blake2.spit_le_to_uint:0">
+        
+        <section id="ethereum.crypto.blake2.spit_le_to_uint:0">
     <h3><span title="ethereum.crypto.blake2.spit_le_to_uint">spit_le_to_uint</span></h3>
     
     <div class="docstring">
@@ -92,8 +40,8 @@ The number of words to be extracted</p></div>
             <code>def <span title="ethereum.crypto.blake2.spit_le_to_uint">spit_le_to_uint</span>(<span title="ethereum.crypto.blake2.spit_le_to_uint.<locals&gt;.data">data</span>: <span><span title="builtins.bytes">bytes</span></span>, <span title="ethereum.crypto.blake2.spit_le_to_uint.<locals&gt;.start">start</span>: <span><span title="builtins.int">int</span></span>, <span title="ethereum.crypto.blake2.spit_le_to_uint.<locals&gt;.num_words">num_words</span>: <span><span title="builtins.int">int</span></span>) -&gt; <span><span><span title="typing.List">List</span></span>[<span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span title="ethereum.base_types.Uint">Uint</span></a></span>]</span>:</code>
         </summary><table class="verbatim"><tbody><tr><th>13</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>14</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Extracts 8 byte words from a given data.</span></span></span></span></pre></td></tr><tr><th>15</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>16</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>17</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>18</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    data :</span></span></span></span></pre></td></tr><tr><th>19</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The data in bytes from which the words need to be extracted</span></span></span></span></pre></td></tr><tr><th>20</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    start :</span></span></span></span></pre></td></tr><tr><th>21</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Position to start the extraction</span></span></span></span></pre></td></tr><tr><th>22</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    num_words:</span></span></span></span></pre></td></tr><tr><th>23</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The number of words to be extracted</span></span></span></span></pre></td></tr><tr><th>24</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>25</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">words</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-list hi"><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>26</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-for hi">for<span class="hi-simple-whitespace hi"> </span><span class="hi-name hi">i</span><span class="hi-simple-whitespace hi"> </span>in<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-name hi">range</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">num_words</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span>:</span></span></pre></td></tr><tr><th>27</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi">        <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">start_position</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-name hi">start</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span>(<span class="hi-binary-operation hi"><span class="hi-left-paren hi"><span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">i</span> <span class="hi-multiply hi"><span class="hi-simple-whitespace hi"></span>*<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">8</span><span class="hi-right-paren hi"><span class="hi-simple-whitespace hi"></span>)</span></span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>28</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>        <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">words</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">append</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>29</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>        <span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-call hi"><span class="hi-attribute hi"><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">from_le_bytes</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">data</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-name hi">start_position</span> <span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-name hi">start_position</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">8</span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>30</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>        <span class="hi-simple-whitespace hi"></span></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>31</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>32</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-empty-line hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-name hi">words</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>33</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
 </section>
-    
-    <section id="ethereum.crypto.blake2.Blake2:0">
+        
+        <section id="ethereum.crypto.blake2.Blake2:0">
     <h3><span title="ethereum.crypto.blake2.Blake2">Blake2</span></h3>
     <table class="verbatim"><tbody><tr><th>35</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre>class <span title="ethereum.crypto.blake2.Blake2">Blake2</span>:</pre>
@@ -319,8 +267,8 @@ The final block indicator flag. An 8-bit word</p></div>
 </section>
     
 </section>
-    
-    <section id="ethereum.crypto.blake2.Blake2b:0">
+        
+        <section id="ethereum.crypto.blake2.Blake2b:0">
     <h3><span title="ethereum.crypto.blake2.Blake2b">Blake2b</span></h3>
     <table class="verbatim"><tbody><tr><th>236</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre>class <span title="ethereum.crypto.blake2.Blake2b">Blake2b</span>:</pre>
@@ -382,7 +330,63 @@ The final block indicator flag. An 8-bit word</p></div>
     <table class="verbatim"><tbody><tr><th>250</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">R4</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">int</span></span> <span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">63</span></span></pre></td></tr></tbody></table></section>
     
 </section>
-    
+        
+    </div>
+
+    <nav class="toc">
+        <h3>Members</h3>
+        <ul>
+            
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Classes
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#ethereum.crypto.blake2.Blake2:0">
+                        </a><a href="#ethereum.crypto.blake2.Blake2:0"><span title="ethereum.crypto.blake2.Blake2">Blake2</span></a><a href="#ethereum.crypto.blake2.Blake2:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#ethereum.crypto.blake2.Blake2b:0">
+                        </a><a href="#ethereum.crypto.blake2.Blake2b:0"><span title="ethereum.crypto.blake2.Blake2b">Blake2b</span></a><a href="#ethereum.crypto.blake2.Blake2b:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Functions
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#ethereum.crypto.blake2.spit_le_to_uint:0">
+                        </a><a href="#ethereum.crypto.blake2.spit_le_to_uint:0"><span title="ethereum.crypto.blake2.spit_le_to_uint">spit_le_to_uint</span></a><a href="#ethereum.crypto.blake2.spit_le_to_uint:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+        </ul>
+    </nav>
 </section>
     </body>
 </html>
