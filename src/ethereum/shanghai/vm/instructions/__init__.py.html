@@ -25,10 +25,1169 @@ implementations.</p></div>
 
 
         
-        <section id="ethereum.shanghai.vm.instructions.Ops:0">
+        <section class="class" id="ethereum.shanghai.vm.instructions.Ops:0">
     <h3><span title="ethereum.shanghai.vm.instructions.Ops">Ops</span></h3>
     
-    <pre>class <span title="ethereum.shanghai.vm.instructions.Ops">Ops</span>:</pre>
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops">Ops</span></span>:</pre>
+
+    
+    
+    
+    
+    <nav class="toc code-like">
+        <ul>
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.ADD:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.ADD:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.ADD">ADD</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.ADD:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.MUL:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.MUL:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.MUL">MUL</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.MUL:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SUB:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SUB:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SUB">SUB</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SUB:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DIV:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DIV:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DIV">DIV</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DIV:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SDIV:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SDIV:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SDIV">SDIV</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SDIV:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.MOD:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.MOD:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.MOD">MOD</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.MOD:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SMOD:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SMOD:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SMOD">SMOD</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SMOD:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.ADDMOD:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.ADDMOD:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.ADDMOD">ADDMOD</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.ADDMOD:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.MULMOD:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.MULMOD:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.MULMOD">MULMOD</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.MULMOD:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.EXP:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.EXP:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.EXP">EXP</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.EXP:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SIGNEXTEND:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SIGNEXTEND:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SIGNEXTEND">SIGNEXTEND</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SIGNEXTEND:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.LT:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.LT:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.LT">LT</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.LT:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.GT:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.GT:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.GT">GT</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.GT:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SLT:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SLT:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SLT">SLT</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SLT:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SGT:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SGT:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SGT">SGT</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SGT:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.EQ:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.EQ:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.EQ">EQ</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.EQ:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.ISZERO:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.ISZERO:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.ISZERO">ISZERO</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.ISZERO:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.AND:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.AND:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.AND">AND</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.AND:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.OR:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.OR:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.OR">OR</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.OR:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.XOR:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.XOR:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.XOR">XOR</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.XOR:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.NOT:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.NOT:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.NOT">NOT</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.NOT:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.BYTE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.BYTE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.BYTE">BYTE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.BYTE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SHL:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SHL:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SHL">SHL</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SHL:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SHR:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SHR:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SHR">SHR</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SHR:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SAR:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SAR:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SAR">SAR</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SAR:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.KECCAK:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.KECCAK:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.KECCAK">KECCAK</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.KECCAK:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.ADDRESS:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.ADDRESS:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.ADDRESS">ADDRESS</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.ADDRESS:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.BALANCE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.BALANCE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.BALANCE">BALANCE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.BALANCE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.ORIGIN:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.ORIGIN:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.ORIGIN">ORIGIN</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.ORIGIN:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CALLER:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLER:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CALLER">CALLER</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLER:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CALLVALUE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLVALUE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CALLVALUE">CALLVALUE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLVALUE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATALOAD:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATALOAD:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CALLDATALOAD">CALLDATALOAD</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATALOAD:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATASIZE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATASIZE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CALLDATASIZE">CALLDATASIZE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATASIZE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATACOPY:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATACOPY:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CALLDATACOPY">CALLDATACOPY</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLDATACOPY:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CODESIZE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CODESIZE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CODESIZE">CODESIZE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CODESIZE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CODECOPY:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CODECOPY:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CODECOPY">CODECOPY</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CODECOPY:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.GASPRICE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.GASPRICE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.GASPRICE">GASPRICE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.GASPRICE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODESIZE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODESIZE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.EXTCODESIZE">EXTCODESIZE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODESIZE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODECOPY:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODECOPY:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.EXTCODECOPY">EXTCODECOPY</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODECOPY:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.RETURNDATASIZE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.RETURNDATASIZE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.RETURNDATASIZE">RETURNDATASIZE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.RETURNDATASIZE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.RETURNDATACOPY:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.RETURNDATACOPY:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.RETURNDATACOPY">RETURNDATACOPY</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.RETURNDATACOPY:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODEHASH:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODEHASH:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.EXTCODEHASH">EXTCODEHASH</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.EXTCODEHASH:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.BLOCKHASH:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.BLOCKHASH:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.BLOCKHASH">BLOCKHASH</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.BLOCKHASH:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.COINBASE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.COINBASE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.COINBASE">COINBASE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.COINBASE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.TIMESTAMP:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.TIMESTAMP:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.TIMESTAMP">TIMESTAMP</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.TIMESTAMP:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.NUMBER:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.NUMBER:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.NUMBER">NUMBER</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.NUMBER:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PREVRANDAO:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PREVRANDAO:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PREVRANDAO">PREVRANDAO</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PREVRANDAO:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.GASLIMIT:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.GASLIMIT:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.GASLIMIT">GASLIMIT</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.GASLIMIT:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CHAINID:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CHAINID:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CHAINID">CHAINID</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CHAINID:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SELFBALANCE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SELFBALANCE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SELFBALANCE">SELFBALANCE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SELFBALANCE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.BASEFEE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.BASEFEE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.BASEFEE">BASEFEE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.BASEFEE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.STOP:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.STOP:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.STOP">STOP</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.STOP:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.JUMP:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.JUMP:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.JUMP">JUMP</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.JUMP:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.JUMPI:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.JUMPI:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.JUMPI">JUMPI</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.JUMPI:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PC:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PC:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PC">PC</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PC:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.GAS:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.GAS:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.GAS">GAS</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.GAS:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.JUMPDEST:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.JUMPDEST:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.JUMPDEST">JUMPDEST</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.JUMPDEST:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SLOAD:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SLOAD:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SLOAD">SLOAD</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SLOAD:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SSTORE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SSTORE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SSTORE">SSTORE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SSTORE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.POP:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.POP:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.POP">POP</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.POP:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH0:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH0:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH0">PUSH0</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH0:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH1:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH1:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH1">PUSH1</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH1:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH2:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH2:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH2">PUSH2</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH2:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH3:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH3:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH3">PUSH3</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH3:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH4:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH4:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH4">PUSH4</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH4:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH5:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH5:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH5">PUSH5</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH5:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH6:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH6:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH6">PUSH6</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH6:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH7:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH7:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH7">PUSH7</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH7:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH8:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH8:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH8">PUSH8</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH8:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH9:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH9:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH9">PUSH9</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH9:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH10:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH10:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH10">PUSH10</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH10:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH11:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH11:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH11">PUSH11</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH11:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH12:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH12:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH12">PUSH12</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH12:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH13:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH13:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH13">PUSH13</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH13:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH14:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH14:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH14">PUSH14</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH14:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH15:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH15:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH15">PUSH15</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH15:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH16:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH16:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH16">PUSH16</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH16:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH17:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH17:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH17">PUSH17</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH17:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH18:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH18:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH18">PUSH18</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH18:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH19:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH19:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH19">PUSH19</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH19:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH20:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH20:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH20">PUSH20</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH20:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH21:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH21:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH21">PUSH21</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH21:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH22:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH22:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH22">PUSH22</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH22:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH23:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH23:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH23">PUSH23</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH23:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH24:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH24:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH24">PUSH24</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH24:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH25:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH25:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH25">PUSH25</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH25:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH26:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH26:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH26">PUSH26</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH26:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH27:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH27:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH27">PUSH27</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH27:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH28:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH28:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH28">PUSH28</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH28:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH29:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH29:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH29">PUSH29</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH29:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH30:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH30:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH30">PUSH30</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH30:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH31:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH31:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH31">PUSH31</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH31:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.PUSH32:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH32:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.PUSH32">PUSH32</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.PUSH32:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP1:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP1:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP1">DUP1</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP1:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP2:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP2:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP2">DUP2</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP2:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP3:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP3:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP3">DUP3</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP3:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP4:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP4:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP4">DUP4</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP4:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP5:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP5:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP5">DUP5</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP5:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP6:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP6:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP6">DUP6</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP6:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP7:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP7:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP7">DUP7</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP7:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP8:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP8:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP8">DUP8</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP8:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP9:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP9:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP9">DUP9</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP9:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP10:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP10:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP10">DUP10</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP10:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP11:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP11:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP11">DUP11</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP11:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP12:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP12:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP12">DUP12</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP12:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP13:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP13:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP13">DUP13</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP13:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP14:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP14:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP14">DUP14</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP14:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP15:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP15:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP15">DUP15</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP15:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DUP16:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP16:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DUP16">DUP16</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DUP16:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP1:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP1:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP1">SWAP1</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP1:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP2:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP2:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP2">SWAP2</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP2:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP3:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP3:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP3">SWAP3</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP3:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP4:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP4:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP4">SWAP4</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP4:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP5:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP5:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP5">SWAP5</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP5:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP6:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP6:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP6">SWAP6</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP6:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP7:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP7:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP7">SWAP7</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP7:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP8:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP8:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP8">SWAP8</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP8:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP9:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP9:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP9">SWAP9</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP9:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP10:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP10:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP10">SWAP10</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP10:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP11:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP11:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP11">SWAP11</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP11:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP12:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP12:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP12">SWAP12</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP12:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP13:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP13:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP13">SWAP13</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP13:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP14:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP14:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP14">SWAP14</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP14:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP15:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP15:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP15">SWAP15</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP15:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SWAP16:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP16:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SWAP16">SWAP16</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SWAP16:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.MLOAD:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.MLOAD:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.MLOAD">MLOAD</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.MLOAD:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.MSTORE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.MSTORE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.MSTORE">MSTORE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.MSTORE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.MSTORE8:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.MSTORE8:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.MSTORE8">MSTORE8</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.MSTORE8:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.MSIZE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.MSIZE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.MSIZE">MSIZE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.MSIZE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.LOG0:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG0:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.LOG0">LOG0</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG0:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.LOG1:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG1:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.LOG1">LOG1</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG1:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.LOG2:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG2:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.LOG2">LOG2</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG2:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.LOG3:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG3:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.LOG3">LOG3</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG3:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.LOG4:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG4:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.LOG4">LOG4</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.LOG4:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CREATE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CREATE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CREATE">CREATE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CREATE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.RETURN:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.RETURN:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.RETURN">RETURN</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.RETURN:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CALL:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CALL:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CALL">CALL</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CALL:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CALLCODE:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLCODE:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CALLCODE">CALLCODE</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CALLCODE:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.DELEGATECALL:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.DELEGATECALL:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.DELEGATECALL">DELEGATECALL</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.DELEGATECALL:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.STATICCALL:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.STATICCALL:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.STATICCALL">STATICCALL</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.STATICCALL:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.REVERT:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.REVERT:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.REVERT">REVERT</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.REVERT:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.SELFDESTRUCT:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.SELFDESTRUCT:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.SELFDESTRUCT">SELFDESTRUCT</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.SELFDESTRUCT:0">
+                </a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="#ethereum.shanghai.vm.instructions.Ops.CREATE2:0">
+                </a><a href="#ethereum.shanghai.vm.instructions.Ops.CREATE2:0"><span class="hi-name"><span title="ethereum.shanghai.vm.instructions.Ops.CREATE2">CREATE2</span></span></a><a href="#ethereum.shanghai.vm.instructions.Ops.CREATE2:0">
+                </a>
+            </li>
+            
+            
+
+            
+        </ul>
+    </nav>
+    
+    
+
     
     <section id="ethereum.shanghai.vm.instructions.Ops.ADD:0">
     <h3>
