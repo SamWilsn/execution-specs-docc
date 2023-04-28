@@ -13,29 +13,44 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum_spec_tools.evm_tools.t8n.t8n_types:0">
-    <div class="members">
-        
-        <h2><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types">ethereum_spec_tools.evm_tools.t8n.t8n_types</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum_spec_tools.evm_tools.t8n.t8n_types:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types">ethereum_spec_tools.evm_tools.t8n.t8n_types</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Define the types used by the t8n tool.</p></div>
-        </div>
-        
+            
+            <div class="docstring">
+                <div class="markdown"><p>Define the types used by the t8n tool.</p></div>
+            </div>
+            
 
 
-        
-        <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Ommer:0">
+            
+            <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Ommer:0">
     <h3><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Ommer">Ommer</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>The Ommer type for the t8n tool.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>17</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Ommer">Ommer</span></span>:</pre>
 
@@ -87,9 +102,16 @@
     <table class="verbatim"><tbody><tr><th>22</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">address</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">Any</span></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Env:0">
+            
+            <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Env:0">
     <h3><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Env">Env</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>The environment for the transition tool.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Env">Env</span></span>:</pre>
 
@@ -512,9 +534,16 @@ needed to obtain the Header.</p></div>
 </section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Alloc:0">
+            
+            <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Alloc:0">
     <h3><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Alloc">Alloc</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>The alloc (state) type for the t8n tool.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Alloc">Alloc</span></span>:</pre>
 
@@ -608,9 +637,17 @@ needed to obtain the Header.</p></div>
 </section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Txs:0">
+            
+            <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Txs:0">
     <h3><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Txs">Txs</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Read the transactions file, sort out the valid transactions and
+return a list of transactions.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Txs">Txs</span></span>:</pre>
 
@@ -742,9 +779,16 @@ if the protected flag is missing or set to true.</p></div>
 </section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Result:0">
+            
+            <section class="class" id="ethereum_spec_tools.evm_tools.t8n.t8n_types.Result:0">
     <h3><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Result">Result</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Type that represents the result of a transition execution</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>389</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.evm_tools.t8n.t8n_types.Result">Result</span></span>:</pre>
 
@@ -945,10 +989,11 @@ if the protected flag is missing or set to true.</p></div>
 </section>
     
 </section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -1005,5 +1050,6 @@ if the protected flag is missing or set to true.</p></div>
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

@@ -13,32 +13,48 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum.exceptions:0">
-    <div class="members">
-        
-        <h2><span title="ethereum.exceptions">ethereum.exceptions</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum.exceptions:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.exceptions">ethereum.exceptions</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Exceptions
+            
+            <div class="docstring">
+                <div class="markdown"><p>Exceptions
 ^^^^^^^^^^</p><p>.. contents:: Table of Contents
 :backlinks: none
 :local:</p><h2>Introduction</h2><p>The Ethereum specification exception classes.</p></div>
-        </div>
-        
+            </div>
+            
 
 
-        
-        <section class="class" id="ethereum.exceptions.EthereumException:0">
+            
+            <section class="class" id="ethereum.exceptions.EthereumException:0">
     <h3><span title="ethereum.exceptions.EthereumException">EthereumException</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>The base class from which all exceptions thrown by the specification during
+normal operation derive.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.exceptions.EthereumException">EthereumException</span></span>:</pre>
 
@@ -50,9 +66,16 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.exceptions.InvalidBlock:0">
+            
+            <section class="class" id="ethereum.exceptions.InvalidBlock:0">
     <h3><span title="ethereum.exceptions.InvalidBlock">InvalidBlock</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Thrown when a block being processed is found to be invalid.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.exceptions.InvalidBlock">InvalidBlock</span></span>:</pre>
 
@@ -64,9 +87,16 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.exceptions.RLPDecodingError:0">
+            
+            <section class="class" id="ethereum.exceptions.RLPDecodingError:0">
     <h3><span title="ethereum.exceptions.RLPDecodingError">RLPDecodingError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Indicates that RLP decoding failed.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.exceptions.RLPDecodingError">RLPDecodingError</span></span>:</pre>
 
@@ -78,9 +108,16 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.exceptions.RLPEncodingError:0">
+            
+            <section class="class" id="ethereum.exceptions.RLPEncodingError:0">
     <h3><span title="ethereum.exceptions.RLPEncodingError">RLPEncodingError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Indicates that RLP encoding failed.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.exceptions.RLPEncodingError">RLPEncodingError</span></span>:</pre>
 
@@ -92,10 +129,11 @@
 
     
 </section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -146,5 +184,6 @@
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

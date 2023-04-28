@@ -13,32 +13,41 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum_spec_tools:0">
-    <div class="members">
-        
-        <h2><span title="ethereum_spec_tools">ethereum_spec_tools</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum_spec_tools:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum_spec_tools">ethereum_spec_tools</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Ethereum Specification Tools
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Specification Tools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>Library of utilities and tools necessary for rendering (or otherwise working
 with) the Ethereum specifications.</p></div>
+            </div>
+            
+
+
+            
         </div>
-        
-
-
-        
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -55,5 +64,6 @@ with) the Ethereum specifications.</p></div>
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

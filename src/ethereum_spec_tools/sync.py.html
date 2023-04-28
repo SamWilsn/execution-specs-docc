@@ -13,38 +13,53 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum_spec_tools.sync:0">
-    <div class="members">
-        
-        <h2><span title="ethereum_spec_tools.sync">ethereum_spec_tools.sync</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum_spec_tools.sync:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum_spec_tools.sync">ethereum_spec_tools.sync</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Ethereum Sync
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Sync
 ^^^^^^^^^^^^^</p><p>Using an RPC provider, fetch each block and validate it with the specification.</p></div>
-        </div>
-        
+            </div>
+            
 
 
-        
-        <section id="ethereum_spec_tools.sync.T:0">
+            
+            <section id="ethereum_spec_tools.sync.T:0">
     <h3>
         
         <span title="ethereum_spec_tools.sync.T">T</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>31</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">T</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">TypeVar</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"T"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
-        
-        <section class="class" id="ethereum_spec_tools.sync.RpcError:0">
+            
+            <section class="class" id="ethereum_spec_tools.sync.RpcError:0">
     <h3><span title="ethereum_spec_tools.sync.RpcError">RpcError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Error message and code returned by the RPC provider.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.sync.RpcError">RpcError</span></span>:</pre>
 
@@ -81,9 +96,16 @@
 </section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.sync.ForkTracking:0">
+            
+            <section class="class" id="ethereum_spec_tools.sync.ForkTracking:0">
     <h3><span title="ethereum_spec_tools.sync.ForkTracking">ForkTracking</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Enables subclasses to track the current fork.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.sync.ForkTracking">ForkTracking</span></span>:</pre>
 
@@ -273,9 +295,16 @@
 </section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.sync.BlockDownloader:0">
+            
+            <section class="class" id="ethereum_spec_tools.sync.BlockDownloader:0">
     <h3><span title="ethereum_spec_tools.sync.BlockDownloader">BlockDownloader</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Downloads blocks from the RPC provider.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.sync.BlockDownloader">BlockDownloader</span></span>:</pre>
 
@@ -567,9 +596,17 @@ using only standard endpoints.</p></div>
 </section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.sync.Sync:0">
+            
+            <section class="class" id="ethereum_spec_tools.sync.Sync:0">
     <h3><span title="ethereum_spec_tools.sync.Sync">Sync</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>A command line tool to fetch blocks from an RPC provider and validate them
+against the specification.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.sync.Sync">Sync</span></span>:</pre>
 
@@ -754,8 +791,8 @@ using only standard endpoints.</p></div>
 </section>
     
 </section>
-        
-        <section id="ethereum_spec_tools.sync.main:0">
+            
+            <section id="ethereum_spec_tools.sync.main:0">
     <h3><span title="ethereum_spec_tools.sync.main">main</span></h3>
     
     <div class="docstring">
@@ -768,10 +805,11 @@ using only standard endpoints.</p></div>
             <code>def <span title="ethereum_spec_tools.sync.main">main</span>() -&gt; <span><span title="builtins.None">None</span></span>:</code>
         </summary><table class="verbatim"><tbody><tr><th>801</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>802</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Using an RPC provider, fetch each block and validate it.</span></span></span></span></pre></td></tr><tr><th>803</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>804</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">logging</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">basicConfig</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">level</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-attribute hi"><span class="hi-name hi">logging</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">INFO</span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>805</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>806</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-empty-line hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">sync</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="#ethereum_spec_tools.sync.Sync:0"><span class="hi-name hi">Sync</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>807</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">sync</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">process_blocks</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>808</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
 </section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -856,5 +894,6 @@ using only standard endpoints.</p></div>
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

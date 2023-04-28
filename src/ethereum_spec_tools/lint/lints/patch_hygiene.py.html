@@ -13,30 +13,45 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum_spec_tools.lint.lints.patch_hygiene:0">
-    <div class="members">
-        
-        <h2><span title="ethereum_spec_tools.lint.lints.patch_hygiene">ethereum_spec_tools.lint.lints.patch_hygiene</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum_spec_tools.lint.lints.patch_hygiene:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum_spec_tools.lint.lints.patch_hygiene">ethereum_spec_tools.lint.lints.patch_hygiene</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Patch Hygiene Lint
+            
+            <div class="docstring">
+                <div class="markdown"><p>Patch Hygiene Lint
 ^^^^^^^^^^^^^^^^^^</p><p>Ensures that the order of identifiers between each hardfork is consistent.</p></div>
-        </div>
-        
+            </div>
+            
 
 
-        
-        <section class="class" id="ethereum_spec_tools.lint.lints.patch_hygiene.PatchHygiene:0">
+            
+            <section class="class" id="ethereum_spec_tools.lint.lints.patch_hygiene.PatchHygiene:0">
     <h3><span title="ethereum_spec_tools.lint.lints.patch_hygiene.PatchHygiene">PatchHygiene</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Ensures that the order of identifiers between each hardfork is consistent.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.lint.lints.patch_hygiene.PatchHygiene">PatchHygiene</span></span>:</pre>
 
@@ -99,9 +114,17 @@ messages if any identifiers have changed relative positions.</p></div>
 </section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.lint.lints.patch_hygiene._Visitor:0">
+            
+            <section class="class" id="ethereum_spec_tools.lint.lints.patch_hygiene._Visitor:0">
     <h3><span title="ethereum_spec_tools.lint.lints.patch_hygiene._Visitor">_Visitor</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Visits nodes in a syntax tree and collects functions, classes, and
+assignments.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.lint.lints.patch_hygiene._Visitor">_Visitor</span></span>:</pre>
 
@@ -350,10 +373,11 @@ messages if any identifiers have changed relative positions.</p></div>
 </section>
     
 </section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -392,5 +416,6 @@ messages if any identifiers have changed relative positions.</p></div>
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

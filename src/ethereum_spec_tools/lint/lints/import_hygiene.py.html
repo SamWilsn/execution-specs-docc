@@ -13,30 +13,45 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum_spec_tools.lint.lints.import_hygiene:0">
-    <div class="members">
-        
-        <h2><span title="ethereum_spec_tools.lint.lints.import_hygiene">ethereum_spec_tools.lint.lints.import_hygiene</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum_spec_tools.lint.lints.import_hygiene:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum_spec_tools.lint.lints.import_hygiene">ethereum_spec_tools.lint.lints.import_hygiene</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Import Hygiene Lint
+            
+            <div class="docstring">
+                <div class="markdown"><p>Import Hygiene Lint
 ^^^^^^^^^^^^^^^^^^^</p><p>Ensures that the import statements follow the relevant rules.</p></div>
-        </div>
-        
+            </div>
+            
 
 
-        
-        <section class="class" id="ethereum_spec_tools.lint.lints.import_hygiene.ImportHygiene:0">
+            
+            <section class="class" id="ethereum_spec_tools.lint.lints.import_hygiene.ImportHygiene:0">
     <h3><span title="ethereum_spec_tools.lint.lints.import_hygiene.ImportHygiene">ImportHygiene</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Ensures that the import statements follow the relevant rules.</p><p>The rules when inside a hard fork file:</p><ul><li><p>Deny absolute imports from within the active fork.</p></li><li><p>Deny absolute imports from future forks.</p></li><li><p>Deny absolute imports from active-minus-two and earlier hard forks.</p></li><li><p>Allow relative imports from the active hard fork.</p></li><li><p>Allow absolute imports from the active-minus-one hard fork.</p></li><li><p>Allow absolute imports of non-fork specific things.</p></li></ul></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.lint.lints.import_hygiene.ImportHygiene">ImportHygiene</span></span>:</pre>
 
@@ -99,9 +114,17 @@ messages if there are any invalid imports.</p></div>
 </section>
     
 </section>
-        
-        <section class="class" id="ethereum_spec_tools.lint.lints.import_hygiene._Visitor:0">
+            
+            <section class="class" id="ethereum_spec_tools.lint.lints.import_hygiene._Visitor:0">
     <h3><span title="ethereum_spec_tools.lint.lints.import_hygiene._Visitor">_Visitor</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Visits nodes in a syntax tree and collects functions, classes, and
+assignments.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum_spec_tools.lint.lints.import_hygiene._Visitor">_Visitor</span></span>:</pre>
 
@@ -196,10 +219,11 @@ messages if there are any invalid imports.</p></div>
 </section>
     
 </section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -238,5 +262,6 @@ messages if there are any invalid imports.</p></div>
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

@@ -13,78 +13,87 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum_spec_tools.patch_tool:0">
-    <div class="members">
-        
-        <h2><span title="ethereum_spec_tools.patch_tool">ethereum_spec_tools.patch_tool</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum_spec_tools.patch_tool:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum_spec_tools.patch_tool">ethereum_spec_tools.patch_tool</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Simple patching tool</p></div>
-        </div>
-        
+            
+            <div class="docstring">
+                <div class="markdown"><p>Simple patching tool</p></div>
+            </div>
+            
 
 
-        
-        <section id="ethereum_spec_tools.patch_tool.DESCRIPTION:0">
+            
+            <section id="ethereum_spec_tools.patch_tool.DESCRIPTION:0">
     <h3>
         
         <span title="ethereum_spec_tools.patch_tool.DESCRIPTION">DESCRIPTION</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>9</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">DESCRIPTION</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-string hi">"""</span></span></pre></td></tr><tr><th>10</th><td><pre><span class="hi-assign hi"><span class="hi-simple-string hi">Apply the unstaged changes in SOURCE_FORK to each TARGET_FORK. If some of the</span></span></pre></td></tr><tr><th>11</th><td><pre><span class="hi-assign hi"><span class="hi-simple-string hi">change didn't apply, '.rej' files listing the unapplied changes will be left in</span></span></pre></td></tr><tr><th>12</th><td><pre><span class="hi-assign hi"><span class="hi-simple-string hi">TARGET_FORK.</span></span></pre></td></tr><tr><th>13</th><td><pre><span class="hi-assign hi"><span class="hi-simple-string hi">"""</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum_spec_tools.patch_tool.parser:0">
+            
+            <section id="ethereum_spec_tools.patch_tool.parser:0">
     <h3>
         
         <span title="ethereum_spec_tools.patch_tool.parser">parser</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>15</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">parser</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">argparse</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">ArgumentParser</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">description</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><a href="#ethereum_spec_tools.patch_tool.DESCRIPTION:0"><span class="hi-name hi">DESCRIPTION</span></a><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum_spec_tools.patch_tool.options:0">
+            
+            <section id="ethereum_spec_tools.patch_tool.options:0">
     <h3>
         
         <span title="ethereum_spec_tools.patch_tool.options">options</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>35</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">options</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-attribute hi"><a href="#ethereum_spec_tools.patch_tool.parser:0"><span class="hi-name hi">parser</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">parse_args</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span>)</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum_spec_tools.patch_tool.source_fork_path:0">
+            
+            <section id="ethereum_spec_tools.patch_tool.source_fork_path:0">
     <h3>
         
         <span title="ethereum_spec_tools.patch_tool.source_fork_path">source_fork_path</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>37</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">source_fork_path</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-attribute hi"><a href="#ethereum_spec_tools.patch_tool.options:0"><span class="hi-name hi">options</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">prefix</span></span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-subscript hi"><span class="hi-attribute hi"><a href="#ethereum_spec_tools.patch_tool.options:0"><span class="hi-name hi">options</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">source_fork</span></span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-integer hi">0</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum_spec_tools.patch_tool.git_diff:0">
+            
+            <section id="ethereum_spec_tools.patch_tool.git_diff:0">
     <h3>
         
         <span title="ethereum_spec_tools.patch_tool.git_diff">git_diff</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>42</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">git_diff</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">subprocess</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">run</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></pre></td></tr><tr><th>43</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-list hi"><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"git"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"diff"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-element hi"><a href="#ethereum_spec_tools.patch_tool.source_fork_path:0"><span class="hi-name hi">source_fork_path</span></a></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">capture_output</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">True</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">text</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">True</span><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>44</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span>)</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum_spec_tools.patch_tool.output_lines:0">
+            
+            <section id="ethereum_spec_tools.patch_tool.output_lines:0">
     <h3>
         
         <span title="ethereum_spec_tools.patch_tool.output_lines">output_lines</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>46</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">output_lines</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-attribute hi"><a href="#ethereum_spec_tools.patch_tool.git_diff:0"><span class="hi-name hi">git_diff</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">stdout</span></span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">splitlines</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">keepends</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">True</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -159,5 +168,6 @@
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

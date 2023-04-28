@@ -13,38 +13,53 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum.crypto.finite_field:0">
-    <div class="members">
-        
-        <h2><span title="ethereum.crypto.finite_field">ethereum.crypto.finite_field</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum.crypto.finite_field:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.crypto.finite_field">ethereum.crypto.finite_field</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Finite Fields
+            
+            <div class="docstring">
+                <div class="markdown"><p>Finite Fields
 ^^^^^^^^^^^^^</p></div>
-        </div>
-        
+            </div>
+            
 
 
-        
-        <section id="ethereum.crypto.finite_field.F:0">
+            
+            <section id="ethereum.crypto.finite_field.F:0">
     <h3>
         
         <span title="ethereum.crypto.finite_field.F">F</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>14</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">F</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">TypeVar</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"F"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bound</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-simple-string hi">"Field"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
-        
-        <section class="class" id="ethereum.crypto.finite_field.Field:0">
+            
+            <section class="class" id="ethereum.crypto.finite_field.Field:0">
     <h3><span title="ethereum.crypto.finite_field.Field">Field</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>A type protocol for defining fields.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.crypto.finite_field.Field">Field</span></span>:</pre>
 
@@ -318,17 +333,25 @@
 </section>
     
 </section>
-        
-        <section id="ethereum.crypto.finite_field.T:0">
+            
+            <section id="ethereum.crypto.finite_field.T:0">
     <h3>
         
         <span title="ethereum.crypto.finite_field.T">T</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>69</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">T</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">TypeVar</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"T"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bound</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-simple-string hi">"PrimeField"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
-        
-        <section class="class" id="ethereum.crypto.finite_field.PrimeField:0">
+            
+            <section class="class" id="ethereum.crypto.finite_field.PrimeField:0">
     <h3><span title="ethereum.crypto.finite_field.PrimeField">PrimeField</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Superclass for integers modulo a prime. Not intended to be used
+directly, but rather to be subclassed.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.crypto.finite_field.PrimeField">PrimeField</span></span>:</pre>
 
@@ -941,17 +964,28 @@ Big endian (most significant bits first) representation.</p></div>
 </section>
     
 </section>
-        
-        <section id="ethereum.crypto.finite_field.U:0">
+            
+            <section id="ethereum.crypto.finite_field.U:0">
     <h3>
         
         <span title="ethereum.crypto.finite_field.U">U</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>192</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">U</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">TypeVar</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"U"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bound</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-simple-string hi">"GaloisField"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
-        
-        <section class="class" id="ethereum.crypto.finite_field.GaloisField:0">
+            
+            <section class="class" id="ethereum.crypto.finite_field.GaloisField:0">
     <h3><span title="ethereum.crypto.finite_field.GaloisField">GaloisField</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Superclass for defining finite fields. Not intended to be used
+directly, but rather to be subclassed.</p><p>Fields are represented as <code>F_p[x]/(x^n + ...)</code> where the <code>MODULUS</code> is a
+tuple of the non-leading coefficients of the defining polynomial. For
+example <code>x^3 + 2x^2 + 3x + 4</code> is <code>(2, 3, 4)</code>.</p><p>In practice the polynomial is likely to be be sparse and you should overload
+the <code>__mul__()</code> function to take advantage of this fact.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.crypto.finite_field.GaloisField">GaloisField</span></span>:</pre>
 
@@ -1382,10 +1416,11 @@ exponentiations.</p></div>
 </section>
     
 </section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -1464,5 +1499,6 @@ exponentiations.</p></div>
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

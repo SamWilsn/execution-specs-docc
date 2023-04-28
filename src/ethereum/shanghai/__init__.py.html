@@ -13,39 +13,48 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum.shanghai:0">
-    <div class="members">
-        
-        <h2><span title="ethereum.shanghai">ethereum.shanghai</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum.shanghai:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.shanghai">ethereum.shanghai</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Ethereum Shanghai Hardfork
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Shanghai Hardfork
 ^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>The Fourteenth Ethereum hardfork.</p></div>
-        </div>
-        
+            </div>
+            
 
 
-        
-        <section id="ethereum.shanghai.MAINNET_FORK_BLOCK:0">
+            
+            <section id="ethereum.shanghai.MAINNET_FORK_BLOCK:0">
     <h3>
         
         <span title="ethereum.shanghai.MAINNET_FORK_BLOCK">MAINNET_FORK_BLOCK</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>8</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">MAINNET_FORK_BLOCK</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-name hi">None</span></span></pre></td></tr></tbody></table></section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -80,5 +89,6 @@
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

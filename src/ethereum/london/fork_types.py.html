@@ -13,104 +13,119 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum.london.fork_types:0">
-    <div class="members">
-        
-        <h2><span title="ethereum.london.fork_types">ethereum.london.fork_types</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum.london.fork_types:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.london.fork_types">ethereum.london.fork_types</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Ethereum Types
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Types
 ^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
 :backlinks: none
 :local:</p><h2>Introduction</h2><p>Types re-used throughout the specification, which are specific to Ethereum.</p></div>
-        </div>
-        
+            </div>
+            
 
 
-        
-        <section id="ethereum.london.fork_types.Address:0">
+            
+            <section id="ethereum.london.fork_types.Address:0">
     <h3>
         
         <span title="ethereum.london.fork_types.Address">Address</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>34</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Address</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../base_types.py.html#ethereum.base_types.Bytes20:0"><span class="hi-name hi">Bytes20</span></a></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.Root:0">
+            
+            <section id="ethereum.london.fork_types.Root:0">
     <h3>
         
         <span title="ethereum.london.fork_types.Root">Root</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>35</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Root</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../crypto/hash.py.html#ethereum.crypto.hash.Hash32:0"><span class="hi-name hi">Hash32</span></a></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.Bloom:0">
+            
+            <section id="ethereum.london.fork_types.Bloom:0">
     <h3>
         
         <span title="ethereum.london.fork_types.Bloom">Bloom</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>37</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Bloom</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><a href="../base_types.py.html#ethereum.base_types.Bytes256:0"><span class="hi-name hi">Bytes256</span></a></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.TX_BASE_COST:0">
+            
+            <section id="ethereum.london.fork_types.TX_BASE_COST:0">
     <h3>
         
         <span title="ethereum.london.fork_types.TX_BASE_COST">TX_BASE_COST</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>39</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_BASE_COST</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">21000</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.TX_DATA_COST_PER_NON_ZERO:0">
+            
+            <section id="ethereum.london.fork_types.TX_DATA_COST_PER_NON_ZERO:0">
     <h3>
         
         <span title="ethereum.london.fork_types.TX_DATA_COST_PER_NON_ZERO">TX_DATA_COST_PER_NON_ZERO</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>40</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_DATA_COST_PER_NON_ZERO</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">16</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.TX_DATA_COST_PER_ZERO:0">
+            
+            <section id="ethereum.london.fork_types.TX_DATA_COST_PER_ZERO:0">
     <h3>
         
         <span title="ethereum.london.fork_types.TX_DATA_COST_PER_ZERO">TX_DATA_COST_PER_ZERO</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>41</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_DATA_COST_PER_ZERO</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">4</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.TX_CREATE_COST:0">
+            
+            <section id="ethereum.london.fork_types.TX_CREATE_COST:0">
     <h3>
         
         <span title="ethereum.london.fork_types.TX_CREATE_COST">TX_CREATE_COST</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>42</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_CREATE_COST</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">32000</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.TX_ACCESS_LIST_ADDRESS_COST:0">
+            
+            <section id="ethereum.london.fork_types.TX_ACCESS_LIST_ADDRESS_COST:0">
     <h3>
         
         <span title="ethereum.london.fork_types.TX_ACCESS_LIST_ADDRESS_COST">TX_ACCESS_LIST_ADDRESS_COST</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>43</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_ACCESS_LIST_ADDRESS_COST</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">2400</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.TX_ACCESS_LIST_STORAGE_KEY_COST:0">
+            
+            <section id="ethereum.london.fork_types.TX_ACCESS_LIST_STORAGE_KEY_COST:0">
     <h3>
         
         <span title="ethereum.london.fork_types.TX_ACCESS_LIST_STORAGE_KEY_COST">TX_ACCESS_LIST_STORAGE_KEY_COST</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>44</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">TX_ACCESS_LIST_STORAGE_KEY_COST</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">1900</span></span></pre></td></tr></tbody></table></section>
-        
-        <section class="class" id="ethereum.london.fork_types.LegacyTransaction:0">
+            
+            <section class="class" id="ethereum.london.fork_types.LegacyTransaction:0">
     <h3><span title="ethereum.london.fork_types.LegacyTransaction">LegacyTransaction</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Atomic operation performed on the block chain.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>47</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>48</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.london.fork_types.LegacyTransaction">LegacyTransaction</span></span>:</pre>
 
@@ -274,9 +289,16 @@
     <table class="verbatim"><tbody><tr><th>62</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">s</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
-        <section class="class" id="ethereum.london.fork_types.AccessListTransaction:0">
+            
+            <section class="class" id="ethereum.london.fork_types.AccessListTransaction:0">
     <h3><span title="ethereum.london.fork_types.AccessListTransaction">AccessListTransaction</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>The transaction type added in EIP-2930 to support access lists.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>65</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>66</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.london.fork_types.AccessListTransaction">AccessListTransaction</span></span>:</pre>
 
@@ -472,9 +494,16 @@
     <table class="verbatim"><tbody><tr><th>82</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">s</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
-        <section class="class" id="ethereum.london.fork_types.FeeMarketTransaction:0">
+            
+            <section class="class" id="ethereum.london.fork_types.FeeMarketTransaction:0">
     <h3><span title="ethereum.london.fork_types.FeeMarketTransaction">FeeMarketTransaction</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>The transaction type added in EIP-1559.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>85</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>86</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.london.fork_types.FeeMarketTransaction">FeeMarketTransaction</span></span>:</pre>
 
@@ -686,16 +715,16 @@
     <table class="verbatim"><tbody><tr><th>103</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">s</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
-        <section id="ethereum.london.fork_types.Transaction:0">
+            
+            <section id="ethereum.london.fork_types.Transaction:0">
     <h3>
         
         <span title="ethereum.london.fork_types.Transaction">Transaction</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>106</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">Transaction</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-subscript hi"><span class="hi-name hi">Union</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>107</th><td><pre><span class="hi-assign hi"><span class="hi-subscript hi"><span class="hi-left-square-bracket hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.london.fork_types.LegacyTransaction:0"><span class="hi-name hi">LegacyTransaction</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.london.fork_types.AccessListTransaction:0"><span class="hi-name hi">AccessListTransaction</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.london.fork_types.FeeMarketTransaction:0"><span class="hi-name hi">FeeMarketTransaction</span></a></span></span><span class="hi-right-square-bracket hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>108</th><td><pre><span class="hi-assign hi"><span class="hi-subscript hi"><span class="hi-right-square-bracket hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span>]</span></span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.encode_transaction:0">
+            
+            <section id="ethereum.london.fork_types.encode_transaction:0">
     <h3><span title="ethereum.london.fork_types.encode_transaction">encode_transaction</span></h3>
     
     <div class="docstring">
@@ -708,8 +737,8 @@
             <code>def <span title="ethereum.london.fork_types.encode_transaction">encode_transaction</span>(<span title="ethereum.london.fork_types.encode_transaction.<locals&gt;.tx">tx</span>: <span><a href="#ethereum.london.fork_types.Transaction:0"><span title="ethereum.london.fork_types.Transaction">Transaction</span></a></span>) -&gt; <span><span><span title="typing.Union">Union</span></span>[<span><a href="#ethereum.london.fork_types.LegacyTransaction:0"><span title="ethereum.london.fork_types.LegacyTransaction">LegacyTransaction</span></a></span>, <span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span title="ethereum.base_types.Bytes">Bytes</span></a></span>]</span>:</code>
         </summary><table class="verbatim"><tbody><tr><th>112</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>113</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Encode a transaction. Needed because non-legacy transactions aren't RLP.</span></span></span></span></pre></td></tr><tr><th>114</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>115</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-if hi">if<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-name hi">isinstance</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">tx</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><a href="#ethereum.london.fork_types.LegacyTransaction:0"><span class="hi-name hi">LegacyTransaction</span></a><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span>:</span></span></pre></td></tr><tr><th>116</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi">        <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-name hi">tx</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>117</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span>    <span class="hi-if hi">elif<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-name hi">isinstance</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">tx</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><a href="#ethereum.london.fork_types.AccessListTransaction:0"><span class="hi-name hi">AccessListTransaction</span></a><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span>:</span></span></span></pre></td></tr><tr><th>118</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi">        <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-binary-operation hi"><span class="hi-simple-string hi">b"\x01"</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-attribute hi"><a href="../rlp.py.html#ethereum.rlp:0"><span class="hi-name hi">rlp</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">encode</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">tx</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>119</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span>    <span class="hi-if hi">elif<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-name hi">isinstance</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">tx</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><a href="#ethereum.london.fork_types.FeeMarketTransaction:0"><span class="hi-name hi">FeeMarketTransaction</span></a><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span>:</span></span></span></span></pre></td></tr><tr><th>120</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-if hi">        <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-binary-operation hi"><span class="hi-simple-string hi">b"\x02"</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-attribute hi"><a href="../rlp.py.html#ethereum.rlp:0"><span class="hi-name hi">rlp</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">encode</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">tx</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>121</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span>    <span class="hi-else hi">else<span class="hi-simple-whitespace hi"></span>:</span></span></span></span></span></pre></td></tr><tr><th>122</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-else hi">        <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-raise hi">raise<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-name hi">Exception</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-formatted-string hi">f"<span class="hi-formatted-string-text hi">Unable to encode transaction of type </span><span class="hi-formatted-string-expression hi">{<span class="hi-simple-whitespace hi"></span><span class="hi-call hi"><span class="hi-name hi">type</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">tx</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span>}</span>"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>123</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-else hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></pre></td></tr></tbody></table></details>
 </section>
-        
-        <section id="ethereum.london.fork_types.decode_transaction:0">
+            
+            <section id="ethereum.london.fork_types.decode_transaction:0">
     <h3><span title="ethereum.london.fork_types.decode_transaction">decode_transaction</span></h3>
     
     <div class="docstring">
@@ -722,9 +751,16 @@
             <code>def <span title="ethereum.london.fork_types.decode_transaction">decode_transaction</span>(<span title="ethereum.london.fork_types.decode_transaction.<locals&gt;.tx">tx</span>: <span><span><span title="typing.Union">Union</span></span>[<span><a href="#ethereum.london.fork_types.LegacyTransaction:0"><span title="ethereum.london.fork_types.LegacyTransaction">LegacyTransaction</span></a></span>, <span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span title="ethereum.base_types.Bytes">Bytes</span></a></span>]</span>) -&gt; <span><a href="#ethereum.london.fork_types.Transaction:0"><span title="ethereum.london.fork_types.Transaction">Transaction</span></a></span>:</code>
         </summary><table class="verbatim"><tbody><tr><th>126</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>127</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Decode a transaction. Needed because non-legacy transactions aren't RLP.</span></span></span></span></pre></td></tr><tr><th>128</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>129</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-if hi">if<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-name hi">isinstance</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">tx</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span class="hi-name hi">Bytes</span></a><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-simple-whitespace hi"></span>:</span></span></pre></td></tr><tr><th>130</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi">        <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-if hi">if<span class="hi-simple-whitespace hi"> </span><span class="hi-comparison hi"><span class="hi-subscript hi"><span class="hi-name hi">tx</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-integer hi">0</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-comparison-target hi"> <span class="hi-equal hi"><span class="hi-simple-whitespace hi"></span>==<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">1</span></span></span><span class="hi-simple-whitespace hi"></span>:</span></span></span></span></pre></td></tr><tr><th>131</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-if hi">            <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-attribute hi"><a href="../rlp.py.html#ethereum.rlp:0"><span class="hi-name hi">rlp</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">decode_to</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><a href="#ethereum.london.fork_types.AccessListTransaction:0"><span class="hi-name hi">AccessListTransaction</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">tx</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-integer hi">1</span><span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"></span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>132</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span>        <span class="hi-if hi">elif<span class="hi-simple-whitespace hi"> </span><span class="hi-comparison hi"><span class="hi-subscript hi"><span class="hi-name hi">tx</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-integer hi">0</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-comparison-target hi"> <span class="hi-equal hi"><span class="hi-simple-whitespace hi"></span>==<span class="hi-simple-whitespace hi"> </span></span><span class="hi-integer hi">2</span></span></span><span class="hi-simple-whitespace hi"></span>:</span></span></span></span></span></pre></td></tr><tr><th>133</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi">            <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-attribute hi"><a href="../rlp.py.html#ethereum.rlp:0"><span class="hi-name hi">rlp</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">decode_to</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><a href="#ethereum.london.fork_types.FeeMarketTransaction:0"><span class="hi-name hi">FeeMarketTransaction</span></a><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">tx</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-integer hi">1</span><span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"></span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>134</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span>        <span class="hi-else hi">else<span class="hi-simple-whitespace hi"></span>:</span></span></span></span></span></span></pre></td></tr><tr><th>135</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-else hi">            <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-raise hi">raise<span class="hi-simple-whitespace hi"> </span><a href="../exceptions.py.html#ethereum.exceptions.InvalidBlock:0"><span class="hi-name hi">InvalidBlock</span></a></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>136</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-if hi"><span class="hi-else hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></span></span></span></span>    <span class="hi-else hi">else<span class="hi-simple-whitespace hi"></span>:</span></span></span></pre></td></tr><tr><th>137</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-else hi">        <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-name hi">tx</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>138</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi"><span class="hi-else hi"><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr></tbody></table></details>
 </section>
-        
-        <section class="class" id="ethereum.london.fork_types.Account:0">
+            
+            <section class="class" id="ethereum.london.fork_types.Account:0">
     <h3><span title="ethereum.london.fork_types.Account">Account</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>State associated with an address.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>140</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>141</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.london.fork_types.Account">Account</span></span>:</pre>
 
@@ -792,16 +828,16 @@
     <table class="verbatim"><tbody><tr><th>149</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">code</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bytes</span></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
-        <section id="ethereum.london.fork_types.EMPTY_ACCOUNT:0">
+            
+            <section id="ethereum.london.fork_types.EMPTY_ACCOUNT:0">
     <h3>
         
         <span title="ethereum.london.fork_types.EMPTY_ACCOUNT">EMPTY_ACCOUNT</span>
         
     </h3>
     <table class="verbatim"><tbody><tr><th>152</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">EMPTY_ACCOUNT</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="#ethereum.london.fork_types.Account:0"><span class="hi-name hi">Account</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></pre></td></tr><tr><th>153</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">nonce</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-integer hi">0</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>154</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">balance</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><a href="../base_types.py.html#ethereum.base_types.U256:0"><span class="hi-name hi">U256</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-integer hi">0</span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>155</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">code</span><span class="hi-assign-equal hi"><span class="hi-simple-whitespace hi"></span>=<span class="hi-simple-whitespace hi"></span></span><span class="hi-call hi"><span class="hi-name hi">bytearray</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>156</th><td><pre><span class="hi-assign hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
-        
-        <section id="ethereum.london.fork_types.encode_account:0">
+            
+            <section id="ethereum.london.fork_types.encode_account:0">
     <h3><span title="ethereum.london.fork_types.encode_account">encode_account</span></h3>
     
     <div class="docstring">
@@ -815,9 +851,16 @@ encoded with providing a storage root.</p></div>
             <code>def <span title="ethereum.london.fork_types.encode_account">encode_account</span>(<span title="ethereum.london.fork_types.encode_account.<locals&gt;.raw_account_data">raw_account_data</span>: <span><a href="#ethereum.london.fork_types.Account:0"><span title="ethereum.london.fork_types.Account">Account</span></a></span>, <span title="ethereum.london.fork_types.encode_account.<locals&gt;.storage_root">storage_root</span>: <span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span title="ethereum.base_types.Bytes">Bytes</span></a></span>) -&gt; <span><a href="../base_types.py.html#ethereum.base_types.Bytes:0"><span title="ethereum.base_types.Bytes">Bytes</span></a></span>:</code>
         </summary><table class="verbatim"><tbody><tr><th>160</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>161</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Encode `Account` dataclass.</span></span></span></span></pre></td></tr><tr><th>162</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>163</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Storage is not stored in the `Account` dataclass, so `Accounts` cannot be</span></span></span></span></pre></td></tr><tr><th>164</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    encoded with providing a storage root.</span></span></span></span></pre></td></tr><tr><th>165</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>166</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-attribute hi"><a href="../rlp.py.html#ethereum.rlp:0"><span class="hi-name hi">rlp</span></a><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">encode</span></span><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>167</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span>(</span></span></span></span></span></pre></td></tr><tr><th>168</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi">            <span class="hi-tuple hi"><span class="hi-left-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">nonce</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>169</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">balance</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>170</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-name hi">storage_root</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>171</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">        </span></span></span></span><span class="hi-element hi"><span class="hi-call hi"><a href="../crypto/hash.py.html#ethereum.crypto.hash.keccak256:0"><span class="hi-name hi">keccak256</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi"><span class="hi-simple-whitespace hi"></span>.<span class="hi-simple-whitespace hi"></span></span><span class="hi-name hi">code</span></span><span class="hi-simple-whitespace hi"></span></span>)</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"></span></span></span><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>172</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">    </span></span>)</span></span><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>173</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi"></span></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>174</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
 </section>
-        
-        <section class="class" id="ethereum.london.fork_types.Header:0">
+            
+            <section class="class" id="ethereum.london.fork_types.Header:0">
     <h3><span title="ethereum.london.fork_types.Header">Header</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Header portion of a block on the chain.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>176</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>177</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.london.fork_types.Header">Header</span></span>:</pre>
 
@@ -1093,9 +1136,16 @@ encoded with providing a storage root.</p></div>
     <table class="verbatim"><tbody><tr><th>198</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">base_fee_per_gas</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><a href="../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
-        <section class="class" id="ethereum.london.fork_types.Block:0">
+            
+            <section class="class" id="ethereum.london.fork_types.Block:0">
     <h3><span title="ethereum.london.fork_types.Block">Block</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>A complete block.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>201</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>202</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.london.fork_types.Block">Block</span></span>:</pre>
 
@@ -1163,9 +1213,16 @@ encoded with providing a storage root.</p></div>
     <table class="verbatim"><tbody><tr><th>210</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">ommers</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.london.fork_types.Header:0"><span class="hi-name hi">Header</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
-        <section class="class" id="ethereum.london.fork_types.Log:0">
+            
+            <section class="class" id="ethereum.london.fork_types.Log:0">
     <h3><span title="ethereum.london.fork_types.Log">Log</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Data record produced during the execution of a transaction.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>213</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>214</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.london.fork_types.Log">Log</span></span>:</pre>
 
@@ -1233,9 +1290,16 @@ encoded with providing a storage root.</p></div>
     <table class="verbatim"><tbody><tr><th>222</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">data</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">bytes</span></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
-        <section class="class" id="ethereum.london.fork_types.Receipt:0">
+            
+            <section class="class" id="ethereum.london.fork_types.Receipt:0">
     <h3><span title="ethereum.london.fork_types.Receipt">Receipt</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Result of a transaction.</p></div>
+    </div>
+    
+
     <table class="verbatim"><tbody><tr><th>225</th><td><pre><a href="../base_types.py.html#ethereum.base_types.slotted_freezable:0">@<span class="hi-name hi">slotted_freezable</span></a></pre></td></tr></tbody></table><table class="verbatim"><tbody><tr><th>226</th><td><pre>@<span class="hi-name hi">dataclass</span></pre></td></tr></tbody></table>
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.london.fork_types.Receipt">Receipt</span></span>:</pre>
 
@@ -1319,10 +1383,11 @@ encoded with providing a storage root.</p></div>
     <table class="verbatim"><tbody><tr><th>235</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">logs</span>: <span class="hi-annotation hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">Tuple</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><a href="#ethereum.london.fork_types.Log:0"><span class="hi-name hi">Log</span></a></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span></span><span class="hi-subscript-element hi"><span class="hi-index hi"><span class="hi-ellipsis hi">...</span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span></span></pre></td></tr></tbody></table></section>
     
 </section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -1523,5 +1588,6 @@ encoded with providing a storage root.</p></div>
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>

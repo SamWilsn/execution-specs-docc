@@ -13,32 +13,48 @@
     </head>
     <body>
         
-        <div id="search">
-    <div class="search-bar">
-        <input type="search" placeholder="Search...">
-        <ul id="search-results"></ul>
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
     </div>
 </div>
         
-        <section class="module" id="ethereum.istanbul.vm.exceptions:0">
-    <div class="members">
-        
-        <h2><span title="ethereum.istanbul.vm.exceptions">ethereum.istanbul.vm.exceptions</span></h2>
-        
+        <main id="main-content">
+        <section class="module row reverse" id="ethereum.istanbul.vm.exceptions:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.istanbul.vm.exceptions">ethereum.istanbul.vm.exceptions</span></h2>
+            
 
-        
-        <div class="docstring">
-            <div class="markdown"><p>Ethereum Virtual Machine (EVM) Exceptions
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Virtual Machine (EVM) Exceptions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
 :backlinks: none
 :local:</p><h2>Introduction</h2><p>Exceptions which cause the EVM to halt exceptionally.</p></div>
-        </div>
-        
+            </div>
+            
 
 
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.ExceptionalHalt:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.ExceptionalHalt:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.ExceptionalHalt">ExceptionalHalt</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Indicates that the EVM has experienced an exceptional halt. This causes
+execution to immediately end with all gas being consumed.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.ExceptionalHalt">ExceptionalHalt</span></span>:</pre>
 
@@ -50,9 +66,17 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.Revert:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.Revert:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.Revert">Revert</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised by the <code>REVERT</code> opcode.</p><p>Unlike other EVM exceptions this does not result in the consumption of all
+gas.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.Revert">Revert</span></span>:</pre>
 
@@ -64,9 +88,16 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.StackUnderflowError:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.StackUnderflowError:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.StackUnderflowError">StackUnderflowError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when a pop is executed on an empty stack.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.StackUnderflowError">StackUnderflowError</span></span>:</pre>
 
@@ -78,9 +109,16 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.StackOverflowError:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.StackOverflowError:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.StackOverflowError">StackOverflowError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when a push is executed on a stack at max capacity.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.StackOverflowError">StackOverflowError</span></span>:</pre>
 
@@ -92,9 +130,17 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.OutOfGasError:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.OutOfGasError:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.OutOfGasError">OutOfGasError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when an operation costs more than the amount of gas left in the
+frame.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.OutOfGasError">OutOfGasError</span></span>:</pre>
 
@@ -106,9 +152,16 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.InvalidOpcode:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.InvalidOpcode:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.InvalidOpcode">InvalidOpcode</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when an invalid opcode is encountered.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.InvalidOpcode">InvalidOpcode</span></span>:</pre>
 
@@ -120,9 +173,18 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.InvalidJumpDestError:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.InvalidJumpDestError:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.InvalidJumpDestError">InvalidJumpDestError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when the destination of a jump operation doesn't meet any of the
+following criteria:</p><ul><li><p>The jump destination is less than the length of the code.</p></li><li><p>The jump destination should have the <code>JUMPDEST</code> opcode (0x5B).</p></li><li><p>The jump destination shouldn't be part of the data corresponding to
+<code>PUSH-N</code> opcodes.</p></li></ul></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.InvalidJumpDestError">InvalidJumpDestError</span></span>:</pre>
 
@@ -134,9 +196,16 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.StackDepthLimitError:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.StackDepthLimitError:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.StackDepthLimitError">StackDepthLimitError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when the message depth is greater than <code>1024</code></p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.StackDepthLimitError">StackDepthLimitError</span></span>:</pre>
 
@@ -148,9 +217,17 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.WriteInStaticContext:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.WriteInStaticContext:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.WriteInStaticContext">WriteInStaticContext</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when an attempt is made to modify the state while operating inside
+of a STATICCALL context.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.WriteInStaticContext">WriteInStaticContext</span></span>:</pre>
 
@@ -162,9 +239,17 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.OutOfBoundsRead:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.OutOfBoundsRead:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.OutOfBoundsRead">OutOfBoundsRead</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when an attempt was made to read data beyond the
+boundaries of the buffer.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.OutOfBoundsRead">OutOfBoundsRead</span></span>:</pre>
 
@@ -176,9 +261,16 @@
 
     
 </section>
-        
-        <section class="class" id="ethereum.istanbul.vm.exceptions.InvalidParameter:0">
+            
+            <section class="class" id="ethereum.istanbul.vm.exceptions.InvalidParameter:0">
     <h3><span title="ethereum.istanbul.vm.exceptions.InvalidParameter">InvalidParameter</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when invalid parameters are passed.</p></div>
+    </div>
+    
+
     
     <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.istanbul.vm.exceptions.InvalidParameter">InvalidParameter</span></span>:</pre>
 
@@ -190,10 +282,11 @@
 
     
 </section>
-        
+            
+        </div>
     </div>
 
-    <nav class="toc">
+    <nav class="toc col-12 col-3-md col-2-lg">
         <h3>Members</h3>
         <ul>
             
@@ -286,5 +379,6 @@
         </ul>
     </nav>
 </section>
+        </main>
     </body>
 </html>
