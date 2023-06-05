@@ -6,9 +6,10 @@
         <link href="static/chota.min.css" rel="stylesheet">
         <link href="static/docc.css" rel="stylesheet">
         
-        <script src="static/fuse.min.js"></script>
-        <script src="static/search.js"></script>
-        <script>initialize_search("search.js", ".")</script>
+        <link id="search-path" rel="preload" as="script" href="search.js">
+        <meta name="docc:search" value=".">
+        <script defer src="static/fuse.min.js"></script>
+        <script defer src="static/search.js"></script>
         
     </head>
     <body>
