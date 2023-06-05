@@ -19,6 +19,9 @@ jobs:
 
       - name: Sphinx
         run: tox -e doc
+        
+      - name: No Jekyll
+        run: touch .tox/docs/.nojekyll
 
       - name: Deploy
         if: ${{ github.event_name == 'push' && ( github.ref == 'refs/heads/master' ||  github.ref == 'refs/heads/pyspec') }}
