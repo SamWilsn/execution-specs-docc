@@ -78,7 +78,15 @@ class Hardfork:
         """
         Path to the module containing this hard fork.
         """
-        return getattr(self.mod, "__path__", None)
+        got = getattr(self.mod, "__path__", None)
+        if got is None or isinstance(got, str):
+            return got
+
+        try:
+            assert isinstance(got[0], str)
+            return got[0]
+        except IndexError:
+            return None
 
     @property
     def short_name(self) -> str:

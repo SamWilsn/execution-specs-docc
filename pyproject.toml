@@ -27,12 +27,13 @@ discovery = [
     "docc.search.discover",
     "docc.html.discover",
     "docc.cst.discover",
+    "ethereum_spec_tools.docc.discover",
     "docc.listing.discover",
 ]
 
 build = [
     "docc.search.build",
-    "docc.cst.build",
+    "ethereum_spec_tools.docc.build",
     "docc.listing.build",
     "docc.resources.build",
 ]
@@ -40,6 +41,7 @@ build = [
 transform = [
     "docc.cst.transform",
     "docc.mistletoe.transform",
+    "ethereum_spec_tools.docc.fix-indexes",
     "docc.references.index",
     "docc.search.transform",
     "docc.html",
