@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../../../static/chota.min.css" rel="stylesheet">
+        <link href="../../../../static/docc.css" rel="stylesheet">
+        
+        <link id="search-path" rel="preload" as="script" href="../../../../search.js">
+        <meta name="docc:search" value="../../../..">
+        <script defer src="../../../../static/fuse.min.js"></script>
+        <script defer src="../../../../static/search.js"></script>
+        
+    </head>
+    <body>
+        
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
+    </div>
+</div>
+        
+        <main id="main-content">
+        <div class="diff" style="display: contents;"><div class="diff-before" style="display: contents;"><section class="module row reverse" id="diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.frontier.vm.exceptions">ethereum.frontier.vm.exceptions</span></h2>
+            
+
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Virtual Machine (EVM) Exceptions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>Exceptions which cause the EVM to halt exceptionally.</p></div>
+            </div>
+            
+
+
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.ExceptionalHalt:0">
+    <h3><span title="ethereum.frontier.vm.exceptions.ExceptionalHalt">ExceptionalHalt</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Indicates that the EVM has experienced an exceptional halt. This causes
+execution to immediately end with all gas being consumed.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.frontier.vm.exceptions.ExceptionalHalt">ExceptionalHalt</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackUnderflowError:0">
+    <h3><span title="ethereum.frontier.vm.exceptions.StackUnderflowError">StackUnderflowError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when a pop is executed on an empty stack.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.frontier.vm.exceptions.StackUnderflowError">StackUnderflowError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackOverflowError:0">
+    <h3><span title="ethereum.frontier.vm.exceptions.StackOverflowError">StackOverflowError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when a push is executed on a stack at max capacity.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.frontier.vm.exceptions.StackOverflowError">StackOverflowError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.OutOfGasError:0">
+    <h3><span title="ethereum.frontier.vm.exceptions.OutOfGasError">OutOfGasError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when an operation costs more than the amount of gas left in the
+frame.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.frontier.vm.exceptions.OutOfGasError">OutOfGasError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.InvalidOpcode:0">
+    <h3><span title="ethereum.frontier.vm.exceptions.InvalidOpcode">InvalidOpcode</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when an invalid opcode is encountered.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.frontier.vm.exceptions.InvalidOpcode">InvalidOpcode</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.InvalidJumpDestError:0">
+    <h3><span title="ethereum.frontier.vm.exceptions.InvalidJumpDestError">InvalidJumpDestError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when the destination of a jump operation doesn't meet any of the
+following criteria:</p><ul><li><p>The jump destination is less than the length of the code.</p></li><li><p>The jump destination should have the <code>JUMPDEST</code> opcode (0x5B).</p></li><li><p>The jump destination shouldn't be part of the data corresponding to
+<code>PUSH-N</code> opcodes.</p></li></ul></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.frontier.vm.exceptions.InvalidJumpDestError">InvalidJumpDestError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackDepthLimitError:0">
+    <h3><span title="ethereum.frontier.vm.exceptions.StackDepthLimitError">StackDepthLimitError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when the message depth is greater than <code>1024</code></p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.frontier.vm.exceptions.StackDepthLimitError">StackDepthLimitError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+        </div>
+    </div>
+
+    <nav class="toc col-12 col-3-md col-2-lg">
+        <h3>Members</h3>
+        <ul>
+            
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Classes
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.ExceptionalHalt:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.ExceptionalHalt:0"><span title="ethereum.frontier.vm.exceptions.ExceptionalHalt">ExceptionalHalt</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.ExceptionalHalt:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackUnderflowError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackUnderflowError:0"><span title="ethereum.frontier.vm.exceptions.StackUnderflowError">StackUnderflowError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackUnderflowError:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackOverflowError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackOverflowError:0"><span title="ethereum.frontier.vm.exceptions.StackOverflowError">StackOverflowError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackOverflowError:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.OutOfGasError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.OutOfGasError:0"><span title="ethereum.frontier.vm.exceptions.OutOfGasError">OutOfGasError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.OutOfGasError:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.InvalidOpcode:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.InvalidOpcode:0"><span title="ethereum.frontier.vm.exceptions.InvalidOpcode">InvalidOpcode</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.InvalidOpcode:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.InvalidJumpDestError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.InvalidJumpDestError:0"><span title="ethereum.frontier.vm.exceptions.InvalidJumpDestError">InvalidJumpDestError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.InvalidJumpDestError:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackDepthLimitError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackDepthLimitError:0"><span title="ethereum.frontier.vm.exceptions.StackDepthLimitError">StackDepthLimitError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.frontier.vm.exceptions.StackDepthLimitError:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+
+            
+            
+            
+        </ul>
+    </nav>
+</section></div><div class="diff-after" style="display: contents;"><section class="module row reverse" id="diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.homestead.vm.exceptions">ethereum.homestead.vm.exceptions</span></h2>
+            
+
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Virtual Machine (EVM) Exceptions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>Exceptions which cause the EVM to halt exceptionally.</p></div>
+            </div>
+            
+
+
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.ExceptionalHalt:0">
+    <h3><span title="ethereum.homestead.vm.exceptions.ExceptionalHalt">ExceptionalHalt</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Indicates that the EVM has experienced an exceptional halt. This causes
+execution to immediately end with all gas being consumed.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.homestead.vm.exceptions.ExceptionalHalt">ExceptionalHalt</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackUnderflowError:0">
+    <h3><span title="ethereum.homestead.vm.exceptions.StackUnderflowError">StackUnderflowError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when a pop is executed on an empty stack.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.homestead.vm.exceptions.StackUnderflowError">StackUnderflowError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackOverflowError:0">
+    <h3><span title="ethereum.homestead.vm.exceptions.StackOverflowError">StackOverflowError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when a push is executed on a stack at max capacity.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.homestead.vm.exceptions.StackOverflowError">StackOverflowError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.OutOfGasError:0">
+    <h3><span title="ethereum.homestead.vm.exceptions.OutOfGasError">OutOfGasError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when an operation costs more than the amount of gas left in the
+frame.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.homestead.vm.exceptions.OutOfGasError">OutOfGasError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.InvalidOpcode:0">
+    <h3><span title="ethereum.homestead.vm.exceptions.InvalidOpcode">InvalidOpcode</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when an invalid opcode is encountered.</p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.homestead.vm.exceptions.InvalidOpcode">InvalidOpcode</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.InvalidJumpDestError:0">
+    <h3><span title="ethereum.homestead.vm.exceptions.InvalidJumpDestError">InvalidJumpDestError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Occurs when the destination of a jump operation doesn't meet any of the
+following criteria:</p><ul><li><p>The jump destination is less than the length of the code.</p></li><li><p>The jump destination should have the <code>JUMPDEST</code> opcode (0x5B).</p></li><li><p>The jump destination shouldn't be part of the data corresponding to
+<code>PUSH-N</code> opcodes.</p></li></ul></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.homestead.vm.exceptions.InvalidJumpDestError">InvalidJumpDestError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+            <section class="class" id="diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackDepthLimitError:0">
+    <h3><span title="ethereum.homestead.vm.exceptions.StackDepthLimitError">StackDepthLimitError</span></h3>
+
+    
+    <div class="docstring">
+        <div class="markdown"><p>Raised when the message depth is greater than <code>1024</code></p></div>
+    </div>
+    
+
+    
+    <pre class="code-like"><span class="hi-class">class</span> <span class="hi-name"><span title="ethereum.homestead.vm.exceptions.StackDepthLimitError">StackDepthLimitError</span></span>:</pre>
+
+    
+    
+    
+    
+    
+
+    
+</section>
+            
+        </div>
+    </div>
+
+    <nav class="toc col-12 col-3-md col-2-lg">
+        <h3>Members</h3>
+        <ul>
+            
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Classes
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.ExceptionalHalt:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.ExceptionalHalt:0"><span title="ethereum.homestead.vm.exceptions.ExceptionalHalt">ExceptionalHalt</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.ExceptionalHalt:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackUnderflowError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackUnderflowError:0"><span title="ethereum.homestead.vm.exceptions.StackUnderflowError">StackUnderflowError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackUnderflowError:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackOverflowError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackOverflowError:0"><span title="ethereum.homestead.vm.exceptions.StackOverflowError">StackOverflowError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackOverflowError:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.OutOfGasError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.OutOfGasError:0"><span title="ethereum.homestead.vm.exceptions.OutOfGasError">OutOfGasError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.OutOfGasError:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.InvalidOpcode:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.InvalidOpcode:0"><span title="ethereum.homestead.vm.exceptions.InvalidOpcode">InvalidOpcode</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.InvalidOpcode:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.InvalidJumpDestError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.InvalidJumpDestError:0"><span title="ethereum.homestead.vm.exceptions.InvalidJumpDestError">InvalidJumpDestError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.InvalidJumpDestError:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackDepthLimitError:0">
+                        </a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackDepthLimitError:0"><span title="ethereum.homestead.vm.exceptions.StackDepthLimitError">StackDepthLimitError</span></a><a href="#diff(ethereum.frontier,ethereum.homestead).ethereum.homestead.vm.exceptions.StackDepthLimitError:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+
+            
+            
+            
+        </ul>
+    </nav>
+</section></div></div>
+        </main>
+    </body>
+</html>

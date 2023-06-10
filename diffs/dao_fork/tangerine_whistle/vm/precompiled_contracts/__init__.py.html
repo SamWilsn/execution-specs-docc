@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../../../../static/chota.min.css" rel="stylesheet">
+        <link href="../../../../../static/docc.css" rel="stylesheet">
+        
+        <link id="search-path" rel="preload" as="script" href="../../../../../search.js">
+        <meta name="docc:search" value="../../../../..">
+        <script defer src="../../../../../static/fuse.min.js"></script>
+        <script defer src="../../../../../static/search.js"></script>
+        
+    </head>
+    <body>
+        
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
+    </div>
+</div>
+        
+        <main id="main-content">
+        <div class="diff" style="display: contents;"><div class="diff-before" style="display: contents;"><section class="module row reverse" id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.dao_fork.vm.precompiled_contracts">ethereum.dao_fork.vm.precompiled_contracts</span></h2>
+            
+
+            
+            <div class="docstring">
+                <div class="markdown"><p>Precompiled Contract Addresses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>Addresses of precompiled contracts and mappings to their
+implementations.</p></div>
+            </div>
+            
+
+
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.__all__:0">
+    <h3>
+        
+        <span title="ethereum.dao_fork.vm.precompiled_contracts.__all__">__all__</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>18</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">__all__</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span>(</span></pre></td></tr><tr><th>19</th><td><pre><span class="hi-assign hi">    <span class="hi-tuple hi"><span class="hi-left-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"ECRECOVER_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>20</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"SHA256_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>21</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"RIPEMD160_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>22</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"IDENTITY_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"></span></span></span><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>23</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></pre></td></tr></tbody></table></section>
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.ECRECOVER_ADDRESS:0">
+    <h3>
+        
+        <span title="ethereum.dao_fork.vm.precompiled_contracts.ECRECOVER_ADDRESS">ECRECOVER_ADDRESS</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>25</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">ECRECOVER_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x01"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.SHA256_ADDRESS:0">
+    <h3>
+        
+        <span title="ethereum.dao_fork.vm.precompiled_contracts.SHA256_ADDRESS">SHA256_ADDRESS</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>26</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">SHA256_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x02"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.RIPEMD160_ADDRESS:0">
+    <h3>
+        
+        <span title="ethereum.dao_fork.vm.precompiled_contracts.RIPEMD160_ADDRESS">RIPEMD160_ADDRESS</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>27</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">RIPEMD160_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x03"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.IDENTITY_ADDRESS:0">
+    <h3>
+        
+        <span title="ethereum.dao_fork.vm.precompiled_contracts.IDENTITY_ADDRESS">IDENTITY_ADDRESS</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>28</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">IDENTITY_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x04"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+            
+        </div>
+    </div>
+
+    <nav class="toc col-12 col-3-md col-2-lg">
+        <h3>Members</h3>
+        <ul>
+            
+            
+            <li>
+                <h4>
+                    Attributes
+                </h4>
+
+                <ul>
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.__all__:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.__all__:0"><span title="ethereum.dao_fork.vm.precompiled_contracts.__all__">__all__</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.__all__:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.ECRECOVER_ADDRESS:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.ECRECOVER_ADDRESS:0"><span title="ethereum.dao_fork.vm.precompiled_contracts.ECRECOVER_ADDRESS">ECRECOVER_ADDRESS</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.ECRECOVER_ADDRESS:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.SHA256_ADDRESS:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.SHA256_ADDRESS:0"><span title="ethereum.dao_fork.vm.precompiled_contracts.SHA256_ADDRESS">SHA256_ADDRESS</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.SHA256_ADDRESS:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.RIPEMD160_ADDRESS:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.RIPEMD160_ADDRESS:0"><span title="ethereum.dao_fork.vm.precompiled_contracts.RIPEMD160_ADDRESS">RIPEMD160_ADDRESS</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.RIPEMD160_ADDRESS:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.IDENTITY_ADDRESS:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.IDENTITY_ADDRESS:0"><span title="ethereum.dao_fork.vm.precompiled_contracts.IDENTITY_ADDRESS">IDENTITY_ADDRESS</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.dao_fork.vm.precompiled_contracts.IDENTITY_ADDRESS:0">
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </li>
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+        </ul>
+    </nav>
+</section></div><div class="diff-after" style="display: contents;"><section class="module row reverse" id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.tangerine_whistle.vm.precompiled_contracts">ethereum.tangerine_whistle.vm.precompiled_contracts</span></h2>
+            
+
+            
+            <div class="docstring">
+                <div class="markdown"><p>Precompiled Contract Addresses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>Addresses of precompiled contracts and mappings to their
+implementations.</p></div>
+            </div>
+            
+
+
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.__all__:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.precompiled_contracts.__all__">__all__</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>18</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">__all__</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span>(</span></pre></td></tr><tr><th>19</th><td><pre><span class="hi-assign hi">    <span class="hi-tuple hi"><span class="hi-left-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"ECRECOVER_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>20</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"SHA256_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>21</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"RIPEMD160_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>22</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-element hi"><span class="hi-comma hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi">    </span></span></span></span><span class="hi-element hi"><span class="hi-simple-string hi">"IDENTITY_ADDRESS"</span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"></span></span></span><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></pre></td></tr><tr><th>23</th><td><pre><span class="hi-assign hi"><span class="hi-tuple hi"><span class="hi-right-paren hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></pre></td></tr></tbody></table></section>
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.ECRECOVER_ADDRESS:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.precompiled_contracts.ECRECOVER_ADDRESS">ECRECOVER_ADDRESS</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>25</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">ECRECOVER_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x01"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.SHA256_ADDRESS:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.precompiled_contracts.SHA256_ADDRESS">SHA256_ADDRESS</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>26</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">SHA256_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x02"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.RIPEMD160_ADDRESS:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.precompiled_contracts.RIPEMD160_ADDRESS">RIPEMD160_ADDRESS</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>27</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">RIPEMD160_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x03"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+            
+            <section id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.IDENTITY_ADDRESS:0">
+    <h3>
+        
+        <span title="ethereum.tangerine_whistle.vm.precompiled_contracts.IDENTITY_ADDRESS">IDENTITY_ADDRESS</span>
+        
+    </h3>
+    <table class="verbatim"><tbody><tr><th>28</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">IDENTITY_ADDRESS</span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><a href="../../utils/hexadecimal.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.utils.hexadecimal.hex_to_address:0"><span class="hi-name hi">hex_to_address</span></a><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-simple-string hi">"0x04"</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></pre></td></tr></tbody></table></section>
+            
+        </div>
+    </div>
+
+    <nav class="toc col-12 col-3-md col-2-lg">
+        <h3>Members</h3>
+        <ul>
+            
+            
+            <li>
+                <h4>
+                    Attributes
+                </h4>
+
+                <ul>
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.__all__:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.__all__:0"><span title="ethereum.tangerine_whistle.vm.precompiled_contracts.__all__">__all__</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.__all__:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.ECRECOVER_ADDRESS:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.ECRECOVER_ADDRESS:0"><span title="ethereum.tangerine_whistle.vm.precompiled_contracts.ECRECOVER_ADDRESS">ECRECOVER_ADDRESS</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.ECRECOVER_ADDRESS:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.SHA256_ADDRESS:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.SHA256_ADDRESS:0"><span title="ethereum.tangerine_whistle.vm.precompiled_contracts.SHA256_ADDRESS">SHA256_ADDRESS</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.SHA256_ADDRESS:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.RIPEMD160_ADDRESS:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.RIPEMD160_ADDRESS:0"><span title="ethereum.tangerine_whistle.vm.precompiled_contracts.RIPEMD160_ADDRESS">RIPEMD160_ADDRESS</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.RIPEMD160_ADDRESS:0">
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.IDENTITY_ADDRESS:0">
+                        </a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.IDENTITY_ADDRESS:0"><span title="ethereum.tangerine_whistle.vm.precompiled_contracts.IDENTITY_ADDRESS">IDENTITY_ADDRESS</span></a><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).ethereum.tangerine_whistle.vm.precompiled_contracts.IDENTITY_ADDRESS:0">
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </li>
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+        </ul>
+    </nav>
+</section></div></div>
+        </main>
+    </body>
+</html>

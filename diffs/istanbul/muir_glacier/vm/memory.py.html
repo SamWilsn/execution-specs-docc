@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../../../static/chota.min.css" rel="stylesheet">
+        <link href="../../../../static/docc.css" rel="stylesheet">
+        
+        <link id="search-path" rel="preload" as="script" href="../../../../search.js">
+        <meta name="docc:search" value="../../../..">
+        <script defer src="../../../../static/fuse.min.js"></script>
+        <script defer src="../../../../static/search.js"></script>
+        
+    </head>
+    <body>
+        
+        <div id="search" role="search" class="row">
+    <div class="col-12 col-3-md col-2-lg"></div>
+    <div class="col">
+        <div class="search-bar width-limiter">
+            <input type="search" placeholder="Search...">
+            <section id="search-results-container">
+                <h2>Search Results</h2>
+                <ul id="search-results"></ul>
+            </section>
+        </div>
+    </div>
+</div>
+        
+        <main id="main-content">
+        <div class="diff" style="display: contents;"><div class="diff-before" style="display: contents;"><section class="module row reverse" id="diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.istanbul.vm.memory">ethereum.istanbul.vm.memory</span></h2>
+            
+
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Virtual Machine (EVM) Memory
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>EVM memory operations.</p></div>
+            </div>
+            
+
+
+            
+            <section id="diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.memory_write:0">
+    <h3><span title="ethereum.istanbul.vm.memory.memory_write">memory_write</span></h3>
+    
+    <div class="docstring">
+        <div class="markdown"><p>Writes to memory.</p><h2>Parameters</h2><p>memory :
+Memory contents of the EVM.
+start_position :
+Starting pointer to the memory.
+value :
+Data to write to memory.</p></div>
+    </div>
+    
+    
+    <details open="">
+        <summary class="code-like">
+            <code>def <span title="ethereum.istanbul.vm.memory.memory_write">memory_write</span>(<span title="ethereum.istanbul.vm.memory.memory_write.<locals&gt;.memory">memory</span>: <span><span title="builtins.bytearray">bytearray</span></span>, <span title="ethereum.istanbul.vm.memory.memory_write.<locals&gt;.start_position">start_position</span>: <span><span title="ethereum.base_types.U256">U256</span></span>, <span title="ethereum.istanbul.vm.memory.memory_write.<locals&gt;.value">value</span>: <span><span title="ethereum.base_types.Bytes">Bytes</span></span>) -&gt; <span><span title="builtins.None">None</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>22</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>23</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Writes to memory.</span></span></span></span></pre></td></tr><tr><th>24</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>25</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>26</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>27</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    memory :</span></span></span></span></pre></td></tr><tr><th>28</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Memory contents of the EVM.</span></span></span></span></pre></td></tr><tr><th>29</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    start_position :</span></span></span></span></pre></td></tr><tr><th>30</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Starting pointer to the memory.</span></span></span></span></pre></td></tr><tr><th>31</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    value :</span></span></span></span></pre></td></tr><tr><th>32</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Data to write to memory.</span></span></span></span></pre></td></tr><tr><th>33</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>34</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-subscript hi"><span class="hi-name hi">memory</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-name hi">start_position</span> <span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">start_position</span><span class="hi-simple-whitespace hi"></span></span>)</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">len</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">value</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-name hi">value</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>35</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
+</section>
+            
+            <section id="diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.memory_read_bytes:0">
+    <h3><span title="ethereum.istanbul.vm.memory.memory_read_bytes">memory_read_bytes</span></h3>
+    
+    <div class="docstring">
+        <div class="markdown"><p>Read bytes from memory.</p><h2>Parameters</h2><p>memory :
+Memory contents of the EVM.
+start_position :
+Starting pointer to the memory.
+size :
+Size of the data that needs to be read from <code>start_position</code>.</p><h2>Returns</h2><p>data_bytes :
+Data read from memory.</p></div>
+    </div>
+    
+    
+    <details open="">
+        <summary class="code-like">
+            <code>def <span title="ethereum.istanbul.vm.memory.memory_read_bytes">memory_read_bytes</span>(<span title="ethereum.istanbul.vm.memory.memory_read_bytes.<locals&gt;.memory">memory</span>: <span><span title="builtins.bytearray">bytearray</span></span>, <span title="ethereum.istanbul.vm.memory.memory_read_bytes.<locals&gt;.start_position">start_position</span>: <span><span title="ethereum.base_types.U256">U256</span></span>, <span title="ethereum.istanbul.vm.memory.memory_read_bytes.<locals&gt;.size">size</span>: <span><span title="ethereum.base_types.U256">U256</span></span>) -&gt; <span><span title="builtins.bytearray">bytearray</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>40</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>41</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Read bytes from memory.</span></span></span></span></pre></td></tr><tr><th>42</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>43</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>44</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>45</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    memory :</span></span></span></span></pre></td></tr><tr><th>46</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Memory contents of the EVM.</span></span></span></span></pre></td></tr><tr><th>47</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    start_position :</span></span></span></span></pre></td></tr><tr><th>48</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Starting pointer to the memory.</span></span></span></span></pre></td></tr><tr><th>49</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    size :</span></span></span></span></pre></td></tr><tr><th>50</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Size of the data that needs to be read from `start_position`.</span></span></span></span></pre></td></tr><tr><th>51</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>52</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Returns</span></span></span></span></pre></td></tr><tr><th>53</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    -------</span></span></span></span></pre></td></tr><tr><th>54</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    data_bytes :</span></span></span></span></pre></td></tr><tr><th>55</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Data read from memory.</span></span></span></span></pre></td></tr><tr><th>56</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>57</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-subscript hi"><span class="hi-name hi">memory</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-name hi">start_position</span> <span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">start_position</span><span class="hi-simple-whitespace hi"></span></span>)</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">size</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>58</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
+</section>
+            
+            <section id="diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.buffer_read:0">
+    <h3><span title="ethereum.istanbul.vm.memory.buffer_read">buffer_read</span></h3>
+    
+    <div class="docstring">
+        <div class="markdown"><p>Read bytes from a buffer. Padding with zeros if neccesary.</p><h2>Parameters</h2><p>buffer :
+Memory contents of the EVM.
+start_position :
+Starting pointer to the memory.
+size :
+Size of the data that needs to be read from <code>start_position</code>.</p><h2>Returns</h2><p>data_bytes :
+Data read from memory.</p></div>
+    </div>
+    
+    
+    <details open="">
+        <summary class="code-like">
+            <code>def <span title="ethereum.istanbul.vm.memory.buffer_read">buffer_read</span>(<span title="ethereum.istanbul.vm.memory.buffer_read.<locals&gt;.buffer">buffer</span>: <span><span title="ethereum.base_types.Bytes">Bytes</span></span>, <span title="ethereum.istanbul.vm.memory.buffer_read.<locals&gt;.start_position">start_position</span>: <span><span title="ethereum.base_types.U256">U256</span></span>, <span title="ethereum.istanbul.vm.memory.buffer_read.<locals&gt;.size">size</span>: <span><span title="ethereum.base_types.U256">U256</span></span>) -&gt; <span><span title="ethereum.base_types.Bytes">Bytes</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>61</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>62</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Read bytes from a buffer. Padding with zeros if neccesary.</span></span></span></span></pre></td></tr><tr><th>63</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>64</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>65</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>66</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    buffer :</span></span></span></span></pre></td></tr><tr><th>67</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Memory contents of the EVM.</span></span></span></span></pre></td></tr><tr><th>68</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    start_position :</span></span></span></span></pre></td></tr><tr><th>69</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Starting pointer to the memory.</span></span></span></span></pre></td></tr><tr><th>70</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    size :</span></span></span></span></pre></td></tr><tr><th>71</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Size of the data that needs to be read from `start_position`.</span></span></span></span></pre></td></tr><tr><th>72</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>73</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Returns</span></span></span></span></pre></td></tr><tr><th>74</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    -------</span></span></span></span></pre></td></tr><tr><th>75</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    data_bytes :</span></span></span></span></pre></td></tr><tr><th>76</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Data read from memory.</span></span></span></span></pre></td></tr><tr><th>77</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>78</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-name hi">right_pad_zero_bytes</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>79</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">buffer</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-name hi">start_position</span> <span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">start_position</span><span class="hi-simple-whitespace hi"></span></span>)</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">size</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">size</span><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>80</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi"></span></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>81</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
+</section>
+            
+        </div>
+    </div>
+
+    <nav class="toc col-12 col-3-md col-2-lg">
+        <h3>Members</h3>
+        <ul>
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Functions
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.memory_write:0">
+                        </a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.memory_write:0"><span title="ethereum.istanbul.vm.memory.memory_write">memory_write</span></a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.memory_write:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.memory_read_bytes:0">
+                        </a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.memory_read_bytes:0"><span title="ethereum.istanbul.vm.memory.memory_read_bytes">memory_read_bytes</span></a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.memory_read_bytes:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.buffer_read:0">
+                        </a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.buffer_read:0"><span title="ethereum.istanbul.vm.memory.buffer_read">buffer_read</span></a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.istanbul.vm.memory.buffer_read:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+        </ul>
+    </nav>
+</section></div><div class="diff-after" style="display: contents;"><section class="module row reverse" id="diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory:0">
+    <div class="members col">
+        <div class="width-limiter">
+            
+            <h2><span title="ethereum.muir_glacier.vm.memory">ethereum.muir_glacier.vm.memory</span></h2>
+            
+
+            
+            <div class="docstring">
+                <div class="markdown"><p>Ethereum Virtual Machine (EVM) Memory
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p><p>.. contents:: Table of Contents
+:backlinks: none
+:local:</p><h2>Introduction</h2><p>EVM memory operations.</p></div>
+            </div>
+            
+
+
+            
+            <section id="diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.memory_write:0">
+    <h3><span title="ethereum.muir_glacier.vm.memory.memory_write">memory_write</span></h3>
+    
+    <div class="docstring">
+        <div class="markdown"><p>Writes to memory.</p><h2>Parameters</h2><p>memory :
+Memory contents of the EVM.
+start_position :
+Starting pointer to the memory.
+value :
+Data to write to memory.</p></div>
+    </div>
+    
+    
+    <details open="">
+        <summary class="code-like">
+            <code>def <span title="ethereum.muir_glacier.vm.memory.memory_write">memory_write</span>(<span title="ethereum.muir_glacier.vm.memory.memory_write.<locals&gt;.memory">memory</span>: <span><span title="builtins.bytearray">bytearray</span></span>, <span title="ethereum.muir_glacier.vm.memory.memory_write.<locals&gt;.start_position">start_position</span>: <span><span title="ethereum.base_types.U256">U256</span></span>, <span title="ethereum.muir_glacier.vm.memory.memory_write.<locals&gt;.value">value</span>: <span><span title="ethereum.base_types.Bytes">Bytes</span></span>) -&gt; <span><span title="builtins.None">None</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>22</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>23</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Writes to memory.</span></span></span></span></pre></td></tr><tr><th>24</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>25</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>26</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>27</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    memory :</span></span></span></span></pre></td></tr><tr><th>28</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Memory contents of the EVM.</span></span></span></span></pre></td></tr><tr><th>29</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    start_position :</span></span></span></span></pre></td></tr><tr><th>30</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Starting pointer to the memory.</span></span></span></span></pre></td></tr><tr><th>31</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    value :</span></span></span></span></pre></td></tr><tr><th>32</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Data to write to memory.</span></span></span></span></pre></td></tr><tr><th>33</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>34</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-subscript hi"><span class="hi-name hi">memory</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-name hi">start_position</span> <span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">start_position</span><span class="hi-simple-whitespace hi"></span></span>)</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">len</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">value</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-simple-whitespace hi"> </span>=<span class="hi-simple-whitespace hi"> </span></span><span class="hi-name hi">value</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>35</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
+</section>
+            
+            <section id="diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.memory_read_bytes:0">
+    <h3><span title="ethereum.muir_glacier.vm.memory.memory_read_bytes">memory_read_bytes</span></h3>
+    
+    <div class="docstring">
+        <div class="markdown"><p>Read bytes from memory.</p><h2>Parameters</h2><p>memory :
+Memory contents of the EVM.
+start_position :
+Starting pointer to the memory.
+size :
+Size of the data that needs to be read from <code>start_position</code>.</p><h2>Returns</h2><p>data_bytes :
+Data read from memory.</p></div>
+    </div>
+    
+    
+    <details open="">
+        <summary class="code-like">
+            <code>def <span title="ethereum.muir_glacier.vm.memory.memory_read_bytes">memory_read_bytes</span>(<span title="ethereum.muir_glacier.vm.memory.memory_read_bytes.<locals&gt;.memory">memory</span>: <span><span title="builtins.bytearray">bytearray</span></span>, <span title="ethereum.muir_glacier.vm.memory.memory_read_bytes.<locals&gt;.start_position">start_position</span>: <span><span title="ethereum.base_types.U256">U256</span></span>, <span title="ethereum.muir_glacier.vm.memory.memory_read_bytes.<locals&gt;.size">size</span>: <span><span title="ethereum.base_types.U256">U256</span></span>) -&gt; <span><span title="builtins.bytearray">bytearray</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>40</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>41</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Read bytes from memory.</span></span></span></span></pre></td></tr><tr><th>42</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>43</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>44</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>45</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    memory :</span></span></span></span></pre></td></tr><tr><th>46</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Memory contents of the EVM.</span></span></span></span></pre></td></tr><tr><th>47</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    start_position :</span></span></span></span></pre></td></tr><tr><th>48</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Starting pointer to the memory.</span></span></span></span></pre></td></tr><tr><th>49</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    size :</span></span></span></span></pre></td></tr><tr><th>50</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Size of the data that needs to be read from `start_position`.</span></span></span></span></pre></td></tr><tr><th>51</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>52</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Returns</span></span></span></span></pre></td></tr><tr><th>53</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    -------</span></span></span></span></pre></td></tr><tr><th>54</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    data_bytes :</span></span></span></span></pre></td></tr><tr><th>55</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Data read from memory.</span></span></span></span></pre></td></tr><tr><th>56</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>57</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-subscript hi"><span class="hi-name hi">memory</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-name hi">start_position</span> <span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">start_position</span><span class="hi-simple-whitespace hi"></span></span>)</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">size</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>58</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
+</section>
+            
+            <section id="diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.buffer_read:0">
+    <h3><span title="ethereum.muir_glacier.vm.memory.buffer_read">buffer_read</span></h3>
+    
+    <div class="docstring">
+        <div class="markdown"><p>Read bytes from a buffer. Padding with zeros if neccesary.</p><h2>Parameters</h2><p>buffer :
+Memory contents of the EVM.
+start_position :
+Starting pointer to the memory.
+size :
+Size of the data that needs to be read from <code>start_position</code>.</p><h2>Returns</h2><p>data_bytes :
+Data read from memory.</p></div>
+    </div>
+    
+    
+    <details open="">
+        <summary class="code-like">
+            <code>def <span title="ethereum.muir_glacier.vm.memory.buffer_read">buffer_read</span>(<span title="ethereum.muir_glacier.vm.memory.buffer_read.<locals&gt;.buffer">buffer</span>: <span><span title="ethereum.base_types.Bytes">Bytes</span></span>, <span title="ethereum.muir_glacier.vm.memory.buffer_read.<locals&gt;.start_position">start_position</span>: <span><span title="ethereum.base_types.U256">U256</span></span>, <span title="ethereum.muir_glacier.vm.memory.buffer_read.<locals&gt;.size">size</span>: <span><span title="ethereum.base_types.U256">U256</span></span>) -&gt; <span><span title="ethereum.base_types.Bytes">Bytes</span></span>:</code>
+        </summary><table class="verbatim"><tbody><tr><th>61</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr><tr><th>62</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Read bytes from a buffer. Padding with zeros if neccesary.</span></span></span></span></pre></td></tr><tr><th>63</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>64</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr><tr><th>65</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr><tr><th>66</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    buffer :</span></span></span></span></pre></td></tr><tr><th>67</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Memory contents of the EVM.</span></span></span></span></pre></td></tr><tr><th>68</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    start_position :</span></span></span></span></pre></td></tr><tr><th>69</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Starting pointer to the memory.</span></span></span></span></pre></td></tr><tr><th>70</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    size :</span></span></span></span></pre></td></tr><tr><th>71</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Size of the data that needs to be read from `start_position`.</span></span></span></span></pre></td></tr><tr><th>72</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr><tr><th>73</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Returns</span></span></span></span></pre></td></tr><tr><th>74</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    -------</span></span></span></span></pre></td></tr><tr><th>75</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    data_bytes :</span></span></span></span></pre></td></tr><tr><th>76</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Data read from memory.</span></span></span></span></pre></td></tr><tr><th>77</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>78</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span>    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return<span class="hi-simple-whitespace hi"> </span><span class="hi-call hi"><span class="hi-name hi">right_pad_zero_bytes</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></pre></td></tr><tr><th>79</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi">    </span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-subscript hi"><span class="hi-name hi">buffer</span><span class="hi-simple-whitespace hi"></span><span class="hi-left-square-bracket hi">[<span class="hi-simple-whitespace hi"></span></span><span class="hi-subscript-element hi"><span class="hi-slice hi"><span class="hi-name hi">start_position</span> <span class="hi-colon hi"><span class="hi-simple-whitespace hi"></span>:<span class="hi-simple-whitespace hi"> </span></span><span class="hi-binary-operation hi"><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">start_position</span><span class="hi-simple-whitespace hi"></span></span>)</span> <span class="hi-add hi"><span class="hi-simple-whitespace hi"></span>+<span class="hi-simple-whitespace hi"> </span></span><span class="hi-call hi"><span class="hi-name hi">Uint</span><span class="hi-simple-whitespace hi"></span>(<span class="hi-simple-whitespace hi"></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">size</span><span class="hi-simple-whitespace hi"></span></span>)</span></span></span></span><span class="hi-right-square-bracket hi"><span class="hi-simple-whitespace hi"></span>]</span></span><span class="hi-comma hi"><span class="hi-simple-whitespace hi"></span>,<span class="hi-simple-whitespace hi"> </span></span><span class="hi-simple-whitespace hi"></span></span><span class="hi-arg hi"><span class="hi-simple-whitespace hi"></span><span class="hi-name hi">size</span><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></span></span></span></span></pre></td></tr><tr><th>80</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-parenthesized-whitespace hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span>    <span class="hi-simple-whitespace hi"></span></span></span>)</span></span><span class="hi-trailing-whitespace hi"><span class="hi-simple-whitespace hi"></span><span class="hi-newline hi"></span></span></span></span></pre></td></tr><tr><th>81</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-trailing-whitespace hi"><span class="hi-newline hi"></span></span></span></span></pre></td></tr></tbody></table></details>
+</section>
+            
+        </div>
+    </div>
+
+    <nav class="toc col-12 col-3-md col-2-lg">
+        <h3>Members</h3>
+        <ul>
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            <li>
+                <h4>
+                    Functions
+                </h4>
+
+                <ul>
+                    
+                    <li>
+                        <a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.memory_write:0">
+                        </a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.memory_write:0"><span title="ethereum.muir_glacier.vm.memory.memory_write">memory_write</span></a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.memory_write:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.memory_read_bytes:0">
+                        </a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.memory_read_bytes:0"><span title="ethereum.muir_glacier.vm.memory.memory_read_bytes">memory_read_bytes</span></a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.memory_read_bytes:0">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.buffer_read:0">
+                        </a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.buffer_read:0"><span title="ethereum.muir_glacier.vm.memory.buffer_read">buffer_read</span></a><a href="#diff(ethereum.istanbul,ethereum.muir_glacier).ethereum.muir_glacier.vm.memory.buffer_read:0">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+        </ul>
+    </nav>
+</section></div></div>
+        </main>
+    </body>
+</html>
