@@ -6,12 +6,12 @@ Detects Python packages that specify Ethereum hardforks.
 """
 
 import importlib
+import importlib.util
 import pkgutil
+from pathlib import PurePath
 from pkgutil import ModuleInfo
 from types import ModuleType
 from typing import Any, Iterator, List, Optional, Type, TypeVar
-
-import ethereum
 
 H = TypeVar("H", bound="Hardfork")
 
@@ -24,10 +24,20 @@ class Hardfork:
     mod: ModuleType
 
     @classmethod
-    def discover(cls: Type[H]) -> List[H]:
+    def discover(cls: Type[H], base: Optional[PurePath] = None) -> List[H]:
         """
         Find packages which contain Ethereum hardfork specifications.
         """
+        if base is None:
+            ethereum = importlib.import_module("ethereum")
+        else:
+            spec = importlib.util.spec_from_file_location(
+                "ethereum", base / "__init__.py", submodule_search_locations=[]
+            )
+            ethereum = importlib.util.module_from_spec(spec)
+            if spec.loader and hasattr(spec.loader, "exec_module"):
+                spec.loader.exec_module(ethereum)  # type: ignore[attr-defined]
+
         path = getattr(ethereum, "__path__", None)
         if path is None:
             raise ValueError("module `ethereum` has no path information")
@@ -38,7 +48,15 @@ class Hardfork:
         new_package = None
 
         for pkg in modules:
-            mod = importlib.import_module(pkg.name)
+            if isinstance(pkg.module_finder, importlib.abc.MetaPathFinder):
+                found = pkg.module_finder.find_module(pkg.name, None)
+            else:
+                found = pkg.module_finder.find_module(pkg.name)
+
+            if not found:
+                raise Exception(f"unable to load module {pkg.name}")
+
+            mod = found.load_module(pkg.name)
             block = getattr(mod, "MAINNET_FORK_BLOCK", -1)
 
             if block == -1:

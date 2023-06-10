@@ -17,6 +17,7 @@
 Plugins for docc specific to the Ethereum execution specification.
 """
 
+import logging
 from collections import defaultdict
 from itertools import tee
 from pathlib import PurePath
@@ -70,7 +71,8 @@ class EthereumDiscover(Discover):
     def __init__(self, config: PluginSettings) -> None:
         super().__init__(config)
         self.settings = config
-        self.forks = Hardfork.discover()
+        base = config.resolve_path(PurePath("src") / "ethereum")
+        self.forks = Hardfork.discover(base=base)
 
     def discover(self, known: FrozenSet[T]) -> Iterator[Source]:
         """
@@ -92,7 +94,12 @@ class EthereumDiscover(Discover):
                     fork = fork_fork
                     break
                 except ValueError:
-                    pass
+                    logging.debug(
+                        "source `%s` is not part of fork `%s`",
+                        source.relative_path,
+                        fork_fork.short_name,
+                        exc_info=True,
+                    )
             else:
                 continue
 
@@ -103,10 +110,12 @@ class EthereumDiscover(Discover):
 
             by_fork[fork][fork_relative_path] = source
 
+        diff_count = 0
         for (before, after) in pairwise(self.forks):
             paths = set(by_fork[before].keys()) | set(by_fork[after].keys())
 
             for path in paths:
+                diff_count += 1
                 before_source = by_fork[before].get(path, None)
                 after_source = by_fork[after].get(path, None)
 
@@ -126,6 +135,11 @@ class EthereumDiscover(Discover):
                     after_source,
                     output_path,
                 )
+
+        if 0 == diff_count:
+            raise Exception("no diff pairs found")
+
+        logging.info("Discovered %s pair(s) of sources to diff", diff_count)
 
 
 S = TypeVar("S", bound=Source)
