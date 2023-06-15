@@ -17,11 +17,14 @@
 Plugins for docc specific to the Ethereum execution specification.
 """
 
+import dataclasses
 import logging
 from collections import defaultdict
 from itertools import tee
 from pathlib import PurePath
 from typing import (
+    Sequence,
+    Type,
     Dict,
     Final,
     FrozenSet,
@@ -33,17 +36,23 @@ from typing import (
     Set,
     Tuple,
     TypeVar,
+    Callable,
 )
 
 from docc.context import Context
 from docc.discover import Discover, T
 from docc.document import BlankNode, Document, Node, Visit, Visitor
-from docc.plugins import html
+from docc.plugins import html, mistletoe
 from docc.plugins.cst import PythonBuilder
 from docc.plugins.references import Definition, Reference
 from docc.settings import PluginSettings
 from docc.source import Source
 from docc.transform import Transform
+from docc.languages import python, verbatim
+
+import graphtage as g
+import graphtage.tree as gt
+from typing_extensions import Self  # type: ignore[attr-defined]
 
 from .forks import Hardfork
 
@@ -390,6 +399,179 @@ class _FixIndexVisitor(Visitor):
         if isinstance(node, DiffNode):
             popped = self.diffs.pop()
             assert popped == node
+
+
+class MinimizeDiffsTransform(Transform):
+    def __init__(self, settings: PluginSettings) -> None:
+        pass
+
+    def transform(self, context: Context) -> None:
+        """
+        Apply the transformation to the given document.
+        """
+        context[Document].root.visit(_MinimizeDiffsVisitor())
+
+
+class _MinimizeDiffsVisitor(Visitor):
+    def enter(self, node: Node) -> Visit:
+        if not isinstance(node, DiffNode):
+            return Visit.TraverseChildren
+
+        # TODO: Probably should make this work in these two cases:
+        assert isinstance(node.before, BeforeNode)
+        assert isinstance(node.after, AfterNode)
+
+        before = _docc_to_graphtage(node.before.child)
+        after = _docc_to_graphtage(node.after.child)
+
+        for edit in before.get_all_edits(after):
+            print(edit)
+
+        return Visit.SkipChildren
+
+    def exit(self, node: Node) -> None:
+        pass
+
+
+class _DoccNode:
+    docc: Node
+
+    def with_docc(self, docc: Node) -> Self:
+        self.docc = docc
+        return self
+
+
+class _DoccNullNode(g.NullNode, _DoccNode):
+    pass
+
+
+class _DoccBranchNode(g.FixedKeyDictNode, _DoccNode):
+    pass
+
+
+def _blank_to_graphtage(blank: Node) -> _DoccNullNode:
+    assert isinstance(blank, BlankNode)
+    return _DoccNullNode().with_docc(blank)
+
+
+def _python_to_graphtage(node: Node) -> _DoccBranchNode:
+    assert isinstance(node, python.PythonNode)
+
+    values = {}
+
+    for field in dataclasses.fields(node):
+        assert field.name not in values
+        value = getattr(node, field.name)
+
+        new_node: g.TreeNode
+        if field.type == Node:
+            # Value is a single child.
+            if not isinstance(value, Node):
+                raise TypeError("child not Node")
+            new_node = _docc_to_graphtage(value)
+        elif field.type == Sequence[Node]:
+            # Value is a list of children.
+            if not all(isinstance(x, Node) for x in value):
+                raise TypeError("child not Node")
+
+            new_node = g.ListNode(
+                _docc_to_graphtage(x) for x in value
+            )
+        else:
+            # Not a child.
+            new_node = g.LeafNode(value)
+
+        values[field.name] = new_node
+
+    return _DoccBranchNode.from_dict({
+        g.LeafNode(k): v for k, v in values.items()
+    }).with_docc(node)
+
+
+def _name_to_graphtage(name: Node) -> _DoccBranchNode:
+    assert isinstance(name, python.Name)
+
+    name_node = g.StringNode(name.name)
+    if name.full_name is None:
+        full_name = g.NullNode()
+    else:
+        full_name = g.StringNode(name.full_name)
+
+    return _DoccBranchNode.from_dict(
+        {
+            g.LeafNode("name"): name_node,
+            g.LeafNode("full_name"): full_name,
+        }
+    ).with_docc(name)
+
+
+def _mistletoe_to_graphtage(node: Node) -> gt.TreeNode:
+    assert isinstance(node, mistletoe.MarkdownNode)
+    logging.warning("markdown diff not yet implemented")
+    return g.NullNode()
+
+
+def _verbatim_to_graphtage(node: Node) -> gt.TreeNode:
+    assert isinstance(node, verbatim.Verbatim)
+    logging.warning("verbatim diff not yet implemented")
+    return g.NullNode()
+
+
+def _definition_to_graphtage(defn: Node) -> _DoccBranchNode:
+    assert isinstance(defn, Definition)
+
+    child = _docc_to_graphtage(defn.child)
+    identifier = g.StringNode(defn.identifier)
+
+    if defn.specifier is None:
+        specifier = g.NullNode()
+    else:
+        specifier = g.IntegerNode(defn.specifier)
+
+    return _DoccBranchNode.from_dict({
+        g.LeafNode("identifier"): identifier,
+        g.LeafNode("child"): child,
+        g.LeafNode("specifier"): specifier,
+    }).with_docc(defn)
+
+
+def _reference_to_graphtage(defn: Node) -> _DoccBranchNode:
+    assert isinstance(defn, Reference)
+
+    child = _docc_to_graphtage(defn.child)
+    identifier = g.StringNode(defn.identifier)
+
+    return _DoccBranchNode.from_dict({
+        g.LeafNode("identifier"): identifier,
+        g.LeafNode("child"): child,
+    }).with_docc(defn)
+
+
+_CONVERT: Final[Dict[Type[Node], Callable[[Node], gt.TreeNode]]] = {
+    BlankNode: _blank_to_graphtage,
+
+    Definition: _definition_to_graphtage,
+    Reference: _reference_to_graphtage,
+
+    python.Module: _python_to_graphtage,
+    python.Class: _python_to_graphtage,
+    python.Function: _python_to_graphtage,
+    python.Type: _python_to_graphtage,
+    python.List: _python_to_graphtage,
+    python.Tuple: _python_to_graphtage,
+    python.Parameter: _python_to_graphtage,
+    python.Attribute: _python_to_graphtage,
+    python.Name: _name_to_graphtage,
+    python.Access: _python_to_graphtage,
+
+    mistletoe.MarkdownNode: _mistletoe_to_graphtage,
+
+    verbatim.Verbatim: _verbatim_to_graphtage,
+}
+
+
+def _docc_to_graphtage(node: Node) -> gt.TreeNode:
+    return _CONVERT[type(node)](node)
 
 
 def render_diff(
