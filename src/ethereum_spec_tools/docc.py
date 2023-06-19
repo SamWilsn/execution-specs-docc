@@ -19,6 +19,7 @@ Plugins for docc specific to the Ethereum execution specification.
 
 import logging
 from collections import defaultdict
+from inspect import getmembers, isfunction, ismethod
 from itertools import tee
 from pathlib import PurePath
 from typing import (
@@ -35,9 +36,11 @@ from typing import (
     TypeVar,
 )
 
+import zss
 from docc.context import Context
 from docc.discover import Discover, T
 from docc.document import BlankNode, Document, Node, Visit, Visitor
+from docc.languages import verbatim
 from docc.plugins import html
 from docc.plugins.cst import PythonBuilder
 from docc.plugins.references import Definition, Reference
@@ -390,6 +393,136 @@ class _FixIndexVisitor(Visitor):
         if isinstance(node, DiffNode):
             popped = self.diffs.pop()
             assert popped == node
+
+
+class MinimizeDiffsTransform(Transform):
+    def __init__(self, settings: PluginSettings) -> None:
+        pass
+
+    def transform(self, context: Context) -> None:
+        """
+        Apply the transformation to the given document.
+        """
+        context[Document].root.visit(_MinimizeDiffsVisitor())
+
+
+class _CountChildrenVisitor(Visitor):
+    stack: Final[List[Node]]
+    nodes: Final[Dict[int, int]]
+
+    def __init__(self, nodes: Optional[Dict[int, int]] = None) -> None:
+        self.stack = []
+        self.nodes = dict() if nodes is None else nodes
+
+    def enter(self, node: Node) -> Visit:
+        if id(node) in self.nodes:
+            logging.warning("node `%s` appears in tree twice", node)
+            return Visit.SkipChildren
+
+        self.nodes[id(node)] = 1
+        self.stack.append(node)
+        return Visit.TraverseChildren
+
+    def exit(self, node: Node) -> None:
+        popped = self.stack.pop()
+        assert popped == node
+
+        if self.stack:
+            self.nodes[id(self.stack[-1])] += self.nodes[id(node)]
+
+
+def _node_eq(a: Node, b: Node) -> bool:
+    if a is b:
+        return True
+
+    if not isinstance(a, type(b)) or not isinstance(b, type(a)):
+        return False
+
+    a_members = {k: v for k, v in getmembers(a) if not k.startswith("_")}
+    b_members = {k: v for k, v in getmembers(b) if not k.startswith("_")}
+
+    for k, a_v in a_members.items():
+        b_v = b_members[k]
+
+        del b_members[k]
+
+        if isfunction(a_v) or ismethod(a_v):
+            continue
+
+        if a_v == b_v:
+            continue
+
+        if isinstance(a_v, Node) and isinstance(b_v, Node):
+            continue
+
+        if isinstance(a_v, (list, tuple)) and isinstance(b_v, (list, tuple)):
+            if all(isinstance(x, Node) for x in list(a_v) + list(b_v)):
+                continue
+
+        return False
+
+    return not b_members
+
+
+class _MinimizeDiffsVisitor(Visitor):
+    def enter(self, node: Node) -> Visit:
+        if not isinstance(node, DiffNode):
+            return Visit.TraverseChildren
+
+        before = node.before
+        after = node.after
+
+        if before:
+            # TODO: Probably should make this work:
+            assert isinstance(before, BeforeNode)
+            before = before.child
+
+        if after:
+            # TODO: Probably should make this work:
+            assert isinstance(after, AfterNode)
+            after = after.child
+
+        weights: Dict[int, int] = dict()
+
+        before.visit(_CountChildrenVisitor(weights))
+        after.visit(_CountChildrenVisitor(weights))
+
+        print(
+            node.before_name,
+            "has",
+            weights[id(before)],
+        )
+
+        print(
+            node.after_name,
+            "has",
+            weights[id(after)],
+        )
+
+        def update_cost(a: Node, b: Node) -> int:
+            if _node_eq(a, b):
+                return 0
+            return weights[id(a)] + weights[id(b)] + 2
+
+        _, operations = zss.distance(
+            before,
+            after,
+            get_children=lambda n: []
+            if isinstance(n, verbatim.Verbatim)
+            else tuple(n.children),
+            insert_cost=lambda n: weights[id(n)],
+            remove_cost=lambda n: weights[id(n)],
+            update_cost=update_cost,
+            return_operations=True,
+        )
+
+        for operation in operations:
+            print(operation)
+
+        return Visit.SkipChildren
+
+    def exit(self, node: Node) -> None:
+        pass
 
 
 def render_diff(
