@@ -11,6 +11,9 @@
         <script defer src="../../../../static/fuse.min.js"></script>
         <script defer src="../../../../static/search.js"></script>
         
+        
+        <link href="../../../../static/custom.css" rel="stylesheet">
+        
     </head>
     <body>
         
@@ -32,7 +35,7 @@
     <div class="members col">
         <div class="width-limiter">
             
-            <h2><del class="diff-before" style="display: contents;"><span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas">ethereum.constantinople.vm.gas</span></del><ins class="diff-after" style="display: contents;"><span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas">ethereum.istanbul.vm.gas</span></ins></h2>
+            <h2><del class="diff-before"><span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas">ethereum.constantinople.vm.gas</span></del><ins class="diff-after"><span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas">ethereum.istanbul.vm.gas</span></ins></h2>
             
 
             
@@ -76,7 +79,7 @@
         <span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_SLOAD">GAS_SLOAD</span>
         
     </h3>
-    <table class="verbatim"><tbody><tr><th>26</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_SLOAD</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi"><del class="diff-before" style="display: contents;">200</del><ins class="diff-after" style="display: contents;">800</ins></span></span>)</span></span></pre></td></tr></tbody></table></section>
+    <table class="verbatim"><tbody class="diff"><tr class="diff-before"><th>26</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_SLOAD</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi">200</span></span>)</span></span></pre></td></tr><tr class="diff-after"><th>26</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_SLOAD</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi">800</span></span>)</span></span></pre></td></tr></tbody></table></section>
             
             <section id="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_STORAGE_SET:0">
     <h3>
@@ -196,7 +199,7 @@
         <span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_BALANCE">GAS_BALANCE</span>
         
     </h3>
-    <table class="verbatim"><tbody><tr><th>41</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_BALANCE</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi"><del class="diff-before" style="display: contents;">400</del><ins class="diff-after" style="display: contents;">700</ins></span></span>)</span></span></pre></td></tr></tbody></table></section>
+    <table class="verbatim"><tbody class="diff"><tr class="diff-before"><th>41</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_BALANCE</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi">400</span></span>)</span></span></pre></td></tr><tr class="diff-after"><th>41</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_BALANCE</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi">700</span></span>)</span></span></pre></td></tr></tbody></table></section>
             
             <section id="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_LOG:0">
     <h3>
@@ -372,9 +375,9 @@
         <span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_CODE_HASH">GAS_CODE_HASH</span>
         
     </h3>
-    <table class="verbatim"><tbody><tr><th>63</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_CODE_HASH</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi"><del class="diff-before" style="display: contents;">400</del><ins class="diff-after" style="display: contents;">700</ins></span></span>)</span></span></pre></td></tr></tbody></table></section>
+    <table class="verbatim"><tbody class="diff"><tr class="diff-before"><th>63</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_CODE_HASH</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi">400</span></span>)</span></span></pre></td></tr><tr class="diff-after"><th>63</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_CODE_HASH</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi">700</span></span>)</span></span></pre></td></tr></tbody></table></section>
             
-            <ins class="diff-after" style="display: contents;"><section id="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_FAST_STEP:0">
+            <ins class="diff-after"><section id="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_FAST_STEP:0">
     <h3>
         
         <span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_FAST_STEP">GAS_FAST_STEP</span>
@@ -382,7 +385,7 @@
     </h3>
     <table class="verbatim"><tbody><tr><th>64</th><td><pre><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">GAS_FAST_STEP</span></span> = <span class="hi-call hi"><span class="hi-name hi">Uint</span>(<span class="hi-arg hi"><span class="hi-integer hi">5</span></span>)</span></span></pre></td></tr></tbody></table></section></ins>
             
-            <ins class="diff-after" style="display: contents;"><section id="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_BLAKE2_PER_ROUND:0">
+            <ins class="diff-after"><section id="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_BLAKE2_PER_ROUND:0">
     <h3>
         
         <span title="diff(ethereum.constantinople,ethereum.istanbul).vm.gas.GAS_BLAKE2_PER_ROUND">GAS_BLAKE2_PER_ROUND</span>

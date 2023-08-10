@@ -11,6 +11,9 @@
         <script defer src="../../../../static/fuse.min.js"></script>
         <script defer src="../../../../static/search.js"></script>
         
+        
+        <link href="../../../../static/custom.css" rel="stylesheet">
+        
     </head>
     <body>
         
@@ -32,7 +35,7 @@
     <div class="members col">
         <div class="width-limiter">
             
-            <h2><del class="diff-before" style="display: contents;"><span title="diff(ethereum.homestead,ethereum.dao_fork).vm">ethereum.homestead.vm</span></del><ins class="diff-after" style="display: contents;"><span title="diff(ethereum.homestead,ethereum.dao_fork).vm">ethereum.dao_fork.vm</span></ins></h2>
+            <h2><del class="diff-before"><span title="diff(ethereum.homestead,ethereum.dao_fork).vm">ethereum.homestead.vm</span></del><ins class="diff-after"><span title="diff(ethereum.homestead,ethereum.dao_fork).vm">ethereum.dao_fork.vm</span></ins></h2>
             
 
             
@@ -692,7 +695,7 @@
     </h3>
     <table class="verbatim"><tbody><tr><th>81</th><td><pre>    <span class="hi-ann-assign hi"><span class="hi-name hi">has_erred</span>: <span class="hi-annotation hi"><span class="hi-name hi">bool</span></span></span></pre></td></tr></tbody></table></section>
     
-    <ins class="diff-after" style="display: contents;"><section id="diff(ethereum.homestead,ethereum.dao_fork).vm.Evm.children:0">
+    <ins class="diff-after"><section id="diff(ethereum.homestead,ethereum.dao_fork).vm.Evm.children:0">
     <h3>
         
         <span title="diff(ethereum.homestead,ethereum.dao_fork).vm.Evm.children">children</span>
@@ -702,7 +705,7 @@
     
 </section>
             
-            <del class="diff-before" style="display: contents;"><section id="diff(ethereum.homestead,ethereum.dao_fork).vm.incorporate_child_on_success:0">
+            <del class="diff-before"><section id="diff(ethereum.homestead,ethereum.dao_fork).vm.incorporate_child_on_success:0">
     <h3><span title="diff(ethereum.homestead,ethereum.dao_fork).vm.incorporate_child_on_success">incorporate_child_on_success</span></h3>
     
     <div class="docstring">
@@ -719,7 +722,7 @@ The child evm to incorporate.</p></div>
         </summary><table class="verbatim"><tbody><tr><th>85</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Incorporate the state of a successful `child_evm` into the parent `evm`.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>87</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>88</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>89</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>90</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    evm :</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The parent `EVM`.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    child_evm :</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>93</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The child evm to incorporate.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>94</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>95</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">gas_left</span></span> <span class="hi-add-assign hi">+=</span> <span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">gas_left</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>96</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">logs</span></span> <span class="hi-add-assign hi">+=</span> <span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">logs</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>97</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-aug-assign hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">refund_counter</span></span> <span class="hi-add-assign hi">+=</span> <span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">refund_counter</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>98</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">accounts_to_delete</span></span><span class="hi-dot hi">.</span><span class="hi-name hi">update</span></span>(<span class="hi-arg hi"><span class="hi-attribute hi"><span class="hi-name hi">child_evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">accounts_to_delete</span></span></span>)</span></span></span></span></pre></td></tr></tbody></table></details>
 </section></del>
             
-            <del class="diff-before" style="display: contents;"><section id="diff(ethereum.homestead,ethereum.dao_fork).vm.incorporate_child_on_error:0">
+            <del class="diff-before"><section id="diff(ethereum.homestead,ethereum.dao_fork).vm.incorporate_child_on_error:0">
     <h3><span title="diff(ethereum.homestead,ethereum.dao_fork).vm.incorporate_child_on_error">incorporate_child_on_error</span></h3>
     
     <div class="docstring">
