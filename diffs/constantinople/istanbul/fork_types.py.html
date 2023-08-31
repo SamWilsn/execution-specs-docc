@@ -17,8 +17,9 @@
         
     </head>
     <body>
-        
-        <div id="search" role="search" class="row">
+        <div class="container">
+            
+            <div id="search" role="search" class="row">
     <div class="col-12 col-3-md col-2-lg"></div>
     <div class="col">
         <div class="search-bar width-limiter">
@@ -30,30 +31,31 @@
         </div>
     </div>
 </div>
-        
-        
-        <div class="row breadcrumbs-row">
-            <div class="col-12 col-3-md col-2-lg"></div>
-            <nav aria-label="breadcrumbs" class="breadcrumbs col">
-                <ul>
-                    
-                    <li><a href="../../../index.html">.</a></li>
-                    
-                    <li><a href="../../index.html">diffs</a></li>
-                    
-                    <li><a href="../index.html">constantinople</a></li>
-                    
-                    <li><a href="index.html">istanbul</a></li>
-                    
+            
+            
+            <div class="row breadcrumbs-row">
+                <div class="col-12 col-3-md col-2-lg"></div>
+                <nav aria-label="breadcrumbs" class="breadcrumbs">
+                    <ul>
+                        
+                        <li><a href="../../../index.html">.</a></li>
+                        
+                        <li><a href="../../index.html">diffs</a></li>
+                        
+                        <li><a href="../index.html">constantinople</a></li>
+                        
+                        <li><a href="index.html">istanbul</a></li>
+                        
 
-                    <li>
-                        <span aria-current="page">fork_types.py</span>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <span aria-current="page">fork_types.py</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
         </div>
-        
-        <main id="main-content">
+        <main class="container" id="main-content">
         <section class="module row reverse" id="diff(ethereum.constantinople,ethereum.istanbul).fork_types:0">
     <div class="members col">
         <div class="width-limiter">
@@ -394,11 +396,13 @@
 encoded with providing a storage root.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="diff(ethereum.constantinople,ethereum.istanbul).fork_types.encode_account">encode_account</span>(<span title="diff(ethereum.constantinople,ethereum.istanbul).fork_types.encode_account.<locals&gt;.raw_account_data">raw_account_data</span>: <span><a href="#diff(ethereum.constantinople,ethereum.istanbul).fork_types.Account:0"><span title="diff(ethereum.constantinople,ethereum.istanbul).fork_types.Account">Account</span></a></span>, <span title="diff(ethereum.constantinople,ethereum.istanbul).fork_types.encode_account.<locals&gt;.storage_root">storage_root</span>: <span><span title="ethereum.base_types.Bytes">Bytes</span></span>) -&gt; <span><span title="ethereum.base_types.Bytes">Bytes</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>81</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>82</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Encode `Account` dataclass.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>83</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>84</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Storage is not stored in the `Account` dataclass, so `Accounts` cannot be</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>85</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    encoded with providing a storage root.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>87</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">rlp</span><span class="hi-dot hi">.</span><span class="hi-name hi">encode</span></span>(</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>88</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi">        <span class="hi-arg hi">(</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>89</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi">            <span class="hi-tuple hi"><span class="hi-left-paren hi"></span><span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi">.</span><span class="hi-name hi">nonce</span></span><span class="hi-comma hi">,</span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>90</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi">            <span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi">.</span><span class="hi-name hi">balance</span></span><span class="hi-comma hi">,</span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi">            <span class="hi-element hi"><span class="hi-name hi">storage_root</span><span class="hi-comma hi">,</span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi">            <span class="hi-element hi"><span class="hi-call hi"><span class="hi-name hi">keccak256</span>(<span class="hi-arg hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi">.</span><span class="hi-name hi">code</span></span></span>)</span><span class="hi-comma hi">,</span></span><span class="hi-right-paren hi"></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>93</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-right-paren hi">        )</span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>94</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi">    )</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="diff(ethereum.constantinople,ethereum.istanbul).fork_types.encode_account">encode_account</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="diff(ethereum.constantinople,ethereum.istanbul).fork_types.encode_account.<locals&gt;.raw_account_data">raw_account_data</span></span>: <span><span class="hi-name"><a href="#diff(ethereum.constantinople,ethereum.istanbul).fork_types.Account:0"><span title="diff(ethereum.constantinople,ethereum.istanbul).fork_types.Account">Account</span></a></span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="diff(ethereum.constantinople,ethereum.istanbul).fork_types.encode_account.<locals&gt;.storage_root">storage_root</span></span>: <span><span class="hi-name"><span title="ethereum.base_types.Bytes">Bytes</span></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="ethereum.base_types.Bytes">Bytes</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>81</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>82</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Encode `Account` dataclass.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>83</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>84</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Storage is not stored in the `Account` dataclass, so `Accounts` cannot be</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>85</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    encoded with providing a storage root.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>87</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">rlp</span><span class="hi-dot hi">.</span><span class="hi-name hi">encode</span></span>(</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>88</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi">        <span class="hi-arg hi">(</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>89</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi">            <span class="hi-tuple hi"><span class="hi-left-paren hi"></span><span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi">.</span><span class="hi-name hi">nonce</span></span><span class="hi-comma hi">,</span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>90</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi">            <span class="hi-element hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi">.</span><span class="hi-name hi">balance</span></span><span class="hi-comma hi">,</span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi">            <span class="hi-element hi"><span class="hi-name hi">storage_root</span><span class="hi-comma hi">,</span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi">            <span class="hi-element hi"><span class="hi-call hi"><span class="hi-name hi">keccak256</span>(<span class="hi-arg hi"><span class="hi-attribute hi"><span class="hi-name hi">raw_account_data</span><span class="hi-dot hi">.</span><span class="hi-name hi">code</span></span></span>)</span><span class="hi-comma hi">,</span></span><span class="hi-right-paren hi"></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>93</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi"><span class="hi-arg hi"><span class="hi-tuple hi"><span class="hi-right-paren hi">        )</span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>94</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi"><span class="hi-call hi">    )</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
             
             <section class="class" id="diff(ethereum.constantinople,ethereum.istanbul).fork_types.Header:0">

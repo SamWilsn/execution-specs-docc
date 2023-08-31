@@ -17,8 +17,9 @@
         
     </head>
     <body>
-        
-        <div id="search" role="search" class="row">
+        <div class="container">
+            
+            <div id="search" role="search" class="row">
     <div class="col-12 col-3-md col-2-lg"></div>
     <div class="col">
         <div class="search-bar width-limiter">
@@ -30,28 +31,29 @@
         </div>
     </div>
 </div>
-        
-        
-        <div class="row breadcrumbs-row">
-            <div class="col-12 col-3-md col-2-lg"></div>
-            <nav aria-label="breadcrumbs" class="breadcrumbs col">
-                <ul>
-                    
-                    <li><a href="../../index.html">.</a></li>
-                    
-                    <li><a href="../index.html">src</a></li>
-                    
-                    <li><a href="index.html">ethereum</a></li>
-                    
+            
+            
+            <div class="row breadcrumbs-row">
+                <div class="col-12 col-3-md col-2-lg"></div>
+                <nav aria-label="breadcrumbs" class="breadcrumbs">
+                    <ul>
+                        
+                        <li><a href="../../index.html">.</a></li>
+                        
+                        <li><a href="../index.html">src</a></li>
+                        
+                        <li><a href="index.html">ethereum</a></li>
+                        
 
-                    <li>
-                        <span aria-current="page">fork_criteria.py</span>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <span aria-current="page">fork_criteria.py</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
         </div>
-        
-        <main id="main-content">
+        <main class="container" id="main-content">
         <section class="module row reverse" id="ethereum.fork_criteria:0">
     <div class="members col">
         <div class="width-limiter">
@@ -203,11 +205,13 @@
         <div class="markdown"><p>Equality for fork criteria.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ForkCriteria.__eq__">__eq__</span>(<span title="ethereum.fork_criteria.ForkCriteria.__eq__.<locals&gt;.self">self</span>, <span title="ethereum.fork_criteria.ForkCriteria.__eq__.<locals&gt;.other">other</span>: <span><span title="builtins.object">object</span></span>) -&gt; <span><span title="builtins.bool">bool</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>35</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>36</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Equality for fork criteria.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>37</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>38</th><td><pre><span class="hi-indented-block hi">        <span class="hi-if hi">if <span class="hi-call hi"><span class="hi-name hi">isinstance</span>(<span class="hi-arg hi"><span class="hi-name hi">other</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a></span>)</span>:</span></span></pre></td></tr></tbody><tbody><tr><th>39</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi">            <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-comparison hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span><span class="hi-comparison-target hi"> <span class="hi-equal hi">==</span> <span class="hi-attribute hi"><span class="hi-name hi">other</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>40</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-name hi">NotImplemented</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__eq__">__eq__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__eq__.<locals&gt;.self">self</span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__eq__.<locals&gt;.other">other</span></span>: <span><span class="hi-name"><span title="builtins.object">object</span></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.bool">bool</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>35</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>36</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Equality for fork criteria.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>37</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>38</th><td><pre><span class="hi-indented-block hi">        <span class="hi-if hi">if <span class="hi-call hi"><span class="hi-name hi">isinstance</span>(<span class="hi-arg hi"><span class="hi-name hi">other</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a></span>)</span>:</span></span></pre></td></tr></tbody><tbody><tr><th>39</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi">            <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-comparison hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span><span class="hi-comparison-target hi"> <span class="hi-equal hi">==</span> <span class="hi-attribute hi"><span class="hi-name hi">other</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>40</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-name hi">NotImplemented</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.ForkCriteria.__lt__:0">
@@ -218,11 +222,13 @@
 forks and scheduled forks are before unscheduled forks.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ForkCriteria.__lt__">__lt__</span>(<span title="ethereum.fork_criteria.ForkCriteria.__lt__.<locals&gt;.self">self</span>, <span title="ethereum.fork_criteria.ForkCriteria.__lt__.<locals&gt;.other">other</span>: <span><span title="builtins.object">object</span></span>) -&gt; <span><span title="builtins.bool">bool</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>43</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>44</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Ordering for fork criteria. Block number forks are before timestamp</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>45</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        forks and scheduled forks are before unscheduled forks.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>46</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>47</th><td><pre><span class="hi-indented-block hi">        <span class="hi-if hi">if <span class="hi-call hi"><span class="hi-name hi">isinstance</span>(<span class="hi-arg hi"><span class="hi-name hi">other</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a></span>)</span>:</span></span></pre></td></tr></tbody><tbody><tr><th>48</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi">            <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-comparison hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span><span class="hi-comparison-target hi"> <span class="hi-less-than hi">&lt;</span> <span class="hi-attribute hi"><span class="hi-name hi">other</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>49</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-name hi">NotImplemented</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__lt__">__lt__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__lt__.<locals&gt;.self">self</span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__lt__.<locals&gt;.other">other</span></span>: <span><span class="hi-name"><span title="builtins.object">object</span></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.bool">bool</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>43</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>44</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Ordering for fork criteria. Block number forks are before timestamp</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>45</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        forks and scheduled forks are before unscheduled forks.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>46</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>47</th><td><pre><span class="hi-indented-block hi">        <span class="hi-if hi">if <span class="hi-call hi"><span class="hi-name hi">isinstance</span>(<span class="hi-arg hi"><span class="hi-name hi">other</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a></span>)</span>:</span></span></pre></td></tr></tbody><tbody><tr><th>48</th><td><pre><span class="hi-indented-block hi"><span class="hi-if hi">            <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-comparison hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span><span class="hi-comparison-target hi"> <span class="hi-less-than hi">&lt;</span> <span class="hi-attribute hi"><span class="hi-name hi">other</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>49</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-name hi">NotImplemented</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.ForkCriteria.__hash__:0">
@@ -232,11 +238,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p><code>ForkCriteria</code> is hashable, so it can be stored in dictionaries.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ForkCriteria.__hash__">__hash__</span>(<span title="ethereum.fork_criteria.ForkCriteria.__hash__.<locals&gt;.self">self</span>) -&gt; <span><span title="builtins.int">int</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>52</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>53</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        `ForkCriteria` is hashable, so it can be stored in dictionaries.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>54</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>55</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-call hi"><span class="hi-name hi">hash</span>(<span class="hi-arg hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span>)</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__hash__">__hash__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__hash__.<locals&gt;.self">self</span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.int">int</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>52</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>53</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        `ForkCriteria` is hashable, so it can be stored in dictionaries.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>54</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>55</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-call hi"><span class="hi-name hi">hash</span>(<span class="hi-arg hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span>)</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.ForkCriteria.check:0">
@@ -246,11 +254,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p>Check whether fork criteria have been met.</p></div>
     </div>
     
-    <table class="verbatim"><tbody><tr><th>57</th><td><pre>    @<span class="hi-name hi">abstractmethod</span></pre></td></tr></tbody></table>
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ForkCriteria.check">check</span>(<span title="ethereum.fork_criteria.ForkCriteria.check.<locals&gt;.self">self</span>, <span title="ethereum.fork_criteria.ForkCriteria.check.<locals&gt;.block_number">block_number</span>: <span><span title="builtins.int">int</span></span>, <span title="ethereum.fork_criteria.ForkCriteria.check.<locals&gt;.timestamp">timestamp</span>: <span><span title="builtins.int">int</span></span>) -&gt; <span><span title="builtins.bool">bool</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>59</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>60</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Check whether fork criteria have been met.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>61</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>62</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-ellipsis hi">...</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        <table class="verbatim"><tbody><tr><th>57</th><td><pre>    @<span class="hi-name hi">abstractmethod</span></pre></td></tr></tbody></table>
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.check">check</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.check.<locals&gt;.self">self</span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.check.<locals&gt;.block_number">block_number</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.check.<locals&gt;.timestamp">timestamp</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.bool">bool</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>59</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>60</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Check whether fork criteria have been met.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>61</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>62</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-ellipsis hi">...</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.ForkCriteria.__repr__:0">
@@ -260,11 +270,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p>String representation of this object.</p></div>
     </div>
     
-    <table class="verbatim"><tbody><tr><th>64</th><td><pre>    @<span class="hi-name hi">abstractmethod</span></pre></td></tr></tbody></table>
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ForkCriteria.__repr__">__repr__</span>(<span title="ethereum.fork_criteria.ForkCriteria.__repr__.<locals&gt;.self">self</span>) -&gt; <span><span title="builtins.str">str</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>66</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>67</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        String representation of this object.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>68</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>69</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-raise hi">raise <span class="hi-call hi"><span class="hi-name hi">NotImplementedError</span>()</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        <table class="verbatim"><tbody><tr><th>64</th><td><pre>    @<span class="hi-name hi">abstractmethod</span></pre></td></tr></tbody></table>
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__repr__">__repr__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ForkCriteria.__repr__.<locals&gt;.self">self</span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.str">str</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>66</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>67</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        String representation of this object.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>68</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>69</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-raise hi">raise <span class="hi-call hi"><span class="hi-name hi">NotImplementedError</span>()</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
 </section>
@@ -336,11 +348,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
     <section id="ethereum.fork_criteria.ByBlockNumber.__init__:0">
     <h3><span title="ethereum.fork_criteria.ByBlockNumber.__init__">__init__</span></h3>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ByBlockNumber.__init__">__init__</span>(<span title="ethereum.fork_criteria.ByBlockNumber.__init__.<locals&gt;.self">self</span>, <span title="ethereum.fork_criteria.ByBlockNumber.__init__.<locals&gt;.block_number">block_number</span>: <span><span title="builtins.int">int</span></span>):</code>
-        </summary><table class="verbatim"><tbody><tr><th>80</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span> = (<span class="hi-tuple hi"><span class="hi-left-paren hi"></span><span class="hi-element hi"><span class="hi-attribute hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a><span class="hi-dot hi">.</span><span class="hi-name hi">BLOCK_NUMBER</span></span><span class="hi-comma hi">,</span></span> <span class="hi-element hi"><span class="hi-name hi">block_number</span></span><span class="hi-right-paren hi">)</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>81</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">block_number</span></span></span> = <span class="hi-name hi">block_number</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.__init__">__init__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.__init__.<locals&gt;.self">self</span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.__init__.<locals&gt;.block_number">block_number</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>​<span class="nobr">):</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>80</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span> = (<span class="hi-tuple hi"><span class="hi-left-paren hi"></span><span class="hi-element hi"><span class="hi-attribute hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a><span class="hi-dot hi">.</span><span class="hi-name hi">BLOCK_NUMBER</span></span><span class="hi-comma hi">,</span></span> <span class="hi-element hi"><span class="hi-name hi">block_number</span></span><span class="hi-right-paren hi">)</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>81</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">block_number</span></span></span> = <span class="hi-name hi">block_number</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.ByBlockNumber.check:0">
@@ -350,11 +364,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p>Check whether the block number has been reached.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ByBlockNumber.check">check</span>(<span title="ethereum.fork_criteria.ByBlockNumber.check.<locals&gt;.self">self</span>, <span title="ethereum.fork_criteria.ByBlockNumber.check.<locals&gt;.block_number">block_number</span>: <span><span title="builtins.int">int</span></span>, <span title="ethereum.fork_criteria.ByBlockNumber.check.<locals&gt;.timestamp">timestamp</span>: <span><span title="builtins.int">int</span></span>) -&gt; <span><span title="builtins.bool">bool</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>84</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>85</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Check whether the block number has been reached.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>87</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-comparison hi"><span class="hi-name hi">block_number</span><span class="hi-comparison-target hi"> <span class="hi-greater-than-equal hi">&gt;=</span> <span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">block_number</span></span></span></span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.check">check</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.check.<locals&gt;.self">self</span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.check.<locals&gt;.block_number">block_number</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.check.<locals&gt;.timestamp">timestamp</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.bool">bool</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>84</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>85</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Check whether the block number has been reached.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>86</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>87</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-comparison hi"><span class="hi-name hi">block_number</span><span class="hi-comparison-target hi"> <span class="hi-greater-than-equal hi">&gt;=</span> <span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">block_number</span></span></span></span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.ByBlockNumber.__repr__:0">
@@ -364,11 +380,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p>String representation of this object.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ByBlockNumber.__repr__">__repr__</span>(<span title="ethereum.fork_criteria.ByBlockNumber.__repr__.<locals&gt;.self">self</span>) -&gt; <span><span title="builtins.str">str</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>90</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        String representation of this object.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>93</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-formatted-string hi">f"<span class="hi-formatted-string-text hi">ByBlockNumber(</span><span class="hi-formatted-string-expression hi">{<span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">block_number</span></span>}</span><span class="hi-formatted-string-text hi">)</span>"</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.__repr__">__repr__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByBlockNumber.__repr__.<locals&gt;.self">self</span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.str">str</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>90</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>91</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        String representation of this object.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>92</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>93</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-formatted-string hi">f"<span class="hi-formatted-string-text hi">ByBlockNumber(</span><span class="hi-formatted-string-expression hi">{<span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">block_number</span></span>}</span><span class="hi-formatted-string-text hi">)</span>"</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
 </section>
@@ -440,11 +458,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
     <section id="ethereum.fork_criteria.ByTimestamp.__init__:0">
     <h3><span title="ethereum.fork_criteria.ByTimestamp.__init__">__init__</span></h3>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ByTimestamp.__init__">__init__</span>(<span title="ethereum.fork_criteria.ByTimestamp.__init__.<locals&gt;.self">self</span>, <span title="ethereum.fork_criteria.ByTimestamp.__init__.<locals&gt;.timestamp">timestamp</span>: <span><span title="builtins.int">int</span></span>):</code>
-        </summary><table class="verbatim"><tbody><tr><th>104</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span> = (<span class="hi-tuple hi"><span class="hi-left-paren hi"></span><span class="hi-element hi"><span class="hi-attribute hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a><span class="hi-dot hi">.</span><span class="hi-name hi">TIMESTAMP</span></span><span class="hi-comma hi">,</span></span> <span class="hi-element hi"><span class="hi-name hi">timestamp</span></span><span class="hi-right-paren hi">)</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>105</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">timestamp</span></span></span> = <span class="hi-name hi">timestamp</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.__init__">__init__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.__init__.<locals&gt;.self">self</span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.__init__.<locals&gt;.timestamp">timestamp</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>​<span class="nobr">):</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>104</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span> = (<span class="hi-tuple hi"><span class="hi-left-paren hi"></span><span class="hi-element hi"><span class="hi-attribute hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a><span class="hi-dot hi">.</span><span class="hi-name hi">TIMESTAMP</span></span><span class="hi-comma hi">,</span></span> <span class="hi-element hi"><span class="hi-name hi">timestamp</span></span><span class="hi-right-paren hi">)</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>105</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">timestamp</span></span></span> = <span class="hi-name hi">timestamp</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.ByTimestamp.check:0">
@@ -454,11 +474,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p>Check whether the timestamp has been reached.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ByTimestamp.check">check</span>(<span title="ethereum.fork_criteria.ByTimestamp.check.<locals&gt;.self">self</span>, <span title="ethereum.fork_criteria.ByTimestamp.check.<locals&gt;.block_number">block_number</span>: <span><span title="builtins.int">int</span></span>, <span title="ethereum.fork_criteria.ByTimestamp.check.<locals&gt;.timestamp">timestamp</span>: <span><span title="builtins.int">int</span></span>) -&gt; <span><span title="builtins.bool">bool</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>108</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>109</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Check whether the timestamp has been reached.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>110</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>111</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-comparison hi"><span class="hi-name hi">timestamp</span><span class="hi-comparison-target hi"> <span class="hi-greater-than-equal hi">&gt;=</span> <span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">timestamp</span></span></span></span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.check">check</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.check.<locals&gt;.self">self</span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.check.<locals&gt;.block_number">block_number</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.check.<locals&gt;.timestamp">timestamp</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.bool">bool</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>108</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>109</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Check whether the timestamp has been reached.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>110</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>111</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-comparison hi"><span class="hi-name hi">timestamp</span><span class="hi-comparison-target hi"> <span class="hi-greater-than-equal hi">&gt;=</span> <span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">timestamp</span></span></span></span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.ByTimestamp.__repr__:0">
@@ -468,11 +490,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p>String representation of this object.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.ByTimestamp.__repr__">__repr__</span>(<span title="ethereum.fork_criteria.ByTimestamp.__repr__.<locals&gt;.self">self</span>) -&gt; <span><span title="builtins.str">str</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>114</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>115</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        String representation of this object.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>116</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>117</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-formatted-string hi">f"<span class="hi-formatted-string-text hi">ByTimestamp(</span><span class="hi-formatted-string-expression hi">{<span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">timestamp</span></span>}</span><span class="hi-formatted-string-text hi">)</span>"</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.__repr__">__repr__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.ByTimestamp.__repr__.<locals&gt;.self">self</span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.str">str</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>114</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>115</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        String representation of this object.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>116</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>117</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-formatted-string hi">f"<span class="hi-formatted-string-text hi">ByTimestamp(</span><span class="hi-formatted-string-expression hi">{<span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">timestamp</span></span>}</span><span class="hi-formatted-string-text hi">)</span>"</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
 </section>
@@ -528,11 +552,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
     <section id="ethereum.fork_criteria.Unscheduled.__init__:0">
     <h3><span title="ethereum.fork_criteria.Unscheduled.__init__">__init__</span></h3>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.Unscheduled.__init__">__init__</span>(<span title="ethereum.fork_criteria.Unscheduled.__init__.<locals&gt;.self">self</span>) -&gt; <span><span title="builtins.None">None</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>126</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span> = (<span class="hi-tuple hi"><span class="hi-left-paren hi"></span><span class="hi-element hi"><span class="hi-attribute hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a><span class="hi-dot hi">.</span><span class="hi-name hi">UNSCHEDULED</span></span><span class="hi-comma hi">,</span></span> <span class="hi-element hi"><span class="hi-integer hi">0</span></span><span class="hi-right-paren hi">)</span></span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.Unscheduled.__init__">__init__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.Unscheduled.__init__.<locals&gt;.self">self</span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.None">None</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>126</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">self</span><span class="hi-dot hi">.</span><span class="hi-name hi">_internal</span></span></span> = (<span class="hi-tuple hi"><span class="hi-left-paren hi"></span><span class="hi-element hi"><span class="hi-attribute hi"><a href="#ethereum.fork_criteria.ForkCriteria:0"><span class="hi-name hi">ForkCriteria</span></a><span class="hi-dot hi">.</span><span class="hi-name hi">UNSCHEDULED</span></span><span class="hi-comma hi">,</span></span> <span class="hi-element hi"><span class="hi-integer hi">0</span></span><span class="hi-right-paren hi">)</span></span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.Unscheduled.check:0">
@@ -542,11 +568,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p>Unscheduled forks never occur.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.Unscheduled.check">check</span>(<span title="ethereum.fork_criteria.Unscheduled.check.<locals&gt;.self">self</span>, <span title="ethereum.fork_criteria.Unscheduled.check.<locals&gt;.block_number">block_number</span>: <span><span title="builtins.int">int</span></span>, <span title="ethereum.fork_criteria.Unscheduled.check.<locals&gt;.timestamp">timestamp</span>: <span><span title="builtins.int">int</span></span>) -&gt; <span><span title="builtins.bool">bool</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>129</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>130</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Unscheduled forks never occur.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>131</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>132</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-name hi">False</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.Unscheduled.check">check</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.Unscheduled.check.<locals&gt;.self">self</span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.Unscheduled.check.<locals&gt;.block_number">block_number</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>, ​​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.Unscheduled.check.<locals&gt;.timestamp">timestamp</span></span>: <span><span class="hi-name"><span title="builtins.int">int</span></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.bool">bool</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>129</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>130</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        Unscheduled forks never occur.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>131</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>132</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-name hi">False</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
     <section id="ethereum.fork_criteria.Unscheduled.__repr__:0">
@@ -556,11 +584,13 @@ forks and scheduled forks are before unscheduled forks.</p></div>
         <div class="markdown"><p>String representation of this object.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.fork_criteria.Unscheduled.__repr__">__repr__</span>(<span title="ethereum.fork_criteria.Unscheduled.__repr__.<locals&gt;.self">self</span>) -&gt; <span><span title="builtins.str">str</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>135</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>136</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        String representation of this object.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>137</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>138</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-simple-string hi">"Unscheduled()"</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.fork_criteria.Unscheduled.__repr__">__repr__</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.fork_criteria.Unscheduled.__repr__.<locals&gt;.self">self</span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.str">str</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>135</th><td><pre>        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>136</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        String representation of this object.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>137</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>138</th><td><pre><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-return hi">return <span class="hi-simple-string hi">"Unscheduled()"</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
     
 </section>

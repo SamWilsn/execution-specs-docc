@@ -17,8 +17,9 @@
         
     </head>
     <body>
-        
-        <div id="search" role="search" class="row">
+        <div class="container">
+            
+            <div id="search" role="search" class="row">
     <div class="col-12 col-3-md col-2-lg"></div>
     <div class="col">
         <div class="search-bar width-limiter">
@@ -30,30 +31,31 @@
         </div>
     </div>
 </div>
-        
-        
-        <div class="row breadcrumbs-row">
-            <div class="col-12 col-3-md col-2-lg"></div>
-            <nav aria-label="breadcrumbs" class="breadcrumbs col">
-                <ul>
-                    
-                    <li><a href="../../../index.html">.</a></li>
-                    
-                    <li><a href="../../index.html">diffs</a></li>
-                    
-                    <li><a href="../index.html">dao_fork</a></li>
-                    
-                    <li><a href="index.html">tangerine_whistle</a></li>
-                    
+            
+            
+            <div class="row breadcrumbs-row">
+                <div class="col-12 col-3-md col-2-lg"></div>
+                <nav aria-label="breadcrumbs" class="breadcrumbs">
+                    <ul>
+                        
+                        <li><a href="../../../index.html">.</a></li>
+                        
+                        <li><a href="../../index.html">diffs</a></li>
+                        
+                        <li><a href="../index.html">dao_fork</a></li>
+                        
+                        <li><a href="index.html">tangerine_whistle</a></li>
+                        
 
-                    <li>
-                        <span aria-current="page">dao.py</span>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <span aria-current="page">dao.py</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
         </div>
-        
-        <main id="main-content">
+        <main class="container" id="main-content">
         <del class="diff-before"><section class="module row reverse" id="diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao:0">
     <div class="members col">
         <div class="width-limiter">
@@ -97,11 +99,13 @@ collection of accounts (The Dao and all its children) to a recovery contract.</p
 State before applying the DAO Fork.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao.apply_dao">apply_dao</span>(<span title="diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao.apply_dao.<locals&gt;.state">state</span>: <span><a href="state.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).state.State:0"><span title="diff(ethereum.dao_fork,ethereum.tangerine_whistle).state.State">State</span></a></span>) -&gt; <span><span title="builtins.None">None</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>147</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>148</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Apply the dao fork to the state.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>149</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>150</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>151</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>152</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    state :</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>153</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        State before applying the DAO Fork.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>154</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>155</th><td><pre><span class="hi-indented-block hi">    <span class="hi-for hi">for <span class="hi-name hi">address</span> in <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao.DAO_ACCOUNTS:0"><span class="hi-name hi">DAO_ACCOUNTS</span></a>:</span></span></pre></td></tr></tbody><tbody><tr><th>156</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi">        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">balance</span></span> = <span class="hi-attribute hi"><span class="hi-call hi"><a href="state.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).state.get_account:0"><span class="hi-name hi">get_account</span></a>(<span class="hi-arg hi"><span class="hi-name hi">state</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><span class="hi-name hi">address</span></span>)</span><span class="hi-dot hi">.</span><span class="hi-name hi">balance</span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>157</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi"><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><a href="state.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).state.move_ether:0"><span class="hi-name hi">move_ether</span></a>(<span class="hi-arg hi"><span class="hi-name hi">state</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><span class="hi-name hi">address</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao.DAO_RECOVERY:0"><span class="hi-name hi">DAO_RECOVERY</span></a><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><span class="hi-name hi">balance</span></span>)</span></span></span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao.apply_dao">apply_dao</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao.apply_dao.<locals&gt;.state">state</span></span>: <span><span class="hi-name"><a href="state.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).state.State:0"><span title="diff(ethereum.dao_fork,ethereum.tangerine_whistle).state.State">State</span></a></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.None">None</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>147</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>148</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Apply the dao fork to the state.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>149</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>150</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>151</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>152</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    state :</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>153</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        State before applying the DAO Fork.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>154</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>155</th><td><pre><span class="hi-indented-block hi">    <span class="hi-for hi">for <span class="hi-name hi">address</span> in <a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao.DAO_ACCOUNTS:0"><span class="hi-name hi">DAO_ACCOUNTS</span></a>:</span></span></pre></td></tr></tbody><tbody><tr><th>156</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi">        <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">balance</span></span> = <span class="hi-attribute hi"><span class="hi-call hi"><a href="state.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).state.get_account:0"><span class="hi-name hi">get_account</span></a>(<span class="hi-arg hi"><span class="hi-name hi">state</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><span class="hi-name hi">address</span></span>)</span><span class="hi-dot hi">.</span><span class="hi-name hi">balance</span></span></span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>157</th><td><pre><span class="hi-indented-block hi"><span class="hi-for hi"><span class="hi-indented-block hi">        <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><a href="state.py.html#diff(ethereum.dao_fork,ethereum.tangerine_whistle).state.move_ether:0"><span class="hi-name hi">move_ether</span></a>(<span class="hi-arg hi"><span class="hi-name hi">state</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><span class="hi-name hi">address</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><a href="#diff(ethereum.dao_fork,ethereum.tangerine_whistle).dao.DAO_RECOVERY:0"><span class="hi-name hi">DAO_RECOVERY</span></a><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><span class="hi-name hi">balance</span></span>)</span></span></span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
             
         </div>

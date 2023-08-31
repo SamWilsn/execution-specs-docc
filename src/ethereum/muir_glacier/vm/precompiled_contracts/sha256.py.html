@@ -17,8 +17,9 @@
         
     </head>
     <body>
-        
-        <div id="search" role="search" class="row">
+        <div class="container">
+            
+            <div id="search" role="search" class="row">
     <div class="col-12 col-3-md col-2-lg"></div>
     <div class="col">
         <div class="search-bar width-limiter">
@@ -30,34 +31,35 @@
         </div>
     </div>
 </div>
-        
-        
-        <div class="row breadcrumbs-row">
-            <div class="col-12 col-3-md col-2-lg"></div>
-            <nav aria-label="breadcrumbs" class="breadcrumbs col">
-                <ul>
-                    
-                    <li><a href="../../../../../index.html">.</a></li>
-                    
-                    <li><a href="../../../../index.html">src</a></li>
-                    
-                    <li><a href="../../../index.html">ethereum</a></li>
-                    
-                    <li><a href="../../index.html">muir_glacier</a></li>
-                    
-                    <li><a href="../index.html">vm</a></li>
-                    
-                    <li><a href="index.html">precompiled_contracts</a></li>
-                    
+            
+            
+            <div class="row breadcrumbs-row">
+                <div class="col-12 col-3-md col-2-lg"></div>
+                <nav aria-label="breadcrumbs" class="breadcrumbs">
+                    <ul>
+                        
+                        <li><a href="../../../../../index.html">.</a></li>
+                        
+                        <li><a href="../../../../index.html">src</a></li>
+                        
+                        <li><a href="../../../index.html">ethereum</a></li>
+                        
+                        <li><a href="../../index.html">muir_glacier</a></li>
+                        
+                        <li><a href="../index.html">vm</a></li>
+                        
+                        <li><a href="index.html">precompiled_contracts</a></li>
+                        
 
-                    <li>
-                        <span aria-current="page">sha256.py</span>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <span aria-current="page">sha256.py</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
         </div>
-        
-        <main id="main-content">
+        <main class="container" id="main-content">
         <section class="module row reverse" id="ethereum.muir_glacier.vm.precompiled_contracts.sha256:0">
     <div class="members col">
         <div class="width-limiter">
@@ -84,11 +86,13 @@
 The current EVM frame.</p></div>
     </div>
     
-    
-    <details open="">
-        <summary class="code-like">
-            <code>def <span title="ethereum.muir_glacier.vm.precompiled_contracts.sha256.sha256">sha256</span>(<span title="ethereum.muir_glacier.vm.precompiled_contracts.sha256.sha256.<locals&gt;.evm">evm</span>: <span><a href="../__init__.py.html#ethereum.muir_glacier.vm.Evm:0"><span title="ethereum.muir_glacier.vm.Evm">Evm</span></a></span>) -&gt; <span><span title="builtins.None">None</span></span>:</code>
-        </summary><table class="verbatim"><tbody><tr><th>24</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>25</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Writes the sha256 hash to output.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>26</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>27</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>28</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>29</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    evm :</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>30</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The current EVM frame.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>31</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>32</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">data</span></span> = <span class="hi-attribute hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">message</span></span><span class="hi-dot hi">.</span><span class="hi-name hi">data</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>33</th><td><pre><span class="hi-indented-block hi"></span></pre></td></tr></tbody><tbody><tr><th>34</th><td><pre><span class="hi-indented-block hi">    # GAS</span></pre></td></tr></tbody><tbody><tr><th>35</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">word_count</span></span> = <span class="hi-binary-operation hi"><span class="hi-call hi"><a href="../../../utils/numeric.py.html#ethereum.utils.numeric.ceil32:0"><span class="hi-name hi">ceil32</span></a>(<span class="hi-arg hi"><span class="hi-call hi"><a href="../../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a>(<span class="hi-arg hi"><span class="hi-call hi"><span class="hi-name hi">len</span>(<span class="hi-arg hi"><span class="hi-name hi">data</span></span>)</span></span>)</span></span>)</span> <span class="hi-floor-divide hi">//</span> <span class="hi-integer hi">32</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>36</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><a href="../gas.py.html#ethereum.muir_glacier.vm.gas.charge_gas:0"><span class="hi-name hi">charge_gas</span></a>(<span class="hi-arg hi"><span class="hi-name hi">evm</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><span class="hi-binary-operation hi"><a href="../gas.py.html#ethereum.muir_glacier.vm.gas.GAS_SHA256:0"><span class="hi-name hi">GAS_SHA256</span></a> <span class="hi-add hi">+</span> <span class="hi-binary-operation hi"><a href="../gas.py.html#ethereum.muir_glacier.vm.gas.GAS_SHA256_WORD:0"><span class="hi-name hi">GAS_SHA256_WORD</span></a> <span class="hi-multiply hi">*</span> <span class="hi-name hi">word_count</span></span></span></span>)</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>37</th><td><pre><span class="hi-indented-block hi"></span></pre></td></tr></tbody><tbody><tr><th>38</th><td><pre><span class="hi-indented-block hi">    # OPERATION</span></pre></td></tr></tbody><tbody><tr><th>39</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">output</span></span></span> = <span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">hashlib</span><span class="hi-dot hi">.</span><span class="hi-name hi">sha256</span></span>(<span class="hi-arg hi"><span class="hi-name hi">data</span></span>)</span><span class="hi-dot hi">.</span><span class="hi-name hi">digest</span></span>()</span></span></span></span></pre></td></tr></tbody></table></details>
+    <div class="scroll-x">
+        
+        <details open="">
+            <summary class="code-like">
+                <code><span class="nobr"><span class="hi-function-def">def</span> <span class="hi-name"><span title="ethereum.muir_glacier.vm.precompiled_contracts.sha256.sha256">sha256</span></span>(</span>​<span class="nobr"><span class="hi-name"><span title="ethereum.muir_glacier.vm.precompiled_contracts.sha256.sha256.<locals&gt;.evm">evm</span></span>: <span><span class="hi-name"><a href="../__init__.py.html#ethereum.muir_glacier.vm.Evm:0"><span title="ethereum.muir_glacier.vm.Evm">Evm</span></a></span></span></span>​<span class="nobr">) -&gt; <span><span class="hi-name"><span title="builtins.None">None</span></span></span>:</span></code>
+            </summary><table class="verbatim"><tbody><tr><th>24</th><td><pre>    <span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">"""</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>25</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Writes the sha256 hash to output.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>26</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi"></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>27</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    Parameters</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>28</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    ----------</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>29</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    evm :</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>30</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">        The current EVM frame.</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>31</th><td><pre><span class="hi-indented-block hi"><span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-simple-string hi">    """</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>32</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">data</span></span> = <span class="hi-attribute hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">message</span></span><span class="hi-dot hi">.</span><span class="hi-name hi">data</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>33</th><td><pre><span class="hi-indented-block hi"></span></pre></td></tr></tbody><tbody><tr><th>34</th><td><pre><span class="hi-indented-block hi">    # GAS</span></pre></td></tr></tbody><tbody><tr><th>35</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-name hi">word_count</span></span> = <span class="hi-binary-operation hi"><span class="hi-call hi"><a href="../../../utils/numeric.py.html#ethereum.utils.numeric.ceil32:0"><span class="hi-name hi">ceil32</span></a>(<span class="hi-arg hi"><span class="hi-call hi"><a href="../../../base_types.py.html#ethereum.base_types.Uint:0"><span class="hi-name hi">Uint</span></a>(<span class="hi-arg hi"><span class="hi-call hi"><span class="hi-name hi">len</span>(<span class="hi-arg hi"><span class="hi-name hi">data</span></span>)</span></span>)</span></span>)</span> <span class="hi-floor-divide hi">//</span> <span class="hi-integer hi">32</span></span></span></span></span></pre></td></tr></tbody><tbody><tr><th>36</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-expr hi"><span class="hi-call hi"><a href="../gas.py.html#ethereum.muir_glacier.vm.gas.charge_gas:0"><span class="hi-name hi">charge_gas</span></a>(<span class="hi-arg hi"><span class="hi-name hi">evm</span><span class="hi-comma hi">,</span></span> <span class="hi-arg hi"><span class="hi-binary-operation hi"><a href="../gas.py.html#ethereum.muir_glacier.vm.gas.GAS_SHA256:0"><span class="hi-name hi">GAS_SHA256</span></a> <span class="hi-add hi">+</span> <span class="hi-binary-operation hi"><a href="../gas.py.html#ethereum.muir_glacier.vm.gas.GAS_SHA256_WORD:0"><span class="hi-name hi">GAS_SHA256_WORD</span></a> <span class="hi-multiply hi">*</span> <span class="hi-name hi">word_count</span></span></span></span>)</span></span></span></span></pre></td></tr></tbody><tbody><tr><th>37</th><td><pre><span class="hi-indented-block hi"></span></pre></td></tr></tbody><tbody><tr><th>38</th><td><pre><span class="hi-indented-block hi">    # OPERATION</span></pre></td></tr></tbody><tbody><tr><th>39</th><td><pre><span class="hi-indented-block hi">    <span class="hi-simple-statement-line hi"><span class="hi-assign hi"><span class="hi-assign-target hi"><span class="hi-attribute hi"><span class="hi-name hi">evm</span><span class="hi-dot hi">.</span><span class="hi-name hi">output</span></span></span> = <span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-call hi"><span class="hi-attribute hi"><span class="hi-name hi">hashlib</span><span class="hi-dot hi">.</span><span class="hi-name hi">sha256</span></span>(<span class="hi-arg hi"><span class="hi-name hi">data</span></span>)</span><span class="hi-dot hi">.</span><span class="hi-name hi">digest</span></span>()</span></span></span></span></pre></td></tr></tbody></table></details>
+    </div>
 </section>
             
         </div>
