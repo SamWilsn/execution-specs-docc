@@ -733,7 +733,9 @@ class Sync(ForkTracking):
         if self.options.reset:
             import rust_pyspec_glue
 
-            rust_pyspec_glue.DB.delete(self.options.persist)
+            persist = self.options.persist
+            assert isinstance(persist, str)
+            rust_pyspec_glue.DB.delete(persist)
 
         if self.options.initial_state is not None:
             assert self.options.persist is not None
