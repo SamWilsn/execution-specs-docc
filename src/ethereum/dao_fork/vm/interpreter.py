@@ -218,7 +218,6 @@ def execute_code(message: Message, env: Environment) -> Evm:
         children=[],
     )
     try:
-
         if evm.message.code_address in PRE_COMPILED_CONTRACTS:
             evm_trace(evm, evm.message.code_address)
             PRE_COMPILED_CONTRACTS[evm.message.code_address](evm)

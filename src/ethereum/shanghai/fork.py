@@ -593,7 +593,7 @@ def process_transaction(
     preaccessed_storage_keys = set()
     preaccessed_addresses.add(env.coinbase)
     if isinstance(tx, (AccessListTransaction, FeeMarketTransaction)):
-        for (address, keys) in tx.access_list:
+        for address, keys in tx.access_list:
             preaccessed_addresses.add(address)
             for key in keys:
                 preaccessed_storage_keys.add((address, key))
@@ -723,7 +723,7 @@ def calculate_intrinsic_cost(tx: Transaction) -> Uint:
 
     access_list_cost = 0
     if isinstance(tx, (AccessListTransaction, FeeMarketTransaction)):
-        for (_address, keys) in tx.access_list:
+        for _address, keys in tx.access_list:
             access_list_cost += TX_ACCESS_LIST_ADDRESS_COST
             access_list_cost += len(keys) * TX_ACCESS_LIST_STORAGE_KEY_COST
 
