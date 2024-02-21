@@ -46,6 +46,7 @@ class Environment:
     chain_id: U64
     traces: List[dict]
     excess_blob_gas: U64
+    transaction_fee_paid: bool
 
 
 @dataclass

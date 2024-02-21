@@ -134,3 +134,7 @@ class KZGProofError(ExceptionalHalt):
     """
 
     pass
+
+
+class InvalidSponsorCall(ExceptionalHalt):
+    pass

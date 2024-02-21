@@ -14,9 +14,11 @@ Implementations of the EVM system related instructions.
 from ethereum.base_types import U256, Bytes0, Uint
 from ethereum.utils.ensure import ensure
 from ethereum.utils.numeric import ceil32
+from ethereum.utils.byte import right_pad_zero_bytes
 
 from ...fork_types import Address
 from ...state import (
+    destroy_ether,
     account_exists_and_is_empty,
     account_has_code_or_nonce,
     get_account,
@@ -36,7 +38,7 @@ from .. import (
     incorporate_child_on_error,
     incorporate_child_on_success,
 )
-from ..exceptions import OutOfGasError, Revert, WriteInStaticContext
+from ..exceptions import OutOfGasError, Revert, WriteInStaticContext, InvalidSponsorCall
 from ..gas import (
     GAS_CALL_VALUE,
     GAS_COLD_ACCOUNT_ACCESS,
@@ -47,6 +49,7 @@ from ..gas import (
     GAS_SELF_DESTRUCT_NEW_ACCOUNT,
     GAS_WARM_ACCESS,
     GAS_ZERO,
+    MessageCallGas,
     calculate_gas_extend_memory,
     calculate_message_call_gas,
     charge_gas,
@@ -686,6 +689,122 @@ def revert(evm: Evm) -> None:
     output = memory_read_bytes(evm.memory, memory_start_index, size)
     evm.output = bytes(output)
     raise Revert
+
+    # PROGRAM COUNTER
+    pass
+
+
+def exec(evm: Evm) -> None:
+    from ...vm.interpreter import process_message
+
+    # STACK
+    transaction_gas_limit = pop(evm.stack)
+    arguments_input_start = pop(evm.stack)
+    arguments_input_size = pop(evm.stack)
+    memory_input_start_position = pop(evm.stack)
+    memory_input_size = pop(evm.stack)
+
+    # GAS
+    extend_memory = calculate_gas_extend_memory(
+        evm.memory,
+        [
+            (arguments_input_start, arguments_input_size),
+            (memory_input_start_position, memory_input_size),
+        ],
+    )
+
+    gas_cost = Uint(0)
+    # TODO: warm vs. cold access costs?
+    # TODO: new account gas cost?
+    gas_used = gas_cost + extend_memory.cost + evm.env.gas_limit - evm.gas_left
+    callee_gas_limit = Uint(transaction_gas_limit) - gas_used
+
+    message_call_gas = MessageCallGas(
+        callee_gas_limit + gas_cost,
+        callee_gas_limit,
+    )
+    charge_gas(evm, message_call_gas.cost + extend_memory.cost)
+
+    # OPERATION
+    evm.memory += b"\x00" * extend_memory.expand_by
+
+    arguments: bytes = memory_read_bytes(
+        evm.memory,
+        arguments_input_start,
+        arguments_input_size
+    )
+    arguments = right_pad_zero_bytes(arguments, 32 * 4)
+
+    version = U256.from_be_bytes(arguments[:32])
+    max_priority_fee_per_gas = U256.from_be_bytes(arguments[32:64])
+    max_fee_per_gas = U256.from_be_bytes(arguments[64:96])
+    to = Address(arguments[108:128])  # Note the skipped bytes.
+
+    maximum_gas_deposit = max_fee_per_gas * transaction_gas_limit
+
+    ensure(0 == version, InvalidSponsorCall)
+    ensure(max_fee_per_gas >= max_priority_fee_per_gas, InvalidSponsorCall)
+    ensure(max_fee_per_gas >= evm.env.base_fee_per_gas, InvalidSponsorCall)
+    ensure(evm.message.depth == 0, InvalidSponsorCall)
+    ensure(not evm.env.transaction_fee_paid, InvalidSponsorCall)
+    ensure(not evm.message.is_static, InvalidSponsorCall)
+
+    sender_balance = get_account(
+        evm.env.state, evm.message.current_target
+    ).balance
+
+    ensure(sender_balance >= maximum_gas_deposit, InvalidSponsorCall)
+
+    priority_fee_per_gas = min(
+        max_priority_fee_per_gas,
+        max_fee_per_gas - evm.env.base_fee_per_gas,
+    )
+
+    effective_gas_price = priority_fee_per_gas + evm.env.base_fee_per_gas
+    actual_gas_deposit = transaction_gas_limit * effective_gas_price
+
+    destroy_ether(
+        evm.env.state,
+        evm.message.current_target,
+        actual_gas_deposit
+    )
+    evm.env.transaction_fee_paid = True
+    evm.env.gas_price = Uint(effective_gas_price)
+
+    # TODO: Set globals.gas_price to gas_price, and globals.gas_limit to gas_limit
+
+    call_data = memory_read_bytes(
+        evm.memory, memory_input_start_position, memory_input_size
+    )
+    code = get_account(evm.env.state, to).code
+    child_message = Message(
+        caller=evm.message.current_target,
+        target=to,
+        gas=message_call_gas.stipend,
+        value=U256(0),
+        data=call_data,
+        code=code,
+        current_target=to,
+        depth=evm.message.depth + 1,
+        code_address=to,
+        should_transfer_value=False,
+        is_static=False,
+        accessed_addresses=evm.accessed_addresses.copy(),
+        accessed_storage_keys=evm.accessed_storage_keys.copy(),
+        parent_evm=evm,
+        blob_versioned_hashes=evm.message.blob_versioned_hashes,
+    )
+    child_evm = process_message(child_message, evm.env)
+
+    if child_evm.error:
+        incorporate_child_on_error(evm, child_evm)
+    else:
+        incorporate_child_on_success(evm, child_evm)
+
+    # TODO: Double-check that setting `evm.output` is pointless in the top
+    #       frame.
+
+    evm.running = False
 
     # PROGRAM COUNTER
     pass
